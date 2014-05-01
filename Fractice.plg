@@ -1,0 +1,181 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Fractice - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/Fractice.res" /d "NDEBUG" /d "_AFXDLL" "C:\Home\Fractice\Fractice\Fractice.rc"" 
+Creating temporary file "C:\DOCUME~1\ckorda\LOCALS~1\Temp\RSP2E7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\gmp" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Release/Fractice.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Home\Fractice\Fractice\AboutDlg.cpp"
+"C:\Home\Fractice\Fractice\AntialiasDlg.cpp"
+"C:\Home\Fractice\Fractice\Benchmark.cpp"
+"C:\Home\Fractice\Fractice\BmpToAvi.cpp"
+"C:\Home\Fractice\Fractice\BoundsDlg.cpp"
+"C:\Home\Fractice\Fractice\CoordsDlg.cpp"
+"C:\Home\Fractice\Fractice\Dib.cpp"
+"C:\Home\Fractice\Fractice\DirShowU.cpp"
+"C:\Home\Fractice\Fractice\DPoint.cpp"
+"C:\Home\Fractice\Fractice\DRect.cpp"
+"C:\Home\Fractice\Fractice\Engine.cpp"
+"C:\Home\Fractice\Fractice\Fractice.cpp"
+"C:\Home\Fractice\Fractice\FracticeDoc.cpp"
+"C:\Home\Fractice\Fractice\FracticeView.cpp"
+"C:\Home\Fractice\Fractice\gmpoo.cpp"
+"C:\Home\Fractice\Fractice\HistoryBar.cpp"
+"C:\Home\Fractice\Fractice\HistoryView.cpp"
+"C:\Home\Fractice\Fractice\hls.cpp"
+"C:\Home\Fractice\Fractice\Hyperlink.cpp"
+"C:\Home\Fractice\Fractice\ImageSizeDlg.cpp"
+"C:\Home\Fractice\Fractice\MainFrm.cpp"
+"C:\Home\Fractice\Fractice\NumEdit.cpp"
+"C:\Home\Fractice\Fractice\OptionsDlg.cpp"
+"C:\Home\Fractice\Fractice\PathStr.cpp"
+"C:\Home\Fractice\Fractice\Persist.cpp"
+"C:\Home\Fractice\Fractice\PersistDlg.cpp"
+"C:\Home\Fractice\Fractice\ProgressDlg.cpp"
+"C:\Home\Fractice\Fractice\QualityDlg.cpp"
+"C:\Home\Fractice\Fractice\RecordDlg.cpp"
+"C:\Home\Fractice\Fractice\RecStatDlg.cpp"
+"C:\Home\Fractice\Fractice\RunAvg.cpp"
+"C:\Home\Fractice\Fractice\scbarg.cpp"
+"C:\Home\Fractice\Fractice\sizecbar.cpp"
+"C:\Home\Fractice\Fractice\Snapshot.cpp"
+"C:\Home\Fractice\Fractice\ToolDlg.cpp"
+"C:\Home\Fractice\Fractice\VersionInfo.cpp"
+"C:\Home\Fractice\Fractice\VideoComprDlg.cpp"
+"C:\Home\Fractice\Fractice\VideoComprList.cpp"
+"C:\Home\Fractice\Fractice\VideoComprState.cpp"
+"C:\Home\Fractice\Fractice\Win32Console.cpp"
+"C:\Home\Fractice\Fractice\yafepal.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ckorda\LOCALS~1\Temp\RSP2E7.tmp" 
+Creating temporary file "C:\DOCUME~1\ckorda\LOCALS~1\Temp\RSP2E8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\gmp" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Release/Fractice.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Home\Fractice\Fractice\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ckorda\LOCALS~1\Temp\RSP2E8.tmp" 
+Creating temporary file "C:\DOCUME~1\ckorda\LOCALS~1\Temp\RSP2E9.tmp" with contents
+[
+..\gmp\gmp.lib vfw32.lib shlwapi.lib quartz.lib strmbase.lib version.lib imagehlp.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Fractice.pdb" /machine:I386 /out:"Release/Fractice.exe" 
+.\Release\AboutDlg.obj
+.\Release\AntialiasDlg.obj
+.\Release\Benchmark.obj
+.\Release\BmpToAvi.obj
+.\Release\BoundsDlg.obj
+.\Release\CoordsDlg.obj
+.\Release\Dib.obj
+.\Release\DirShowU.obj
+.\Release\DPoint.obj
+.\Release\DRect.obj
+.\Release\Engine.obj
+.\Release\Fractice.obj
+.\Release\FracticeDoc.obj
+.\Release\FracticeView.obj
+.\Release\gmpoo.obj
+.\Release\HistoryBar.obj
+.\Release\HistoryView.obj
+.\Release\hls.obj
+.\Release\Hyperlink.obj
+.\Release\ImageSizeDlg.obj
+.\Release\MainFrm.obj
+.\Release\NumEdit.obj
+.\Release\OptionsDlg.obj
+.\Release\PathStr.obj
+.\Release\Persist.obj
+.\Release\PersistDlg.obj
+.\Release\ProgressDlg.obj
+.\Release\QualityDlg.obj
+.\Release\RecordDlg.obj
+.\Release\RecStatDlg.obj
+.\Release\RunAvg.obj
+.\Release\scbarg.obj
+.\Release\sizecbar.obj
+.\Release\Snapshot.obj
+.\Release\StdAfx.obj
+.\Release\ToolDlg.obj
+.\Release\VersionInfo.obj
+.\Release\VideoComprDlg.obj
+.\Release\VideoComprList.obj
+.\Release\VideoComprState.obj
+.\Release\Win32Console.obj
+.\Release\yafepal.obj
+.\Release\Fractice.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ckorda\LOCALS~1\Temp\RSP2E9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+
+NOTE: WINVER has been defined as 0x0500 or greater which enables
+Windows NT 5.0 and Windows 98 features. When these headers were released,
+Windows NT 5.0 beta 1 and Windows 98 beta 2.1 were the current versions.
+
+For this release when WINVER is defined as 0x0500 or greater, you can only
+build beta or test applications.  To build a retail application,
+set WINVER to 0x0400 or visit http://www.microsoft.com/msdn/sdk
+to see if retail Windows NT 5.0 or Windows 98 headers are available.
+
+See the SDK release notes for more information.
+
+Compiling...
+AboutDlg.cpp
+AntialiasDlg.cpp
+Benchmark.cpp
+BmpToAvi.cpp
+BoundsDlg.cpp
+CoordsDlg.cpp
+Dib.cpp
+DirShowU.cpp
+DPoint.cpp
+DRect.cpp
+Engine.cpp
+Fractice.cpp
+FracticeDoc.cpp
+FracticeView.cpp
+gmpoo.cpp
+HistoryBar.cpp
+HistoryView.cpp
+hls.cpp
+Hyperlink.cpp
+ImageSizeDlg.cpp
+Generating Code...
+Compiling...
+MainFrm.cpp
+NumEdit.cpp
+OptionsDlg.cpp
+PathStr.cpp
+Persist.cpp
+PersistDlg.cpp
+ProgressDlg.cpp
+QualityDlg.cpp
+RecordDlg.cpp
+RecStatDlg.cpp
+RunAvg.cpp
+scbarg.cpp
+sizecbar.cpp
+Snapshot.cpp
+ToolDlg.cpp
+VersionInfo.cpp
+VideoComprDlg.cpp
+VideoComprList.cpp
+VideoComprState.cpp
+Win32Console.cpp
+Generating Code...
+Compiling...
+yafepal.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Fractice.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

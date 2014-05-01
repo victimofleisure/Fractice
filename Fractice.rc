@@ -1,0 +1,2571 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Fractice.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Fractice.ico"
+IDR_FRACTICETYPE        ICON                    "res\\FracticeDoc.ico"
+IDI_SORT_UP             ICON                    "res\\sort_up.ico"
+IDI_SORT_DOWN           ICON                    "res\\sort_down.ico"
+IDI_HIST_VIEW_POS       ICON                    "res\\HistViewPos.ico"
+IDI_TC_LOOP_DOWN        ICON                    "res\\tc_loop_down.ico"
+IDI_TC_LOOP_UP          ICON                    "res\\tc_loop_up.ico"
+IDI_TC_PLAY_DOWN        ICON                    "res\\tc_play_down.ico"
+IDI_TC_PLAY_UP          ICON                    "res\\tc_play_up.ico"
+IDI_TC_STOP_DOWN        ICON                    "res\\tc_stop_down.ico"
+IDI_TC_STOP_UP          ICON                    "res\\tc_stop_up.ico"
+IDI_TC_PAUSE_UP         ICON                    "res\\tc_pause_up.ico"
+IDI_TC_PAUSE_DOWN       ICON                    "res\\tc_pause_down.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_RECORDING           BITMAP                  "res\\Recording.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_FILE_EXPORT
+    BUTTON      ID_FILE_RECORD
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_TOOL_MARQUEE
+    BUTTON      ID_EDIT_TOOL_HAND
+    BUTTON      ID_EDIT_TOOL_ZOOM
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_RECORDING TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_RECORD
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_FRACTICETYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Print Set&up...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Export...\tCtrl+E",          ID_FILE_EXPORT
+        MENUITEM "&Record...\tCtrl+R",          ID_FILE_RECORD
+        MENUITEM "Pos&ter...",                  ID_FILE_POSTER
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select A&ll\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Coordinat&es...\tShift+C",    ID_EDIT_COORDS
+        MENUITEM "&Bounds...\tShift+B",         ID_EDIT_BOUNDS
+        MENUITEM "&Options...\tShift+O",        ID_EDIT_OPTIONS
+        MENUITEM SEPARATOR
+        POPUP "Too&l"
+        BEGIN
+            MENUITEM "&Marquee\tM",                 ID_EDIT_TOOL_MARQUEE
+            MENUITEM "&Hand\tH",                    ID_EDIT_TOOL_HAND
+            MENUITEM "&Zoom\tZ",                    ID_EDIT_TOOL_ZOOM
+        END
+    END
+    POPUP "&Image"
+    BEGIN
+        POPUP "&Fractal"
+        BEGIN
+            MENUITEM "&Mandelbrot",                 ID_IMG_FRACTAL_TYPE_1
+            MENUITEM "Mandelba&r",                  ID_IMG_FRACTAL_TYPE_3
+            MENUITEM "&Newton",                     ID_IMG_FRACTAL_TYPE_2
+        END
+        POPUP "Image &Size"
+        BEGIN
+            MENUITEM "&320 x 240\tCtrl+1",          ID_IMG_IMAGE_SIZE_1
+            MENUITEM "&640 x 480\tCtrl+2",          ID_IMG_IMAGE_SIZE_2
+            MENUITEM "&800 x 600\tCtrl+3",          ID_IMG_IMAGE_SIZE_3
+            MENUITEM "&1024 x 768\tCtrl+4",         ID_IMG_IMAGE_SIZE_4
+            MENUITEM SEPARATOR
+            MENUITEM "&Custom...",                  ID_IMG_IMAGE_SIZE_0
+            MENUITEM SEPARATOR
+            MENUITEM "Recent",                      ID_IMG_MRU_IMAGE_SIZE1
+        END
+        POPUP "&Quality"
+        BEGIN
+            MENUITEM "&Draft\tShift+1",             ID_IMG_QUALITY_1
+            MENUITEM "&Normal\tShift+2",            ID_IMG_QUALITY_2
+            MENUITEM "&High\tShift+3",              ID_IMG_QUALITY_3
+            MENUITEM SEPARATOR
+            MENUITEM "&Custom...",                  ID_IMG_QUALITY_0
+            MENUITEM SEPARATOR
+            MENUITEM "Recent",                      ID_IMG_MRU_QUALITY1
+        END
+        POPUP "&Antialiasing"
+        BEGIN
+            MENUITEM "&None\tAlt+1",                ID_IMG_ANTIALIAS_1
+            MENUITEM "&2x\tAlt+2",                  ID_IMG_ANTIALIAS_2
+            MENUITEM "&3x\tAlt+3",                  ID_IMG_ANTIALIAS_3
+            MENUITEM "&4x\tAlt+4",                  ID_IMG_ANTIALIAS_4
+            MENUITEM SEPARATOR
+            MENUITEM "&Custom...",                  ID_IMG_ANTIALIAS_0
+            MENUITEM SEPARATOR
+            MENUITEM "Recent",                      ID_IMG_MRU_ANTIALIAS1
+        END
+        POPUP "&Palette"
+        BEGIN
+            MENUITEM "&Open...",                    ID_IMG_PALETTE_OPEN
+            MENUITEM "&Save...",                    ID_IMG_PALETTE_SAVE
+            MENUITEM SEPARATOR
+            MENUITEM "&Import...",                  ID_IMG_PALETTE_IMPORT
+            MENUITEM "&Export...",                  ID_IMG_PALETTE_EXPORT
+            MENUITEM SEPARATOR
+            MENUITEM "I&nvert Color\tShift+N",      ID_IMG_PAL_INVERT_COLOR
+            MENUITEM "&Rotate Hue\tShift+R",        ID_IMG_PAL_ROTATE_HUE
+            MENUITEM "&Cycle Colors\tShift+F9",     ID_IMG_CYCLE_COLORS
+            MENUITEM SEPARATOR
+            MENUITEM "Recent Palette",              ID_IMG_MRU_PALETTE1, GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Render\tF5",                 ID_IMG_RENDER
+        MENUITEM "&Cancel\tEsc",                ID_IMG_CANCEL
+        POPUP "&History"
+        BEGIN
+            MENUITEM "&Export...",                  ID_IMG_HISTORY_EXPORT
+            MENUITEM "&Transform...",               ID_IMG_TRANSFORM
+            MENUITEM SEPARATOR
+            MENUITEM "&Slide Show...\tShift+F5",    ID_IMG_SLIDE_SHOW
+            MENUITEM SEPARATOR
+            MENUITEM "&Uncache Image",              ID_IMG_UNCACHE_IMAGE
+            MENUITEM "&Delete Escape Times",        ID_IMG_DELETE_ESC_TIMES
+            MENUITEM SEPARATOR
+            MENUITEM "&Properties",                 ID_SNAP_PROPERTIES
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom &In\t=",                 ID_IMG_ZOOM_IN
+        MENUITEM "Zoom &Out\t-",                ID_IMG_ZOOM_OUT
+        MENUITEM "Fit in &Window\tCtrl+0",      ID_IMG_FIT_IN_WINDOW
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&History\tShift+H",           ID_VIEW_HISTORY
+        MENUITEM "&Levels\tShift+L",            ID_VIEW_LEVELS
+        MENUITEM "P&arameters\tShift+P",        ID_VIEW_PARAMS
+        MENUITEM "&Files\tShift+F",             ID_VIEW_FILES
+        MENUITEM SEPARATOR
+        MENUITEM "&Palette\tF7",                ID_VIEW_PALETTE
+        MENUITEM "&Color Mapping\tF8",          ID_VIEW_COLOR_MAPPING
+        MENUITEM "C&olor Cycling\tF9",          ID_VIEW_COLOR_CYCLING
+        MENUITEM SEPARATOR
+        MENUITEM "&Mixer\tShift+M",             ID_VIEW_MIXER
+        MENUITEM "M&IDI Setup\tShift+I",        ID_VIEW_MIDI_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Record",                     ID_VIEW_RECORD
+        MENUITEM "R&ecord Status",              ID_VIEW_RECORD_STATUS
+        MENUITEM "Ser&vers\tShift+S",           ID_VIEW_SERVERS
+        MENUITEM "&Job Control\tShift+J",       ID_VIEW_JOB_CONTROL
+        MENUITEM SEPARATOR
+        MENUITEM "&Grid\tCtrl+G",               ID_VIEW_GRID
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Full Screen\tF11",           ID_WND_FULL_SCREEN
+        MENUITEM "&Exclusive\tCtrl+F11",        ID_WND_EXCLUSIVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "Tile &Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "&Tile Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics\tF1",            ID_HELP_INDEX
+        MENUITEM "Fractice on the &Web",        ID_APP_HOME_PAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&About Fractice...",          ID_APP_ABOUT
+    END
+END
+
+IDR_VIEW MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Zoom &In",                    ID_IMG_CTX_ZOOM_IN
+        MENUITEM "Zoom &Out",                   ID_IMG_CTX_ZOOM_OUT
+        MENUITEM SEPARATOR
+        POPUP "&Fractal"
+        BEGIN
+            MENUITEM "&Mandelbrot",                 ID_IMG_FRACTAL_TYPE_1
+            MENUITEM "Mandelba&r",                  ID_IMG_FRACTAL_TYPE_3
+            MENUITEM "&Newton",                     ID_IMG_FRACTAL_TYPE_2
+        END
+        POPUP "Image &Size"
+        BEGIN
+            MENUITEM "&320 x 240",                  ID_IMG_IMAGE_SIZE_1
+            MENUITEM "&640 x 480",                  ID_IMG_IMAGE_SIZE_2
+            MENUITEM "&800 x 600",                  ID_IMG_IMAGE_SIZE_3
+            MENUITEM "&1024 x 768",                 ID_IMG_IMAGE_SIZE_4
+            MENUITEM SEPARATOR
+            MENUITEM "&Custom...",                  ID_IMG_IMAGE_SIZE_0
+            MENUITEM SEPARATOR
+            MENUITEM "Recent",                      ID_IMG_MRU_IMAGE_SIZE1
+        END
+        POPUP "&Quality"
+        BEGIN
+            MENUITEM "&Draft",                      ID_IMG_QUALITY_1
+            MENUITEM "&Normal",                     ID_IMG_QUALITY_2
+            MENUITEM "&High",                       ID_IMG_QUALITY_3
+            MENUITEM SEPARATOR
+            MENUITEM "&Custom...",                  ID_IMG_QUALITY_0
+            MENUITEM SEPARATOR
+            MENUITEM "Recent",                      ID_IMG_MRU_QUALITY1
+        END
+        POPUP "&Antialiasing"
+        BEGIN
+            MENUITEM "&None",                       ID_IMG_ANTIALIAS_1
+            MENUITEM "&2x",                         ID_IMG_ANTIALIAS_2
+            MENUITEM "&3x",                         ID_IMG_ANTIALIAS_3
+            MENUITEM "&4x",                         ID_IMG_ANTIALIAS_4
+            MENUITEM SEPARATOR
+            MENUITEM "&Custom...",                  ID_IMG_ANTIALIAS_0
+            MENUITEM SEPARATOR
+            MENUITEM "Recent",                      ID_IMG_MRU_ANTIALIAS1
+        END
+        POPUP "&Palette"
+        BEGIN
+            MENUITEM "&Open...",                    ID_IMG_PALETTE_OPEN
+            MENUITEM "&Save...",                    ID_IMG_PALETTE_SAVE
+            MENUITEM SEPARATOR
+            MENUITEM "&Import...",                  ID_IMG_PALETTE_IMPORT
+            MENUITEM "&Export...",                  ID_IMG_PALETTE_EXPORT
+            MENUITEM SEPARATOR
+            MENUITEM "In&vert Color",               ID_IMG_PAL_INVERT_COLOR
+            MENUITEM "&Rotate Hue",                 ID_IMG_PAL_ROTATE_HUE
+            MENUITEM "&Cycle Colors",               ID_IMG_CYCLE_COLORS
+            MENUITEM SEPARATOR
+            MENUITEM "Recent Palette",              ID_IMG_MRU_PALETTE1, GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Fit in &Window",              ID_IMG_FIT_IN_WINDOW
+    END
+END
+
+IDR_RECORDING MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Stop Recording\tCtrl+R",     ID_FILE_RECORD_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&History\tShift+H",           ID_VIEW_HISTORY
+        MENUITEM "&Levels\tShift+L",            ID_VIEW_LEVELS
+        MENUITEM "P&arameters\tShift+P",        ID_VIEW_PARAMS
+        MENUITEM "&Files\tShift+F",             ID_VIEW_FILES
+        MENUITEM SEPARATOR
+        MENUITEM "&Palette\tF7",                ID_VIEW_PALETTE
+        MENUITEM "&Color Mapping\tF8",          ID_VIEW_COLOR_MAPPING
+        MENUITEM "C&olor Cycling\tF9",          ID_VIEW_COLOR_CYCLING
+        MENUITEM "&Mixer\tShift+M",             ID_VIEW_MIXER
+        MENUITEM SEPARATOR
+        MENUITEM "&Record",                     ID_VIEW_RECORD
+        MENUITEM "R&ecord Status",              ID_VIEW_RECORD_STATUS
+        MENUITEM "Ser&vers\tShift+S",           ID_VIEW_SERVERS
+        MENUITEM "&Job Control\tShift+J",       ID_VIEW_JOB_CONTROL
+        MENUITEM SEPARATOR
+        MENUITEM "&Grid\tCtrl+G",               ID_VIEW_GRID
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "Tile &Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "&Tile Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics\tF1",            ID_HELP_INDEX
+        MENUITEM "Fractice on the &Web",        ID_APP_HOME_PAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&About Fractice...",          ID_APP_ABOUT
+    END
+END
+
+IDR_HISTORY MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Render",                      ID_IMG_RENDER
+        MENUITEM SEPARATOR
+        MENUITEM "Record",                      ID_HIST_RECORD
+        MENUITEM SEPARATOR
+        MENUITEM "Cut",                         ID_EDIT_CUT
+        MENUITEM "Copy",                        ID_EDIT_COPY
+        MENUITEM "Paste",                       ID_EDIT_PASTE
+        MENUITEM "Delete",                      ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Export...",                  ID_IMG_HISTORY_EXPORT
+        MENUITEM "&Transform...",               ID_IMG_TRANSFORM
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_SNAP_PROPERTIES
+    END
+END
+
+IDR_GRADIENT MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Insert",                      ID_GRAD_INSERT_AT
+        MENUITEM "Delete",                      ID_GRAD_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Invert Color",                ID_GRAD_INVERT_COLOR
+        MENUITEM "Rotate Hue",                  ID_GRAD_ROTATE_HUE
+        MENUITEM "Reverse Cycle",               ID_GRAD_REVERSE_CYCLE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All",                  ID_GRAD_SELECT_ALL
+    END
+END
+
+IDR_LEVELS MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Linear",                      ID_LEVS_SCALING_TYPE
+        MENUITEM "Log 10",                      ID_LEVS_SCALING_TYPE2
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Axis",                  ID_LEVS_SHOW_AXIS
+    END
+END
+
+IDR_JOB_CONTROL MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load job list...",           ID_JOB_FILE_LOAD_LIST
+        MENUITEM "&Save job list...",           ID_JOB_FILE_SAVE_LIST
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Clear list",                 ID_JOB_EDIT_CLEAR_LIST
+        MENUITEM "&Delete done jobs",           ID_JOB_EDIT_DELETE_DONE
+        MENUITEM SEPARATOR
+        MENUITEM "All Waiting => Postponed",    ID_JOB_EDIT_WAITING_POSTPONED
+        MENUITEM "All Postponed => Waiting",    ID_JOB_EDIT_POSTPONED_WAITING
+        MENUITEM "All Done => Waiting",         ID_JOB_EDIT_DONE_WAITING
+        MENUITEM "All Failed => Waiting",       ID_JOB_EDIT_FAILED_WAITING
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Shutdown when finished",     ID_JOB_OPTS_SHUTDOWN
+    END
+END
+
+IDR_JOB_CONTROL_CTX MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Postpone",                   ID_JOB_EDIT_POSTPONE
+        MENUITEM "&Delete",                     ID_JOB_EDIT_DELETE
+        MENUITEM "&Skip",                       ID_JOB_EDIT_SKIP
+        MENUITEM "View &Error",                 ID_JOB_VIEW_ERROR
+    END
+END
+
+IDR_RECORD_CTX MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Insert",                      ID_SNAP_INSERT
+        MENUITEM "Delete",                      ID_SNAP_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All",                  ID_SNAP_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...",               ID_SNAP_PROPERTIES
+    END
+END
+
+IDR_PALETTE MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Open...",                    ID_IMG_PALETTE_OPEN
+        MENUITEM "&Save...",                    ID_IMG_PALETTE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Import...",                  ID_IMG_PALETTE_IMPORT
+        MENUITEM "&Export...",                  ID_IMG_PALETTE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Invert Color",                ID_IMG_PAL_INVERT_COLOR
+        MENUITEM "Rotate Hue",                  ID_IMG_PAL_ROTATE_HUE
+        MENUITEM "&Cycle Colors",               ID_IMG_CYCLE_COLORS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent Palette",              ID_IMG_MRU_PALETTE1, GRAYED
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Print Set&up...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Options...\tShift+O",        ID_EDIT_OPTIONS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&History\tShift+H",           ID_VIEW_HISTORY
+        MENUITEM "&Levels\tShift+L",            ID_VIEW_LEVELS
+        MENUITEM "P&arameters\tShift+P",        ID_VIEW_PARAMS
+        MENUITEM "&Files\tShift+F",             ID_VIEW_FILES
+        MENUITEM SEPARATOR
+        MENUITEM "&Palette\tF7",                ID_VIEW_PALETTE
+        MENUITEM "&Color Mapping\tF8",          ID_VIEW_COLOR_MAPPING
+        MENUITEM "C&olor Cycling\tF9",          ID_VIEW_COLOR_CYCLING
+        MENUITEM "&Mixer\tShift+M",             ID_VIEW_MIXER
+        MENUITEM SEPARATOR
+        MENUITEM "&Record",                     ID_VIEW_RECORD
+        MENUITEM "R&ecord Status",              ID_VIEW_RECORD_STATUS
+        MENUITEM "Ser&vers\tShift+S",           ID_VIEW_SERVERS
+        MENUITEM "&Job Control\tShift+J",       ID_VIEW_JOB_CONTROL
+        MENUITEM SEPARATOR
+        MENUITEM "&Grid\tCtrl+G",               ID_VIEW_GRID
+        MENUITEM "&Demo",                       ID_VIEW_DEMO
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics\tF1",            ID_HELP_INDEX
+        MENUITEM "Fractice on the &Web",        ID_APP_HOME_PAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&About Fractice...",          ID_APP_ABOUT
+    END
+END
+
+IDR_FB_CTX_BAR MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Parent Folder",              ID_FB_PARENT_FOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Icons",                      ID_FB_VIEW_ICON
+        MENUITEM "&Small Icons",                ID_FB_VIEW_SMALL_ICON
+        MENUITEM "&List",                       ID_FB_VIEW_LIST
+        MENUITEM "&Details",                    ID_FB_VIEW_REPORT
+        MENUITEM SEPARATOR
+        POPUP "&Arrange"
+        BEGIN
+            MENUITEM "by &Name",                    ID_FB_SORT_NAME
+            MENUITEM "by &Type",                    ID_FB_SORT_TYPE
+            MENUITEM "by &Size",                    ID_FB_SORT_SIZE
+            MENUITEM "by &Date",                    ID_FB_SORT_DATE
+        END
+    END
+END
+
+IDR_FB_CTX_ITEM MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Open",                       ID_FB_FILE_OPEN
+        MENUITEM "&Rename",                     ID_FB_RENAME
+    END
+END
+
+IDR_REPORT_HDR MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Reset Columns",               ID_RH_RESET_COLS
+    END
+END
+
+IDR_SERVER_CTX MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Delete",                      ID_SRV_DELETE
+        MENUITEM "Shutdown",                    ID_SRV_SHUTDOWN
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_SRV_PROPERTIES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "-",            ID_IMG_ZOOM_OUT,        ASCII,  NOINVERT
+    "0",            ID_IMG_FIT_IN_WINDOW,   VIRTKEY, CONTROL, NOINVERT
+    "1",            ID_IMG_IMAGE_SIZE_1,    VIRTKEY, CONTROL, NOINVERT
+    "1",            ID_IMG_ANTIALIAS_1,     VIRTKEY, ALT, NOINVERT
+    "1",            ID_IMG_QUALITY_1,       VIRTKEY, SHIFT, NOINVERT
+    "2",            ID_IMG_IMAGE_SIZE_2,    VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_IMG_ANTIALIAS_2,     VIRTKEY, ALT, NOINVERT
+    "2",            ID_IMG_QUALITY_2,       VIRTKEY, SHIFT, NOINVERT
+    "3",            ID_IMG_IMAGE_SIZE_3,    VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_IMG_ANTIALIAS_3,     VIRTKEY, ALT, NOINVERT
+    "3",            ID_IMG_QUALITY_3,       VIRTKEY, SHIFT, NOINVERT
+    "4",            ID_IMG_IMAGE_SIZE_4,    VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_IMG_ANTIALIAS_4,     VIRTKEY, ALT, NOINVERT
+    "=",            ID_IMG_ZOOM_IN,         ASCII,  NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_EDIT_BOUNDS,         VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COORDS,         VIRTKEY, SHIFT, NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_VIEW_FILES,          VIRTKEY, SHIFT, NOINVERT
+    "G",            ID_VIEW_GRID,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_TOOL_HAND,      VIRTKEY, NOINVERT
+    "H",            ID_VIEW_HISTORY,        VIRTKEY, SHIFT, NOINVERT
+    "I",            ID_VIEW_MIDI_SETUP,     VIRTKEY, SHIFT, NOINVERT
+    "J",            ID_VIEW_JOB_CONTROL,    VIRTKEY, SHIFT, NOINVERT
+    "L",            ID_VIEW_LEVELS,         VIRTKEY, SHIFT, NOINVERT
+    "M",            ID_EDIT_TOOL_MARQUEE,   VIRTKEY, NOINVERT
+    "M",            ID_VIEW_MIXER,          VIRTKEY, SHIFT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_IMG_PAL_INVERT_COLOR, VIRTKEY, SHIFT, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_EDIT_OPTIONS,        VIRTKEY, SHIFT, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_VIEW_PARAMS,         VIRTKEY, SHIFT, NOINVERT
+    "R",            ID_FILE_RECORD,         VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_IMG_PAL_ROTATE_HUE,  VIRTKEY, SHIFT, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_VIEW_SERVERS,        VIRTKEY, SHIFT, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_IMG_CANCEL,          VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP_INDEX,          VIRTKEY, NOINVERT
+    VK_F11,         ID_WND_FULL_SCREEN,     VIRTKEY, NOINVERT
+    VK_F11,         ID_WND_EXCLUSIVE,       VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_IMG_RENDER,          VIRTKEY, NOINVERT
+    VK_F5,          ID_IMG_SLIDE_SHOW,      VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_VIEW_PALETTE,        VIRTKEY, NOINVERT
+    VK_F8,          ID_VIEW_COLOR_MAPPING,  VIRTKEY, NOINVERT
+    VK_F9,          ID_VIEW_COLOR_CYCLING,  VIRTKEY, NOINVERT
+    VK_F9,          ID_IMG_CYCLE_COLORS,    VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_TOOL_ZOOM,      VIRTKEY, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_RECORDING ACCELERATORS 
+BEGIN
+    "G",            ID_VIEW_GRID,           VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_FILE_RECORD,         VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP_INDEX,          VIRTKEY, NOINVERT
+    VK_F4,          ID_VIEW_JOB_CONTROL,    VIRTKEY, NOINVERT
+    VK_F8,          ID_VIEW_PALETTE,        VIRTKEY, NOINVERT
+END
+
+IDR_MODAL ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      ID_APP_CANCEL,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COORDS DIALOG  0, 0, 136, 86
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Coordinates"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "&X:",IDC_STATIC,7,7,8,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COORDS_X,19,7,110,14,ES_AUTOHSCROLL
+    RTEXT           "&Y:",IDC_STATIC,7,24,8,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COORDS_Y,19,24,110,14,ES_AUTOHSCROLL
+    RTEXT           "&Z:",IDC_STATIC,7,41,8,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COORDS_Z,19,41,110,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,19,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,79,65,50,14
+END
+
+IDD_IMAGE_SIZE DIALOG  0, 0, 124, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Image Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Width:",IDC_STATIC,18,7,22,8
+    EDITTEXT        IDC_IMG_SIZE_WIDTH_EDIT,18,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Height:",IDC_STATIC,65,7,24,8
+    EDITTEXT        IDC_IMG_SIZE_HEIGHT_EDIT,65,18,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,42,50,14
+END
+
+IDD_QUALITY DIALOG  0, 0, 124, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Quality"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_QUALITY_VALUE_EDIT,56,7,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,29,50,14
+    CTEXT           "&Value:",IDC_STATIC,28,7,21,12,SS_CENTERIMAGE
+END
+
+IDD_RECORD_STATUS DIALOG  0, 0, 159, 140
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Record Status"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Record duration:",IDC_STATIC,7,7,65,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_RST_DURATION,77,7,75,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Amount recorded:",IDC_STATIC,7,21,65,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_RST_RECORDED,77,21,75,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Elapsed time:",IDC_STATIC,7,35,65,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_RST_ELAPSED,77,35,75,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Rendering time:",IDC_STATIC,7,49,65,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_RST_RENDERING,77,49,75,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Remaining time:",IDC_STATIC,7,63,65,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_RST_REMAINING,77,63,75,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Average frame rate:",IDC_STATIC,3,77,69,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_RST_FRAME_RATE,77,77,75,12,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "Progress1",IDC_RST_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,7,97,145,14
+    DEFPUSHBUTTON   "Abort",IDC_RST_ABORT,53,119,50,14,WS_DISABLED
+    RTEXT           "",IDC_RST_PCT_DONE,113,118,30,15,SS_CENTERIMAGE
+END
+
+IDD_PROGRESS DIALOG  0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,7,7,172,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,28,50,14
+    RTEXT           "",IDC_PROGRESS_PERCENT,139,27,40,15,SS_CENTERIMAGE
+END
+
+IDD_SHUTDOWN_WARN DIALOG  0, 0, 186, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Shutdown Warning"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            429,IDC_WARNING_ICON,7,7,20,20
+    LTEXT           "Fractice has finished processing and is about to shut down your computer.",IDC_PROGRESS_MSG,40,7,139,20
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,7,35,172,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,56,50,14
+    RTEXT           "",IDC_PROGRESS_PERCENT,139,55,40,15,SS_CENTERIMAGE
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 207, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About Fractice"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "Fractice Version 1.0.0\nCopyleft 2008 Chris Korda",IDC_ABOUT_TEXT,40,7,108,25,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,160,7,40,14,WS_GROUP
+    LTEXT           "http://fractice.sourceforge.net",IDC_ABOUT_URL,40,31,96,8,SS_NOTIFY
+    EDITTEXT        IDC_ABOUT_LICENSE,7,46,193,45,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+END
+
+IDD_ANTIALIAS DIALOG  0, 0, 124, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Antialiasing"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ANTIALIAS_VALUE_EDIT,56,7,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,29,50,14
+    CTEXT           "&Value:",IDC_STATIC,28,7,21,12,SS_CENTERIMAGE
+END
+
+IDD_BOUNDS DIALOG  0, 0, 142, 102
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Bounds"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "X1:",IDC_STATIC,7,7,14,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BOUNDS_X1,25,7,110,14,ES_AUTOHSCROLL
+    RTEXT           "X2:",IDC_STATIC,7,24,14,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BOUNDS_X2,25,24,110,14,ES_AUTOHSCROLL
+    RTEXT           "Y1:",IDC_STATIC,7,41,14,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BOUNDS_Y1,25,41,110,14,ES_AUTOHSCROLL
+    RTEXT           "Y2:",IDC_STATIC,7,58,14,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BOUNDS_Y2,25,58,110,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,25,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,81,50,14
+END
+
+IDD_GRADIENT DIALOG  0, 0, 279, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Gradient"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_GRAD_GRADIENT,7,7,265,17,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_CLPK_COLOR,7,36,80,80,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_CLPK_SHADE,95,36,10,80,SS_NOTIFY | SS_SUNKEN
+    RTEXT           "&R",IDC_STATIC,113,36,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_R,127,36,30,14,ES_AUTOHSCROLL
+    RTEXT           "&G",IDC_STATIC,113,54,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_G,127,54,30,14,ES_AUTOHSCROLL
+    RTEXT           "&B",IDC_STATIC,113,72,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_B,127,72,30,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_CLPK_SWATCH,121,92,36,24,SS_NOTIFY | SS_SUNKEN
+    RTEXT           "&H",IDC_STATIC,8,124,11,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_H,23,124,30,14,ES_AUTOHSCROLL
+    RTEXT           "&L",IDC_STATIC,55,124,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_L,70,124,30,14,ES_AUTOHSCROLL
+    RTEXT           "&S",IDC_STATIC,102,124,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_S,117,124,30,14,ES_AUTOHSCROLL
+    LTEXT           "&Position:",IDC_STATIC,168,36,28,8
+    EDITTEXT        IDC_GRAD_POS_EDIT,168,47,40,14,ES_AUTOHSCROLL
+    CONTROL         "Space &Evenly",IDC_GRAD_SPACE_EVENLY_CHK,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,170,64,42,18
+    CONTROL         "RGB",IDC_GRAD_COLOR_MODE_0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,175,98,31,10
+    CONTROL         "HLS",IDC_GRAD_COLOR_MODE_1,"Button",BS_AUTORADIOBUTTON,175,111,30,10
+    GROUPBOX        "Mode",IDC_STATIC,168,86,44,42,WS_GROUP
+    PUSHBUTTON      "&Insert",IDC_GRAD_INSERT,222,36,50,14
+    PUSHBUTTON      "&Delete",IDC_GRAD_DELETE,222,56,50,14
+    DEFPUSHBUTTON   "OK",IDOK,222,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,222,124,50,14
+END
+
+IDD_COLOR_PICKER DIALOG  0, 0, 164, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Picker"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_CLPK_COLOR,7,7,80,80,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_CLPK_SHADE,95,7,10,80,SS_NOTIFY | SS_SUNKEN
+    RTEXT           "&R",IDC_STATIC,113,7,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_R,127,7,30,14,ES_AUTOHSCROLL
+    RTEXT           "&G",IDC_STATIC,113,24,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_G,127,24,30,14,ES_AUTOHSCROLL
+    RTEXT           "&B",IDC_STATIC,113,41,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_B,127,41,30,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_CLPK_SWATCH,121,63,32,24,SS_NOTIFY | SS_SUNKEN
+    RTEXT           "&H",IDC_STATIC,8,95,11,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_H,23,95,30,14,ES_AUTOHSCROLL
+    RTEXT           "&L",IDC_STATIC,55,95,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_L,70,95,30,14,ES_AUTOHSCROLL
+    RTEXT           "&S",IDC_STATIC,102,95,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_S,117,95,30,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,46,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,117,50,14
+END
+
+IDD_PALETTE DIALOG  0, 0, 278, 145
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_GRAD_GRADIENT,7,7,264,17,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_CLPK_COLOR,7,36,80,80,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_CLPK_SHADE,95,36,10,80,SS_NOTIFY | SS_SUNKEN
+    RTEXT           "R",IDC_STATIC,113,36,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_R,127,36,30,14,ES_AUTOHSCROLL
+    RTEXT           "G",IDC_STATIC,113,54,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_G,127,54,30,14,ES_AUTOHSCROLL
+    RTEXT           "B",IDC_STATIC,113,72,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_B,127,72,30,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_CLPK_SWATCH,121,92,36,24,SS_NOTIFY | SS_SUNKEN
+    RTEXT           "H",IDC_STATIC,8,124,11,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_H,23,124,30,14,ES_AUTOHSCROLL
+    RTEXT           "L",IDC_STATIC,55,124,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_L,70,124,30,14,ES_AUTOHSCROLL
+    RTEXT           "S",IDC_STATIC,102,124,10,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLPK_EDIT_S,117,124,30,14,ES_AUTOHSCROLL
+    LTEXT           "Position:",IDC_STATIC,168,35,28,8
+    EDITTEXT        IDC_GRAD_POS_EDIT,168,46,40,14,ES_AUTOHSCROLL
+    CONTROL         "Space Evenly",IDC_GRAD_SPACE_EVENLY_CHK,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,170,63,39,18
+    GROUPBOX        "Mode",IDC_STATIC,168,83,44,40,WS_GROUP
+    CONTROL         "RGB",IDC_GRAD_COLOR_MODE_0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,175,95,31,10
+    CONTROL         "HLS",IDC_GRAD_COLOR_MODE_1,"Button",BS_AUTORADIOBUTTON,175,107,30,10
+    CONTROL         "Preview",IDC_PAL_PREVIEW_CHK,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,169,128,41,10
+    PUSHBUTTON      "Insert",IDC_GRAD_INSERT,221,36,50,14
+    PUSHBUTTON      "Delete",IDC_GRAD_DELETE,221,56,50,14
+    PUSHBUTTON      "Bkgnd...",IDC_PAL_BK_COLOR,221,76,50,14
+    PUSHBUTTON      "Name...",IDC_PAL_EDIT_NAME,221,96,50,14
+    PUSHBUTTON      "Apply",ID_APPLY_NOW,221,124,50,14
+END
+
+IDD_SERVERS DIALOG  300, 170, 226, 124
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Servers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_SRV_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,150,110
+    PUSHBUTTON      "&Find...",IDC_SRV_FIND,169,7,50,14
+    PUSHBUTTON      "&Add...",IDC_SRV_ADD,169,27,50,14
+    PUSHBUTTON      "&Delete",IDC_SRV_DELETE,169,67,50,14,WS_DISABLED
+    PUSHBUTTON      "&Shutdown",IDC_SRV_SHUTDOWN,169,87,50,14,WS_DISABLED
+    PUSHBUTTON      "&List...",IDC_SRV_ADD_LIST,169,47,50,14
+    CONTROL         "&Progress",IDC_SRV_SHOW_PROGRESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,173,107,43,10
+END
+
+IDD_FIND_SERVERS DIALOG  0, 0, 124, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Find Servers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Broadcast",IDC_FSRV_METHOD,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,7,48,10
+    CONTROL         "IP Address &Range",IDC_FSRV_METHOD2,"Button",BS_AUTORADIOBUTTON,25,20,73,10
+    RTEXT           "&Start:",IDC_STATIC,7,36,21,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FSRV_RANGE_START,31,36,80,14,ES_AUTOHSCROLL
+    RTEXT           "&End:",IDC_STATIC,7,55,21,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FSRV_RANGE_END,31,55,80,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Find",IDOK,7,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,77,50,14
+END
+
+IDD_ADD_SERVER DIALOG  0, 0, 124, 60
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Hostname or IP address:",IDC_STATIC,7,7,78,8
+    EDITTEXT        IDC_ASRV_HOSTNAME_EDIT,7,17,110,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,39,50,14
+END
+
+IDD_SERVER_SHUTDOWN DIALOG  0, 0, 151, 84
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Server Shutdown"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Exit",IDC_SRVSD_ACTION,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,19,27,10
+    CONTROL         "&Log Off",IDC_SRVSD_ACTION2,"Button",BS_AUTORADIOBUTTON,16,32,39,10
+    CONTROL         "&Reboot",IDC_SRVSD_ACTION3,"Button",BS_AUTORADIOBUTTON,16,45,39,10
+    CONTROL         "&Power Down",IDC_SRVSD_ACTION4,"Button",BS_AUTORADIOBUTTON,16,58,57,10
+    GROUPBOX        "Action",IDC_STATIC,7,7,77,70,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,94,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,25,50,14
+END
+
+IDD_SERVERS_FOUND DIALOG  0, 0, 312, 190
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Servers Found"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_SRVFND_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,298,155
+    CONTROL         "Show &available servers only",IDC_SRVFND_SHOW_AVAIL_ONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,169,103,10
+    PUSHBUTTON      "OK",IDOK,195,169,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,255,169,50,14
+END
+
+IDD_ADD_SERVER_LIST DIALOG  0, 0, 184, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Server List"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&List path:",IDC_STATIC,7,7,30,8
+    EDITTEXT        IDC_ASRVL_PATH_EDIT,7,17,170,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_ASRVL_BROWSE,127,40,50,14
+    DEFPUSHBUTTON   "OK",IDOK,7,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,40,50,14
+END
+
+IDD_JOB_CONTROL DIALOG  165, 0, 352, 198
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Job Control"
+MENU IDR_JOB_CONTROL
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_JOB_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDATA | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,276,167
+    DEFPUSHBUTTON   "OK",IDOK,295,7,50,14
+    PUSHBUTTON      "Move &up",IDC_JOB_MOVE_UP,295,33,50,14
+    PUSHBUTTON      "Move d&own",IDC_JOB_MOVE_DOWN,295,50,50,14
+    PUSHBUTTON      "&Postpone",IDC_JOB_POSTPONE,295,80,50,14
+    PUSHBUTTON      "&Delete",IDC_JOB_DELETE,295,96,50,14
+    PUSHBUTTON      "Start",IDC_JOB_START,295,125,50,14
+    PUSHBUTTON      "Abort",IDC_JOB_ABORT,295,141,50,14
+    PUSHBUTTON      "S&kip",IDC_JOB_SKIP,295,157,50,14
+    LTEXT           "Current job",IDC_JOB_PROG_CAP,7,179,37,12,SS_CENTERIMAGE
+    CONTROL         "Progress1",IDC_JOB_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,49,179,268,12
+    RTEXT           "0%",IDC_JOB_PERCENT,320,179,20,12,SS_CENTERIMAGE
+END
+
+IDD_MULTI_FILE DIALOG  0, 0, 186, 24
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Preview",IDC_MULTI_FILE_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,41,10
+END
+
+IDD_PALETTE_NAME DIALOG  0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Palette Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PALN_NAME_EDIT,7,7,172,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,69,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,28,50,14
+END
+
+IDD_POSTER DIALOG  0, 0, 173, 188
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Poster"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_PSTR_SNAP_PIC,"Static",SS_BLACKFRAME,7,7,159,55
+    RTEXT           "&Width:",IDC_STATIC,7,69,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_IMSR_WIDTH_EDIT,55,69,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_IMSR_WIDTH_UNIT,99,69,64,41,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Height:",IDC_STATIC,7,88,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_IMSR_HEIGHT_EDIT,55,88,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_IMSR_HEIGHT_UNIT,99,88,64,41,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Resolution:",IDC_STATIC,7,107,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_IMSR_RESOLUTION_EDIT,55,107,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_IMSR_RESOLUTION_UNIT,99,107,64,41,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Antialiasing:",IDC_STATIC,7,126,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PSTR_ANTIALIAS_EDIT,55,126,40,14,ES_AUTOHSCROLL
+    CONTROL         "Queue to job control",IDC_PSTR_QUEUE_JOB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,147,80,10
+    PUSHBUTTON      "Res&ume...",IDC_PSTR_RESUME,110,144,50,14
+    PUSHBUTTON      "OK",IDOK,32,167,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,167,50,14
+END
+
+IDD_POSTER_PROGRESS DIALOG  0, 0, 186, 140
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Poster Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Filename:",IDC_STATIC,7,7,63,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_POPR_FILENAME,74,7,105,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Image size:",IDC_STATIC,7,21,63,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_POPR_IMAGE_SIZE,74,21,105,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Rows done:",IDC_STATIC,7,35,63,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_POPR_ROWS_DONE,74,35,105,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Elapsed time:",IDC_STATIC,7,49,63,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_POPR_ELAPSED,74,49,105,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Remaining time:",IDC_STATIC,7,63,63,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_POPR_REMAINING,74,63,105,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Pixels per second:",IDC_STATIC,7,77,63,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_POPR_PIXEL_RATE,74,77,105,12,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "Progress1",IDC_POPR_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,7,97,172,14
+    DEFPUSHBUTTON   "Pause",IDC_POPR_PAUSE,36,119,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,119,50,14
+    RTEXT           "",IDC_POPR_PCT_DONE,149,118,30,15,SS_CENTERIMAGE
+END
+
+IDD_IMAGE_SIZE_RES DIALOG  0, 0, 173, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Image Size / Resolution"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Width:",IDC_STATIC,7,7,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_IMSR_WIDTH_EDIT,55,7,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_IMSR_WIDTH_UNIT,99,7,64,41,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Height:",IDC_STATIC,7,26,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_IMSR_HEIGHT_EDIT,55,26,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_IMSR_HEIGHT_UNIT,99,26,64,41,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Resolution:",IDC_STATIC,7,45,42,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_IMSR_RESOLUTION_EDIT,55,45,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_IMSR_RESOLUTION_UNIT,99,45,64,41,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,32,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,72,50,14
+END
+
+IDD_COLOR_MAPPING DIALOG  0, 0, 192, 65
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CMAP_CYCLE_LEN_EDIT,7,17,40,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_CMAP_CYCLE_LEN_SLIDER,"msctls_trackbar32",TBS_BOTH | WS_TABSTOP,55,7,130,25
+    LTEXT           "Color Offset:",IDC_STATIC,7,34,45,8
+    EDITTEXT        IDC_CMAP_COLOR_OFS_EDIT,7,44,40,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_CMAP_COLOR_OFS_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,55,33,130,25
+    LTEXT           "Cycle Length:",IDC_STATIC,7,7,45,8
+END
+
+IDD_COLOR_CYCLING DIALOG  0, 0, 192, 43
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CCYC_RATE_EDIT,7,7,40,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_CCYC_RATE_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,55,7,130,25
+    CONTROL         "Enable",IDC_CCYC_CYCLE_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,26,38,10
+END
+
+IDD_OPTS_GENERAL DIALOG  0, 0, 250, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Default snapshot to load on startup:",IDC_STATIC,7,7,113,8
+    EDITTEXT        IDC_OPTS_DEF_SNAP_EDIT,7,18,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_OPTS_DEF_SNAP_BROWSE,192,18,45,14
+    GROUPBOX        "Undo levels",IDC_STATIC,7,40,61,53
+    CONTROL         "Unlimited",IDC_OPTS_UNDO_UNLIMITED_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,53,45,10
+    EDITTEXT        IDC_OPTS_UNDO_LEVELS_EDIT,18,69,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Cache full-size images in history",IDC_OPTS_CACHE_IMAGES_CHK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,45,115,10
+    CONTROL         "Save escape times",IDC_OPTS_SAVE_ESC_TIMES_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,61,76,10
+END
+
+IDD_OPTS_NETWORK DIALOG  0, 0, 250, 111
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Network"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Network Adapter",IDC_STATIC,7,7,54,8
+    COMBOBOX        IDC_OPTS_NET_ADAPTER_COMBO,7,18,225,74,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Properties...",IDC_OPTS_NET_ADAPTER_PROPS,172,36,60,14
+    GROUPBOX        "Port number",IDC_STATIC,7,39,71,53
+    CONTROL         "Use default",IDC_OPTS_NET_DEF_PORT_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,52,52,10
+    EDITTEXT        IDC_OPTS_NET_PORT_NUM_EDIT,17,68,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Listen for servers",IDC_OPTS_LISTEN_SERVERS_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,92,61,76,10
+END
+
+IDD_OPTS_DOCUMENT DIALOG  0, 0, 250, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Document"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Default file format",IDC_STATIC,7,7,77,48,WS_GROUP
+    CONTROL         "&Project",IDC_OPTS_FILE_FORMAT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,20,38,10
+    CONTROL         "&Snapshot",IDC_OPTS_FILE_FORMAT2,"Button",BS_AUTORADIOBUTTON,17,35,46,10
+    GROUPBOX        "Thumbnail size",IDC_STATIC,96,7,108,48
+    LTEXT           "&Width:",IDC_STATIC,106,18,22,8
+    EDITTEXT        IDC_OPTS_THUMB_WIDTH_EDIT,106,29,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Height:",IDC_STATIC,154,18,24,8
+    EDITTEXT        IDC_OPTS_THUMB_HEIGHT_EDIT,154,29,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Warn before closing unsaved file",IDC_OPTS_SAVE_CHGS_WARN_CHK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,64,119,10
+END
+
+IDD_OPTS_ENGINE DIALOG  0, 0, 250, 111
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Engine"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Rendering threads",IDC_STATIC,7,7,81,54
+    CONTROL         "One per CPU",IDC_OPTS_THREADS_AUTO_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,20,58,10
+    EDITTEXT        IDC_OPTS_THREAD_COUNT_EDIT,17,37,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Use SSE2",IDC_OPTS_USE_SSE2_CHK,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,17,69,49,10
+END
+
+IDD_OPTS_PALETTE DIALOG  0, 0, 250, 111
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Palette"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Import/Export",IDC_STATIC,7,7,130,79
+    CONTROL         "First entry is background color",IDC_OPTS_PAL_FIRST_BKGND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,20,110,10
+    CONTROL         "Smooth wraparound",IDC_OPTS_PAL_SMOOTH_WRAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,35,79,10
+    LTEXT           "&Export size:",IDC_STATIC,17,50,37,8
+    EDITTEXT        IDC_OPTS_PAL_EXPORT_SIZE,17,61,40,14,ES_AUTOHSCROLL
+    LTEXT           "Entries",IDC_STATIC,62,61,33,12,SS_CENTERIMAGE
+    LTEXT           "&Hue rotation:",IDC_STATIC,151,7,42,8
+    EDITTEXT        IDC_OPTS_HUE_ROTATION,151,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "Degrees",IDC_STATIC,196,18,29,12,SS_CENTERIMAGE
+END
+
+IDD_OPTS_NAVIGATE DIALOG  0, 0, 250, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Navigation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Zoom factors",IDC_STATIC,7,7,110,48
+    LTEXT           "&Single step:",IDC_STATIC,17,19,38,8
+    EDITTEXT        IDC_OPTS_ZOOM_STEP_EDIT,17,30,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Continuous:",IDC_STATIC,66,19,38,8
+    EDITTEXT        IDC_OPTS_CONT_ZOOM_STEP_EDIT,66,30,40,14,ES_AUTOHSCROLL
+    LTEXT           "Scroll delta:",IDC_STATIC,135,19,38,8
+    EDITTEXT        IDC_OPTS_SCROLL_DELTA,135,30,40,14,ES_AUTOHSCROLL
+    RTEXT           "Recent parameters:",IDC_STATIC,3,64,70,12,SS_CENTERIMAGE
+    RTEXT           "Recent palettes:",IDC_STATIC,3,82,70,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_OPTS_RECENT_PARAMS,77,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OPTS_RECENT_PALETTES,77,82,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Grid Color...",IDC_OPTS_GRID_COLOR,135,72,60,14
+END
+
+IDD_OPTS_DISPLAY DIALOG  0, 0, 250, 111
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Exclusive display device:",IDC_STATIC,7,7,80,8
+    COMBOBOX        IDC_OPTS_DISPLAY_COMBO,7,18,190,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "",IDC_OPTS_DISPLAY_SIZE,120,7,76,8
+    LTEXT           "&Frame rate:",IDC_STATIC,7,39,36,8
+    EDITTEXT        IDC_OPTS_FRAME_RATE,7,50,40,14,ES_AUTOHSCROLL
+    LTEXT           "Hz",IDC_STATIC,52,50,13,12,SS_CENTERIMAGE
+END
+
+IDD_ORIGIN_RANDOM DIALOG  0, 0, 162, 45
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Damping:",IDC_STATIC,0,0,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ORG_DAMPING_EDIT,36,0,40,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_ORG_DAMPING_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,0,80,12
+    RTEXT           "Tempo:",IDC_STATIC,0,15,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ORG_TEMPO_EDIT,36,15,40,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_ORG_TEMPO_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,15,80,12
+END
+
+IDD_ORIGIN_DRAG DIALOG  0, 0, 162, 30
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Damping:",IDC_STATIC,0,0,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ORG_DAMPING_EDIT,36,0,40,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_ORG_DAMPING_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,0,80,12
+END
+
+IDD_ORIGIN_LISSAJOUS DIALOG  0, 0, 162, 65
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Speed:",IDC_STATIC,0,0,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ORG_LISS_SPEED_EDIT,36,0,40,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_ORG_LISS_SPEED_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,0,80,12
+    RTEXT           "X Freq:",IDC_STATIC,0,15,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ORG_LISS_XFREQ_EDIT,36,15,40,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_ORG_LISS_XFREQ_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,15,80,12
+    RTEXT           "Y Freq:",IDC_STATIC,0,30,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ORG_LISS_YFREQ_EDIT,36,30,40,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_ORG_LISS_YFREQ_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,30,80,12
+    RTEXT           "Phase:",IDC_STATIC,0,45,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ORG_LISS_PHASE_EDIT,36,45,40,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_ORG_LISS_PHASE_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,45,80,12
+END
+
+IDD_ORIGIN_PONG DIALOG  0, 0, 162, 30
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Speed:",IDC_STATIC,0,0,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ORG_PONG_SPEED_EDIT,36,0,40,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_ORG_PONG_SPEED_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,0,80,12
+END
+
+IDD_MSG_BOX DIALOG  0, 0, 65, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            "",IDC_MSG_BOX_ICON,7,7,20,20
+    CONTROL         "",IDC_MSG_BOX_TEXT,"Static",SS_LEFTNOWORDWRAP | NOT WS_VISIBLE | WS_GROUP,39,7,18,19
+    DEFPUSHBUTTON   "OK",IDOK,7,37,50,14
+END
+
+IDD_RENDERING DIALOG  0, 0, 186, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Rendering..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,7,7,172,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,42,50,14
+    CTEXT           "",IDC_REND_STATUS,7,26,172,8
+END
+
+IDD_MIX_MAIN DIALOG  0, 0, 212, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Main"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_MIX_FADER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,7,7,198,25
+    COMBOBOX        IDC_MIX_SRC_A_COMBO,7,37,96,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MIX_SRC_B_COMBO,109,37,96,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Autofade",IDC_STATIC,7,54,198,34
+    CHECKBOX        "Play",IDC_MIX_AUTOFADE_PLAY,17,66,16,14,BS_ICON | BS_PUSHLIKE
+    CHECKBOX        "Stop",IDC_MIX_AUTOFADE_STOP,36,66,16,14,BS_ICON | BS_PUSHLIKE
+    CHECKBOX        "Loop",IDC_MIX_AUTOFADE_LOOP,55,66,16,14,BS_ICON | BS_PUSHLIKE
+    EDITTEXT        IDC_MIX_AUTOFADE_TIME_EDIT,81,66,30,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_MIX_AUTOFADE_TIME_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,115,66,80,12
+END
+
+IDD_MIX_MOTION DIALOG  0, 0, 212, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Motion"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_MIX_ORG_MOTION_COMBO,7,7,90,81,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "A",IDC_MIX_CHAN_SELECT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,109,8,21,10
+    CONTROL         "B",IDC_MIX_CHAN_SELECT2,"Button",BS_AUTORADIOBUTTON,131,8,21,10
+    CONTROL         "Mirror",IDC_MIX_MIRROR_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,8,33,10
+    LTEXT           "",IDC_MIX_ORG_MOTION_PARAMS,7,28,162,60
+END
+
+IDD_OPTS_MIDI DIALOG  0, 0, 250, 111
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "MIDI"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_OPTS_MIDI_DEVICE,7,18,150,64,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MIDI Device:",IDC_STATIC,7,7,43,8
+    PUSHBUTTON      "Refresh",IDC_OPTS_MIDI_REFRESH,168,17,50,14
+END
+
+IDD_ROW_DIALOG_FORM DIALOGEX 0, 0, 240, 137
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_MIDI_SETUP_ROW DIALOG  0, 0, 324, 14
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Static",IDC_MS_TITLE,0,1,76,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_MS_RANGE_START,80,1,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_MS_RANGE_START_SPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,112,1,10,12
+    EDITTEXT        IDC_MS_RANGE_END,122,1,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_MS_RANGE_END_SPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,154,1,10,12
+    COMBOBOX        IDC_MS_EVENT,164,1,40,67,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MS_CHAN,206,1,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_MS_CHAN_SPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,237,1,11,12
+    EDITTEXT        IDC_MS_CTRL,248,1,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_MS_CTRL_SPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,279,1,11,12
+    EDITTEXT        IDC_MS_VALUE,290,1,30,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_TABSTOP
+END
+
+IDD_MIDI_SETUP DIALOG  0, 0, 314, 118
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "MIDI Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Learn",IDC_MS_LEARN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,9,34,10
+    CONTROL         "A",IDC_MS_PAGE_SELECT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,49,9,21,10
+    CONTROL         "B",IDC_MS_PAGE_SELECT2,"Button",BS_AUTORADIOBUTTON,71,9,21,10
+    CONTROL         "Global",IDC_MS_PAGE_SELECT3,"Button",BS_AUTORADIOBUTTON,93,9,36,10
+    PUSHBUTTON      "Open...",IDC_MS_OPEN,141,7,50,14,WS_GROUP
+    PUSHBUTTON      "Save...",IDC_MS_SAVE,199,7,50,14
+    PUSHBUTTON      "Reset",IDC_MS_RESET,257,7,50,14
+END
+
+IDD_MIX_MISC DIALOG  0, 0, 212, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Misc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Palette tween time:",IDC_STATIC,7,7,61,8
+    EDITTEXT        IDC_MIX_TWEEN_TIME_EDIT,7,18,30,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_MIX_TWEEN_TIME_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,41,18,80,12
+    PUSHBUTTON      "Open...",IDC_MIX_OPEN,7,74,50,14
+    PUSHBUTTON      "Save...",IDC_MIX_SAVE,67,74,50,14
+END
+
+IDD_SLIDE_SHOW DIALOG  160, 120, 207, 43
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CHECKBOX        "Play",IDC_SLIDE_PLAY,7,7,16,14,BS_ICON | BS_PUSHLIKE
+    CHECKBOX        "Loop",IDC_SLIDE_PAUSE,26,7,16,14,BS_ICON | BS_PUSHLIKE
+    CHECKBOX        "Stop",IDC_SLIDE_STOP,45,7,16,14,BS_ICON | BS_PUSHLIKE
+    CHECKBOX        "Loop",IDC_SLIDE_LOOP,64,7,16,14,BS_ICON | BS_PUSHLIKE
+    EDITTEXT        IDC_SLIDE_INTERVAL_EDIT,86,7,30,12,ES_AUTOHSCROLL
+    CONTROL         "Slider2",IDC_SLIDE_INTERVAL_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,7,80,12
+    CONTROL         "Sequential",IDC_SLIDE_ORDER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,26,49,10
+    CONTROL         "Random",IDC_SLIDE_ORDER2,"Button",BS_AUTORADIOBUTTON,61,26,43,10
+    RTEXT           "Status",IDC_SLIDE_STATUS,115,26,85,10,SS_CENTERIMAGE
+END
+
+IDD_TRANSFORM DIALOG  0, 0, 186, 169
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Transform"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_TRAN_PARAMS_CTRL,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,112,127
+    LTEXT           "Palette:",IDC_STATIC,7,137,25,8
+    EDITTEXT        IDC_TRAN_PALETTE_EDIT,7,148,152,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TRAN_PALETTE_BROWSE,164,148,15,14
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,25,50,14
+    CONTROL         "Render",IDC_TRAN_RENDER_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,47,43,10
+END
+
+IDD_RECORD DIALOG  0, 95, 294, 209
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Record"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "D&uration:",IDC_STATIC,17,7,36,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REC_DURATION_EDIT,57,7,50,14,ES_AUTOHSCROLL
+    CONTROL         "&Time",IDC_REC_DURATION_UNIT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,36,26,31,10
+    CONTROL         "&Frames",IDC_REC_DURATION_UNIT2,"Button",BS_AUTORADIOBUTTON,71,26,39,10
+    RTEXT           "Frame &Rate:",IDC_STATIC,5,41,48,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REC_FRAME_RATE_EDIT,57,41,50,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_REC_PARAMS_CTRL,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,63,99,139
+    CONTROL         "List1",IDC_REC_SNAP_LIST,"SysListView32",LVS_SHOWSELALWAYS | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,117,7,170,65
+    RTEXT           "X:",IDC_REC_X_CAP,121,79,8,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REC_X_EDIT,133,79,70,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    RTEXT           "Y:",IDC_REC_Y_CAP,121,97,8,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REC_Y_EDIT,133,97,70,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    RTEXT           "Z:",IDC_REC_Z_CAP,121,115,8,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REC_Z_EDIT,133,115,70,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "Cycle &colors",IDC_REC_CYCLE_COLORS_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,221,83,54,10
+    LTEXT           "Cycling Rate:",IDC_REC_CYCLING_RATE_CAP,221,98,46,8
+    EDITTEXT        IDC_REC_CYCLING_RATE_EDIT,221,109,40,14,ES_AUTOHSCROLL
+    CONTROL         "&All",IDC_REC_FRAME_RANGE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,138,138,23,10
+    CONTROL         "Range",IDC_REC_FRAME_RANGE2,"Button",BS_AUTORADIOBUTTON,138,151,37,10
+    LTEXT           "Start Frame:",IDC_REC_START_FRAME_CAP,180,136,39,8
+    EDITTEXT        IDC_REC_START_FRAME_EDIT,180,147,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Frame:",IDC_REC_END_FRAME_CAP,226,136,37,8
+    EDITTEXT        IDC_REC_END_FRAME_EDIT,226,147,40,14,ES_AUTOHSCROLL
+    CONTROL         "Record to &bitmaps",IDC_REC_TO_BITMAPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,170,73,10
+    CONTROL         "&Queue to job control",IDC_REC_QUEUE_JOB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,170,80,10
+    PUSHBUTTON      "&Insert",IDC_REC_INSERT,118,188,50,14
+    PUSHBUTTON      "&Delete",IDC_REC_DELETE,177,188,50,14
+    DEFPUSHBUTTON   "&Start",IDOK,237,188,50,14
+END
+
+IDD_SELECT_IMAGES DIALOG  0, 0, 260, 166
+STYLE DS_SETFONT | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Select Images"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_SELIMG_LIST,"SysListView32",LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,7,7,246,131
+    DEFPUSHBUTTON   "OK",IDOK,143,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,203,145,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,6,0
+ PRODUCTVERSION 1,0,6,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Anal Software"
+            VALUE "FileDescription", "Fractice Fractal Explorer"
+            VALUE "FileVersion", "1, 0, 6, 0"
+            VALUE "InternalName", "Fractice"
+            VALUE "LegalCopyright", "Copyleft 2010 Chris Korda"
+            VALUE "LegalTrademarks", "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version."
+            VALUE "OriginalFilename", "Fractice.exe"
+            VALUE "ProductName", "Fractice"
+            VALUE "ProductVersion", "1, 0, 6, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_COORDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 129
+        VERTGUIDE, 19
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_IMAGE_SIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_QUALITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_RECORD_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_SHUTDOWN_WARN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        VERTGUIDE, 40
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_ANTIALIAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_BOUNDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_GRADIENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_COLOR_PICKER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_PALETTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_SERVERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_FIND_SERVERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_ADD_SERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_SERVER_SHUTDOWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_SERVERS_FOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_ADD_SERVER_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_JOB_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_MULTI_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 17
+    END
+
+    IDD_PALETTE_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_POSTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_POSTER_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 74
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_IMAGE_SIZE_RES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_COLOR_MAPPING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_COLOR_CYCLING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 36
+    END
+
+    IDD_OPTS_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_OPTS_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_OPTS_DOCUMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_OPTS_ENGINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_OPTS_PALETTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_OPTS_NAVIGATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_OPTS_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_MSG_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 57
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_RENDERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_MIX_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_MIX_MOTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_OPTS_MIDI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_MIDI_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_MIX_MISC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SLIDE_SHOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 36
+    END
+
+    IDD_TRANSFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_SELECT_IMAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_EYEDROPPER          CURSOR                  "res\\eyedropper.cur"
+IDC_DRAG_SINGLE         CURSOR                  "res\\drag_single.cur"
+IDC_TOOL_ZOOM           CURSOR                  "res\\tool_zoom.cur"
+IDC_TOOL_HAND_OPEN      CURSOR                  "res\\tool_hand_open.cur"
+IDC_TOOL_HAND_CLOSED    CURSOR                  "res\\tool_hand_closed.cur"
+IDC_TOOL_ZOOM_IN        CURSOR                  "res\\tool_zoom_in.cur"
+IDC_TOOL_ZOOM_OUT       CURSOR                  "res\\tool_zoom_out.cur"
+IDC_DRAG_MULTI          CURSOR                  "res\\dragmulti.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_POSTER DLGINIT
+BEGIN
+    IDC_IMSR_WIDTH_UNIT, 0x403, 7, 0
+0x6970, 0x6578, 0x736c, "\000" 
+    IDC_IMSR_WIDTH_UNIT, 0x403, 7, 0
+0x6e69, 0x6863, 0x7365, "\000" 
+    IDC_IMSR_WIDTH_UNIT, 0x403, 3, 0
+0x6d63, "\000" 
+    IDC_IMSR_HEIGHT_UNIT, 0x403, 7, 0
+0x6970, 0x6578, 0x736c, "\000" 
+    IDC_IMSR_HEIGHT_UNIT, 0x403, 7, 0
+0x6e69, 0x6863, 0x7365, "\000" 
+    IDC_IMSR_HEIGHT_UNIT, 0x403, 3, 0
+0x6d63, "\000" 
+    IDC_IMSR_RESOLUTION_UNIT, 0x403, 12, 0
+0x6970, 0x6578, 0x736c, 0x692f, 0x636e, 0x0068, 
+    IDC_IMSR_RESOLUTION_UNIT, 0x403, 10, 0
+0x6970, 0x6578, 0x736c, 0x632f, 0x006d, 
+    0
+END
+
+IDD_IMAGE_SIZE_RES DLGINIT
+BEGIN
+    IDC_IMSR_WIDTH_UNIT, 0x403, 7, 0
+0x6970, 0x6578, 0x736c, "\000" 
+    IDC_IMSR_WIDTH_UNIT, 0x403, 7, 0
+0x6e69, 0x6863, 0x7365, "\000" 
+    IDC_IMSR_WIDTH_UNIT, 0x403, 3, 0
+0x6d63, "\000" 
+    IDC_IMSR_HEIGHT_UNIT, 0x403, 7, 0
+0x6970, 0x6578, 0x736c, "\000" 
+    IDC_IMSR_HEIGHT_UNIT, 0x403, 7, 0
+0x6e69, 0x6863, 0x7365, "\000" 
+    IDC_IMSR_HEIGHT_UNIT, 0x403, 3, 0
+0x6d63, "\000" 
+    IDC_IMSR_RESOLUTION_UNIT, 0x403, 12, 0
+0x6970, 0x6578, 0x736c, 0x692f, 0x636e, 0x0068, 
+    IDC_IMSR_RESOLUTION_UNIT, 0x403, 10, 0
+0x6970, 0x6578, 0x736c, 0x632f, 0x006d, 
+    0
+END
+
+IDD_MIX_MOTION DLGINIT
+BEGIN
+    IDC_MIX_ORG_MOTION_COMBO, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_MIX_ORG_MOTION_COMBO, 0x403, 10, 0
+0x6950, 0x676e, 0x5020, 0x6e6f, 0x0067, 
+    IDC_MIX_ORG_MOTION_COMBO, 0x403, 12, 0
+0x7543, 0x7372, 0x726f, 0x4420, 0x6172, 0x0067, 
+    IDC_MIX_ORG_MOTION_COMBO, 0x403, 10, 0
+0x494d, 0x4944, 0x4420, 0x6172, 0x0067, 
+    IDC_MIX_ORG_MOTION_COMBO, 0x403, 12, 0
+0x6152, 0x646e, 0x6d6f, 0x4a20, 0x6d75, 0x0070, 
+    IDC_MIX_ORG_MOTION_COMBO, 0x403, 10, 0
+0x694c, 0x7373, 0x6a61, 0x756f, 0x0073, 
+    0
+END
+
+IDD_MIDI_SETUP_ROW DLGINIT
+BEGIN
+    IDC_MS_EVENT, 0x403, 4, 0
+0x464f, 0x0046, 
+    IDC_MS_EVENT, 0x403, 5, 0
+0x5443, 0x4c52, "\000" 
+    IDC_MS_EVENT, 0x403, 5, 0
+0x4f4e, 0x4554, "\000" 
+    IDC_MS_EVENT, 0x403, 6, 0
+0x4950, 0x4354, 0x0048, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Fractice"
+    IDR_FRACTICETYPE        "\nFractice\nFractice\nFractice Files (*.frp)\n.frp\nFractice.Document\nFractice Document"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MIDI_CANT_CREATE    "Can't create MIDI device: %1"
+    IDS_MIDI_SETUP_FILTER   "MIDI Setup Files (*.txt)|*.txt|All Files (*.*)|*.*||"
+    IDS_MIXER_FILTER        "Mixer Files (*.frm)|*.frm|All Files (*.*)|*.*||"
+    IDS_MIX_BAD_IMAGE_SIZE  "Image size doesn't match display resolution.\nPerformance and image quality may suffer."
+    IDS_MIX_IMAGE_SIZE_MISMATCH "Can't mix different-sized images."
+    IDS_MP_AUTOFADE_LOOP    "Autofade Loop"
+    IDS_MP_AUTOFADE_PLAY    "Autofade Play"
+    IDS_MP_AUTOFADE_TIME    "Autofade Time"
+    IDS_MP_COLOR_CYCLE_ENABLE "Color Cycle Enable"
+    IDS_MP_COLOR_CYCLE_RATE "Color Cycle Rate"
+    IDS_MP_COLOR_OFFSET     "Color Offset"
+    IDS_MP_CYCLE_LENGTH     "Cycle Length"
+    IDS_MP_DAMPING          "Damping"
+    IDS_MP_FADER_POS        "Fader Position"
+    IDS_MP_LISS_PHASE       "Lissajous Phase"
+    IDS_MP_LISS_SPEED       "Lissajous Speed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MP_MIRROR           "Mirror"
+    IDS_MP_ORIGIN_MOTION    "Origin Motion"
+    IDS_MP_ORIGIN_X         "Origin X"
+    IDS_MP_ORIGIN_Y         "Origin Y"
+    IDS_MP_PAL_TWEEN_TIME   "Palette Tween Time"
+    IDS_MP_PONG_SPEED       "Pong Speed"
+    IDS_MP_SCROLL_DOWN      "Scroll Down"
+    IDS_MP_SCROLL_LEFT      "Scroll Left"
+    IDS_MP_SCROLL_RIGHT     "Scroll Right"
+    IDS_MP_SCROLL_UP        "Scroll Up"
+    IDS_MP_TEMPO            "Tempo"
+    IDS_MP_ZOOM_IN          "Zoom In"
+    IDS_MP_ZOOM_OUT         "Zoom Out"
+    IDS_MS_CHAN             "Channel"
+    IDS_MS_CTRL             "Controller"
+    IDS_MS_EVENT            "Event"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MS_RANGE            "Range"
+    IDS_MS_RESET_WARN       "Restore default MIDI settings?"
+    IDS_MS_VALUE            "Value"
+    IDS_NET_ADAPTER_PROPS   "Description:\t%s\nMAC Address:\t%s\nAdapter Type:\t%d\nDHCP Enabled:\t%d\nIP Address List:\t%s\nGateway List:\t%s\nDHCP Server:\t%s\nHave WINS:\t%d\nPrimary WINS Server:\t%s\nSecondary WINS Server:\t%s\nLease Obtained:\t%s\nLease Expires:\t%s"
+    IDS_OPTIONS             "Options"
+    IDS_OPTS_CUSTOM         "Custom"
+    IDS_OPTS_DEFAULT_ITEM   "<default>"
+    IDS_OPTS_RESET_ALL      "Reset All"
+    IDS_OPTS_RESTORE_DEFAULTS "Restore all options to default settings?"
+    IDS_OPTS_SNAP_NOT_FOUND "Default snapshot was not found."
+    IDS_OPT_NO_MIDI_IN      "<none>"
+    IDS_PALETTE_FILTER      "Fractice Palette Files (*.frc)|*.frc|All Files (*.*)|*.*||"
+    IDS_PAL_BKGND_COLOR     "Background Color"
+    IDS_PARM_ANTIALIAS      "Antialiasing"
+    IDS_PARM_COLOR_OFFSET   "Color Offset"
+    IDS_PARM_CYCLE_LEN      "Cycle Length"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARM_DEEP_ZOOM      "Deep Zoom"
+    IDS_PARM_EXPONENT       "Exponent"
+    IDS_PARM_FRACTAL_TYPE   "Fractal Type"
+    IDS_PARM_IMAGE_HEIGHT   "Image Height"
+    IDS_PARM_IMAGE_WIDTH    "Image Width"
+    IDS_PARM_MATH_PREC      "Math Precision"
+    IDS_PARM_NO             "No"
+    IDS_PARM_PARAM          "Parameter"
+    IDS_PARM_QUALITY        "Quality"
+    IDS_PARM_VALUE          "Value"
+    IDS_PARM_YES            "Yes"
+    IDS_PSTR_CANT_RESUME    "Can't resume poster."
+    IDS_PSTR_PAUSED_FILTER  "Fractice Paused Posters (*.frx)|*.frx|All Files (*.*)|*.*||"
+    IDS_PSTR_PAUSE_CHECK    "Pause poster export?"
+    IDS_PSTR_PAUSING        "Pausing poster..."
+    IDS_PSTR_RESUMING       "Resuming poster..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PSTR_STOP_CHECK     "Abort poster?"
+    IDS_PSTR_WRITING_BITMAP "Writing poster bitmap..."
+    IDS_RECORD              "Record"
+    IDS_REC_BAD_COLOR_CYCLE_RATE "Invalid color cycling rate."
+    IDS_REC_BAD_DURATION    "Invalid record duration."
+    IDS_REC_BAD_FRAME_RANGE "Invalid frame range."
+    IDS_REC_BAD_FRAME_RATE  "Invalid frame rate."
+    IDS_REC_BMP_CONTINUE    "%1\n\nDestination folder already contains numbered bitmaps\nwhich could be an aborted version of this recording.\nIf so, continue recording from where it aborted?"
+    IDS_REC_BMP_DEST_FOLDER "Destination folder for bitmaps"
+    IDS_REC_BMP_OVERWRITE   "Overwrite existing bitmaps in %1?"
+    IDS_REC_CANT_CHANGE_PALETTE "Can't change palette while recording."
+    IDS_REC_CANT_CREATE_FILTER "%1\n%2"
+    IDS_REC_CANT_LISTEN_SERVERS "Can't listen for servers."
+    IDS_REC_CHECKING_BITMAPS "Checking for existing bitmaps..."
+    IDS_REC_COMPLETE        "Recording is complete."
+    IDS_REC_FINISHING       "Finishing..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REC_NOT_ENOUGH_ZOOM "Not enough change in zoom."
+    IDS_REC_PARAMS_DIFFER   "Items have different parameters and/or palettes.\nUse newest item's parameters and palette?"
+    IDS_REC_REPLACE_SCRIPT_WARN "Replace existing list, or append to it?"
+    IDS_REC_SAME_COORDS     "Start and end points have identical coordinates."
+    IDS_REC_SELECT_POINTS   "Select Record Points"
+    IDS_REC_TOO_FEW_POINTS  "Not enough points."
+    IDS_REC_ZOOM_OUT_OF_RANGE "Zoom exceeds range of double."
+    IDS_REND_CANT_MULTI_RENDER 
+                            "Can't render multiple items, because image caching is disabled.\nCheck 'Cache full size images in history' in the Options dialog."
+    IDS_REND_STATUS         "%d of %d (%d%%)"
+    IDS_SELECT_ITEMS        "Select one or more items."
+    IDS_SLIDE_STATUS        "Showing %d of %d"
+    IDS_SNAPSHOT_FILTER     "Fractice Snapshots (*.frs)|*.frs|All Files (*.*)|*.*||"
+    IDS_SNAP_PROPERTIES     "Fractal:\t%s\nRe(c):\t%s\nIm(c):\t%s\nZoom:\t%s\nWidth:\t%d\nHeight:\t%d\nQuality:\t%d\nAntialiasing:\t%dx\nCycle Length:\t%d\nColor Offset:\t%g\nMath Precision:\t%d\nDeep Zoom:\t%s\nExponent:\t%d\nPalette:\t%s\nImage Cached:\t%s\nEscape Times:\t%s"
+    IDS_SNAP_PROPS_CAP      "Properties"
+    IDS_SRVFND_NO_SELECTION "No servers selected."
+    IDS_SRVFND_UNAVAILABLE  "One or more selected servers are unavailable."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SRV_ADDING_SERVERS  "Adding servers..."
+    IDS_SRV_ALREADY_CONNECTED "Already connected."
+    IDS_SRV_BAD_SERVER      "Unrecognized server type."
+    IDS_SRV_BAD_SNAP_FORMAT "Unrecognized snapshot format."
+    IDS_SRV_BAD_VERSION     "Incompatible server version."
+    IDS_SRV_CANT_CONNECT    "Can't connect to server '%1'."
+    IDS_SRV_COL_CLIENT_HOST_NAME "Client Name"
+    IDS_SRV_COL_CLIENT_IP_ADDR "Client IP"
+    IDS_SRV_COL_DONE        "Done"
+    IDS_SRV_COL_HOST_NAME   "Host Name"
+    IDS_SRV_COL_IP_ADDR     "IP Address"
+    IDS_SRV_COL_PROGRESS    "Progress"
+    IDS_SRV_COL_QUEUE       "Queue"
+    IDS_SRV_COL_RENDER_TIME "Render Time"
+    IDS_SRV_COL_THREAD_COUNT "Threads"
+    IDS_SRV_LOCAL_HOST      "Local Host"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SRV_NO_SERVERS_FOUND "No servers found."
+    IDS_SRV_PROPS           "Host Name:\t%s\nIP Address:\t%s\nCPU Count:\t%d\nThread Count:\t%d"
+    IDS_SRV_PROPS_EX_CAPS   "\nServer Version:\t%d.%d.%d.%d\nSystem Version:\t%s\nBigNum Version:\t%s %d.%d.%d\nBigNum Platform:\t%s/%s"
+    IDS_SRV_PROPS_TITLE     "Server Properties"
+    IDS_SRV_TIMEOUT         "Server timeout."
+    IDS_SSE2_ODD_WIDTH      "SSE2 doesn't support odd image widths.\nForcing image width to an even number."
+    IDS_TEXT_FILTER         "Text Files (*.txt)|*.txt|All Files (*.*)|*.*||"
+    IDS_TRAN_CANT_UNDO      "Transformation can't be undone. Are you sure?"
+    IDS_TRAN_NO_PARAMS      "Specify one or more parameters and/or a palette."
+    IDS_UC_APPLY_PALETTE    "Apply Palette"
+    IDS_UC_BOUNDS           "Bounds"
+    IDS_UC_COORDS           "Coordinates"
+    IDS_UC_DRAG             "Drag"
+    IDS_UC_EDIT_PALETTE     "Edit Palette"
+    IDS_UC_HISTORY_CUT      "Cut History"
+    IDS_UC_HISTORY_DELETE   "Delete History"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UC_HISTORY_MOVE     "Move History"
+    IDS_UC_HISTORY_PASTE    "Paste History"
+    IDS_UC_HISTORY_RENDER   "Render History"
+    IDS_UC_IMAGE_SIZE       "Image Size"
+    IDS_UC_INVERT_COLOR     "Invert Color"
+    IDS_UC_OPEN_PALETTE     "Open Palette"
+    IDS_UC_ROTATE_HUE       "Rotate Hue"
+    IDS_UC_SCROLL           "Scroll"
+    IDS_UC_ZOOM             "Zoom"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_JOB_LOAD_LIST       "Load Job List"
+    IDS_JOB_NAME            "Name"
+    IDS_JOB_POSTPONED       "Postponed"
+    IDS_JOB_RUNNING         "In Progress"
+    IDS_JOB_SAVE_LIST       "Save Job List"
+    IDS_JOB_SOURCE          "Source"
+    IDS_JOB_START           "Start"
+    IDS_JOB_STATUS          "Status"
+    IDS_JOB_STOPPED_ERROR   "Job stopped with the following error:"
+    IDS_JOB_WAITING         "Waiting"
+    IDS_MF_CANT_SHUTDOWN    "Can't shutdown, error %d."
+    IDS_MF_HELP_FILE_MISSING "Can't find help file '%1'."
+    IDS_MF_PREPARING_DEMO   "Preparing demo..."
+    IDS_MF_STOP_RECORD      "Stop recording?"
+    IDS_MF_UNTITLED         "Untitled"
+    IDS_MF_VIEW_DEMO        "Do you want to view the demo?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ALL_PAL_FILTER      "Fractice Palette Files (*.frc)|*.frc|Importable Palette Files (*.map, *.pal)|*.map;*.pal|All Files (*.*)|*.*||"
+    IDS_APP_ABOUT_TEXT      "Fractice Version %d.%d.%d.%d\nCopyleft 2010 Chris Korda\n%s %d.%d.%d %s/%s"
+    IDS_APP_HOME_PAGE_URL   "http://fractice.sourceforge.net"
+    IDS_APP_LICENSE         "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111 USA."
+    IDS_APP_NO_SSE2         "CPU doesn't support SSE2."
+    IDS_AVI_FILTER          "AVI Files (*.avi)|*.avi|All Files (*.*)|*.*||"
+    IDS_BAD_COORDS          "Invalid coordinates."
+    IDS_BAD_DEMO_PROJECT    "Invalid demo project."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOC_OPEN_FILTER     "Fractice Files (*.frp, *.frs)|*.frp;*.frs|Fractice Projects (*.frp)|*.frp|Fractice Snapshots (*.frs)|*.frs|All Files (*.*)|*.*||"
+    IDS_DOC_SAVE_FILTER     "Fractice Project (*.frp)|*.frp|Fractice Snapshot (*.frs)|*.frs||"
+    IDS_DOC_SAVING          "Saving document..."
+    IDS_EDIT_REDO_FMT       "&Redo %s\tCtrl+Y"
+    IDS_EDIT_UNDO_FMT       "&Undo %s\tCtrl+Z"
+    IDS_EXCLUSIVE_WND_NAME  "Output"
+    IDS_EXPORT              "Export"
+    IDS_FB_COL_MODIFIED     "Modified"
+    IDS_FB_COL_NAME         "Name"
+    IDS_FB_COL_SIZE         "Size"
+    IDS_FB_COL_TYPE         "Type"
+    IDS_FB_FILE_SUFFIX      "File"
+    IDS_FB_PALETTES         "Palettes"
+    IDS_FB_PROJECTS         "Projects"
+    IDS_FILE_OVERWRITE_PROMPT "%1 already exists.\nDo you want to replace it?"
+    IDS_FSRV_BAD_IP_RANGE   "Invalid IP address range."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FSRV_FINDING        "Finding servers..."
+    IDS_FSRV_PROGRESS_CAP   "Finding servers..."
+    IDS_FT_MANDELBAR        "Mandelbar"
+    IDS_FT_MANDELBROT       "Mandelbrot"
+    IDS_FT_NEWTON           "Newton"
+    IDS_HIST_DEL_ESC_TIMES_WARN 
+                            "Escape times will be deleted from the selected items.\nThis action can't be undone, except by re-rendering."
+    IDS_HIST_UNCACHE_IMAGE_WARN 
+                            "Cached images will be deleted from the selected items.\nThis action can't be undone, except by re-rendering."
+    IDS_HLINK_CANT_LAUNCH   "Can't launch browser."
+    IDS_IMG_BAD_SIZE        "Invalid image size."
+    IDS_IMP_PAL_FILTER      "Palette Files (*.map, *.pal)|*.map;*.pal|All Files (*.*)|*.*||"
+    IDS_JOB_ABORTED         "Aborted"
+    IDS_JOB_DEST            "Dest"
+    IDS_JOB_DONE            "Done"
+    IDS_JOB_END             "End"
+    IDS_JOB_FAILED          "Error"
+    IDS_JOB_FILTER          "Fractice Job Files (*.frj)|*.frj|All Files (*.*)|*.*||"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BAD_FORMAT          "%1 has an invalid format."
+    IDS_BAD_ZOOM            "Invalid zoom."
+    IDS_BMP_FILTER          "BMP Files (*.bmp)|*.bmp|All Files (*.*)|*.*||"
+    IDS_BT_APPEND           "&Append"
+    IDS_BT_REPLACE          "&Replace"
+    IDS_CANT_ADD_TO_AVI     "Error adding frame to AVI file."
+    IDS_CANT_CREATE_BITMAP  "Can't create bitmap."
+    IDS_CANT_CREATE_BMP_FOLDER "Can't create bitmap folder."
+    IDS_CANT_CREATE_DC      "Can't create device context."
+    IDS_CANT_CREATE_DIRECTDRAW "Can't create DirectDraw."
+    IDS_CANT_CREATE_FRAME   "Can't create frame."
+    IDS_CANT_CREATE_SURFACE "Can't create surface."
+    IDS_CANT_CREATE_THUMB   "Can't create thumbnail."
+    IDS_CANT_EXPORT_PALETTE "Error exporting palette."
+    IDS_CANT_IMPORT_PALETTE "Error importing palette."
+    IDS_CANT_LAUNCH_BMP_THREAD "Can't launch bitmap thread."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANT_LAUNCH_ENGINE  "Can't launch rendering engine."
+    IDS_CANT_READ_BITMAP    "Error reading bitmap."
+    IDS_CANT_SET_DISPLAY_MODE "Can't set display mode."
+    IDS_CANT_SET_EXCLUSIVE  "Can't set exclusive mode."
+    IDS_CANT_WRITE_BITMAP   "Error writing bitmap."
+    IDS_CBT_COLOR_CYCLING   "Color Cycling"
+    IDS_CBT_COLOR_MAPPING   "Color Mapping"
+    IDS_CBT_FILES           "Files"
+    IDS_CBT_HISTORY         "History"
+    IDS_CBT_LEVELS          "Levels"
+    IDS_CBT_MIXER           "Mixer"
+    IDS_CBT_PALETTE         "Palette"
+    IDS_CBT_PARAMETERS      "Parameters"
+    IDS_CBT_SLIDE_SHOW      "Slide Show"
+    IDS_DOCKABLE            "Dockable"
+    IDS_DOC_OPENING         "Opening document..."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Fractice"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "List Help topics\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_HOME_PAGE        "Go to the Fractice home page\nHome Page"
+    ID_EDIT_BOUNDS          "Edit the bounding rectangle\nEdit Bounds"
+    ID_EDIT_COORDS          "Edit the coordinates\nEdit Coordinates"
+    ID_EDIT_DELETE          "Delete the selection\nDelete"
+    ID_EDIT_OPTIONS         "Edit the options\nOptions"
+    ID_EDIT_TOOL_HAND       "Select the hand tool\nHand Tool"
+    ID_EDIT_TOOL_MARQUEE    "Select the marquee tool\nMarquee Tool"
+    ID_EDIT_TOOL_ZOOM       "Select the zoom tool\nZoom Tool"
+    ID_FB_FILE_OPEN         "Open selected file\nOpen File"
+    ID_FB_FILE_PROPS        "Display properties of selected file\nFile Properties"
+    ID_FB_PARENT_FOLDER     "Go up to parent folder\nParent Folder"
+    ID_FB_RENAME            "Rename the item\nRename"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FB_SORT_DATE         "Sort items by date, from oldest to most recent\nArrange by Date"
+    ID_FB_SORT_NAME         "Sort items alphabetically by name\nArrange by Name"
+    ID_FB_SORT_SIZE         "Sort items by size, from smallest to largest\nArrange by Size"
+    ID_FB_SORT_TYPE         "Sort items by type\nArrange by Type"
+    ID_FB_VIEW_ICON         "View items as icons\nIcons"
+    ID_FB_VIEW_LIST         "View items arranged in columns\nList"
+    ID_FB_VIEW_REPORT       "View items with additional info\nDetails"
+    ID_FB_VIEW_SMALL_ICON   "View items as small icons\nSmall Icons"
+    ID_FILE_EXPORT          "Export current image as a bitmap\nExport"
+    ID_FILE_POSTER          "Create a poster of current image\nExport poster"
+    ID_FILE_RECORD          "Record a movie\nRecord"
+    ID_FILE_RECORD_STOP     "Stop recording this movie\nStop recording"
+    ID_GRAD_DELETE          "Delete gradient point"
+    ID_GRAD_INSERT_AT       "Insert gradient point"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HISTORY_VIEW         "*"
+    ID_HIST_RECORD          "Add selected items to movie\nRecord"
+    ID_IMG_ANTIALIAS_0      "Set antialiasing to a custom value"
+    ID_IMG_ANTIALIAS_1      "Set antialiasing to none\nNo Antialiasing"
+    ID_IMG_ANTIALIAS_2      "Set antialiasing to 2x\n2x Antialiasing"
+    ID_IMG_ANTIALIAS_3      "Set antialiasing to 3x\n3x Antialiasing"
+    ID_IMG_ANTIALIAS_4      "Set antialiasing to 4x\n4x Antialiasing"
+    ID_IMG_CANCEL           "Cancel the current render\nCancel"
+    ID_IMG_CTX_ZOOM_IN      "Zoom in\nZoom In"
+    ID_IMG_CTX_ZOOM_OUT     "Zoom out\nZoom Out"
+    ID_IMG_CYCLE_COLORS     "Toggle color cycling\nCycle Colors"
+    ID_IMG_DELETE_ESC_TIMES "Delete escape times from selected items\nDelete Escape Times"
+    ID_IMG_FIT_IN_WINDOW    "Fit the image in the window\nFit in Window"
+    ID_IMG_FRACTAL_TYPE_1   "Set fractal type to Mandelbrot"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_IMG_FRACTAL_TYPE_2   "Set fractal type to Newton"
+    ID_IMG_FRACTAL_TYPE_3   "Set fractal type to Mandelbar (Tricorn)"
+    ID_IMG_HISTORY_EXPORT   "Export selected items\nExport History"
+    ID_IMG_IMAGE_SIZE_0     "Set image size to a custom value"
+    ID_IMG_IMAGE_SIZE_1     "Set image size to 320 x 240\n320 x 240"
+    ID_IMG_IMAGE_SIZE_2     "Set image size to 640 x 480\n640 x 480"
+    ID_IMG_IMAGE_SIZE_3     "Set image size to 800 x 600\n800 x 600"
+    ID_IMG_IMAGE_SIZE_4     "Set image size to 1024 x 768\n1024 x 768"
+    ID_IMG_MRU_ANTIALIAS1   "Set this antialiasing"
+    ID_IMG_MRU_ANTIALIAS2   "Set this antialiasing"
+    ID_IMG_MRU_ANTIALIAS3   "Set this antialiasing"
+    ID_IMG_MRU_ANTIALIAS4   "Set this antialiasing"
+    ID_IMG_MRU_ANTIALIAS5   "Set this antialiasing"
+    ID_IMG_MRU_ANTIALIAS6   "Set this antialiasing"
+    ID_IMG_MRU_ANTIALIAS7   "Set this antialiasing"
+    ID_IMG_MRU_ANTIALIAS8   "Set this antialiasing"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_IMG_MRU_ANTIALIAS9   "Set this antialiasing"
+    ID_IMG_MRU_IMAGE_SIZE1  "Set this image size"
+    ID_IMG_MRU_IMAGE_SIZE2  "Set this image size"
+    ID_IMG_MRU_IMAGE_SIZE3  "Set this image size"
+    ID_IMG_MRU_IMAGE_SIZE4  "Set this image size"
+    ID_IMG_MRU_IMAGE_SIZE5  "Set this image size"
+    ID_IMG_MRU_IMAGE_SIZE6  "Set this image size"
+    ID_IMG_MRU_IMAGE_SIZE7  "Set this image size"
+    ID_IMG_MRU_IMAGE_SIZE8  "Set this image size"
+    ID_IMG_MRU_IMAGE_SIZE9  "Set this image size"
+    ID_IMG_MRU_PALETTE1     "Open this palette"
+    ID_IMG_MRU_PALETTE2     "Open this palette"
+    ID_IMG_MRU_PALETTE3     "Open this palette"
+    ID_IMG_MRU_PALETTE4     "Open this palette"
+    ID_IMG_MRU_PALETTE5     "Open this palette"
+    ID_IMG_MRU_PALETTE6     "Open this palette"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_IMG_MRU_PALETTE7     "Open this palette"
+    ID_IMG_MRU_PALETTE8     "Open this palette"
+    ID_IMG_MRU_PALETTE9     "Open this palette"
+    ID_IMG_MRU_QUALITY1     "Set this quality"
+    ID_IMG_MRU_QUALITY2     "Set this quality"
+    ID_IMG_MRU_QUALITY3     "Set this quality"
+    ID_IMG_MRU_QUALITY4     "Set this quality"
+    ID_IMG_MRU_QUALITY5     "Set this quality"
+    ID_IMG_MRU_QUALITY6     "Set this quality"
+    ID_IMG_MRU_QUALITY7     "Set this quality"
+    ID_IMG_MRU_QUALITY8     "Set this quality"
+    ID_IMG_MRU_QUALITY9     "Set this quality"
+    ID_IMG_PALETTE_EXPORT   "Export a palette file\nExport Palette"
+    ID_IMG_PALETTE_IMPORT   "Import a palette file\nImport Palette"
+    ID_IMG_PALETTE_OPEN     "Open a palette file\nOpen Palette"
+    ID_IMG_PALETTE_SAVE     "Save palette to a file\nSave Palette"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_IMG_PAL_INVERT_COLOR "Invert color\nInvert Color"
+    ID_IMG_PAL_ROTATE_HUE   "Rotate hues sixty degrees\nRotate Hue 60°"
+    ID_IMG_QUALITY_0        "Set quality to a custom value"
+    ID_IMG_QUALITY_1        "Set quality to draft\nDraft Quality"
+    ID_IMG_QUALITY_2        "Set quality to normal\nNormal Quality"
+    ID_IMG_QUALITY_3        "Set quality to high\nHigh Quality"
+    ID_IMG_RENDER           "Render the current frame\nRender"
+    ID_IMG_SLIDE_SHOW       "View a slide show of history\nSlide Show"
+    ID_IMG_TRANSFORM        "Transform parameters of selected items\nTransform History"
+    ID_IMG_UNCACHE_IMAGE    "Delete cached image from selected items\nUncache Image"
+    ID_IMG_ZOOM_IN          "Zoom in\nZoom In"
+    ID_IMG_ZOOM_OUT         "Zoom out\nZoom Out"
+    ID_INDICATOR_ANTIALIAS  "0000"
+    ID_INDICATOR_FRAME_SIZE "0000000000000"
+    ID_INDICATOR_QUALITY    "00000000"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LEVELS_VIEW          "*"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PARAMS_VIEW          "*"
+    ID_SNAP_DELETE          "Delete the selection\nDelete"
+    ID_SNAP_INSERT          "Insert snapshots\nInsert"
+    ID_SNAP_PROPERTIES      "Show properties of selected items\nProperties"
+    ID_SNAP_SELECT_ALL      "Select all items\nSelect All"
+    ID_VIEW_COLOR_CYCLING   "Show or hide the color cycling dialog\nToggle Color Cycling"
+    ID_VIEW_COLOR_MAPPING   "Show or hide the color mapping dialog\nToggle Color Mapping"
+    ID_VIEW_DEMO            "View the demo\nView Demo"
+    ID_VIEW_FILES           "Show or hide the files bar\nToggle Files"
+    ID_VIEW_GRID            "Show or hide the grid\nToggle Grid"
+    ID_VIEW_HISTORY         "Show or hide the history bar\nToggle History"
+    ID_VIEW_JOB_CONTROL     "Show or hide job control dialog\nJob Control"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_LEVELS          "Show or hide the levels bar\nToggle Levels"
+    ID_VIEW_MIDI_SETUP      "Show or hide the MIDI setup dialog\nToggle MIDI Setup"
+    ID_VIEW_MIXER           "Show or hide the mixer\nToggle Mixer"
+    ID_VIEW_PALETTE         "Show or hide the palette\nToggle Palette"
+    ID_VIEW_PARAMS          "Show or hide the parameters bar\nToggle Params"
+    ID_VIEW_RECORD          "Show or hide the record dialog\nToggle Record"
+    ID_VIEW_RECORD_STATUS   "Show or hide the record status dialog\nToggle Record Status"
+    ID_VIEW_SERVERS         "Show or hide the servers dialog\nToggle Servers"
+    ID_WND_EXCLUSIVE        "Toggle DirectDraw Exclusive mode\nToggle Exclusive"
+    ID_WND_FULL_SCREEN      "Show the image full-screen\nFull Screen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_FB_LIST             "*"
+    IDC_FB_TAB              "*"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PARAMS_CTRL         "*"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Fractice.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
