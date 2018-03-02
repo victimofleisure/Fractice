@@ -1,0 +1,577 @@
+<html><head><title>Fractice Help</title></head><body>
+<h1>Fractice Help</h1>
+<h2>Contents</h2>
+
+<dl>
+<dt>Getting Started
+<dd><a href="#Introduction">Introduction</a>
+<dd><a href="#License">License</a>
+<dd><a href="#Requirements">Requirements</a>
+<dd><a href="#Installing">Installing</a>
+<dd><a href="#Uninstalling">Uninstalling</a>
+<dt>Exploring
+<dd><a href="#Navigation">Navigation</a>
+<dd><a href="#History">History</a>
+<dd><a href="#Levels">Levels</a>
+<dd><a href="#Snapshots">Snapshots</a>
+<dd><a href="#Projects">Projects</a>
+<dd><a href="#Fit_in_Window">Fit in Window</a>
+<dd><a href="#Grid">Grid</a>
+<dt>Parameters
+<dd><a href="#Parameters">Parameters</a>
+<dd><a href="#Fractal_Type">Fractal Type</a>
+<dd><a href="#Image_Size">Image Size</a>
+<dd><a href="#Quality">Quality</a>
+<dd><a href="#Antialiasing">Antialiasing</a>
+<dd><a href="#Cycle_Length">Cycle Length</a>
+<dd><a href="#Color_Offset">Color Offset</a>
+<dd><a href="#Math_Precision">Math Precision</a>
+<dd><a href="#Deep_Zoom">Deep Zoom</a>
+<dd><a href="#Exponent">Exponent</a>
+<dt>Palettes
+<dd><a href="#Palettes">Palettes</a>
+<dd><a href="#Color_mapping">Color mapping</a>
+<dt>Recording movies
+<dd><a href="#Recording">Recording</a>
+<dd><a href="#Choosing_points">Choosing points</a>
+<dd><a href="#Record_dialog">Record dialog</a>
+<dd><a href="#Video_compression">Video compression</a>
+<dd><a href="#Record_to_bitmaps">Record to bitmaps</a>
+<dt>Exporting images
+<dd><a href="#Export_bitmap">Export bitmap</a>
+<dd><a href="#Posters">Posters</a>
+<dt>Distributed processing
+<dd><a href="#Distributed_processing">Distributed processing</a>
+<dd><a href="#Servers_dialog">Servers dialog</a>
+<dd><a href="#Finding_servers">Finding servers</a>
+<dd><a href="#Server_arguments">Server arguments</a>
+<dt>Job control
+<dd><a href="#Job_control">Job control</a>
+<dt>Options
+<dd><a href="#Default_snapshot">Default snapshot</a>
+<dd><a href="#Thumbnail_size">Thumbnail size</a>
+<dd><a href="#Default_file_format">Default file format</a>
+<dd><a href="#Use_SSE2">Use SSE2</a>
+<dd><a href="#Save_changes_warning">Save changes warning</a>
+<dd><a href="#Listen_for_servers">Listen for servers</a>
+<dd><a href="#Rendering_threads">Rendering threads</a>
+<dd><a href="#Undo_levels">Undo levels</a>
+<dd><a href="#Network_settings">Network settings</a>
+<dd><a href="#Zoom_step">Zoom step</a>
+<dd><a href="#Zoom_tool_step">Zoom tool step</a>
+<dd><a href="#Cache_full-size_images">Cache full-size images</a>
+<dd><a href="#Grid_color">Grid color</a>
+<dd><a href="#Restore_defaults">Restore defaults</a>
+<dt>Loose ends
+<dd><a href="#Printing">Printing</a>
+<dd><a href="#Shortcuts">Shortcuts</a>
+</dl>
+
+<h1>Getting Started</h1>
+<a name="Introduction"><h2>Introduction</h2></a>
+
+<p>Fractice is a free, open-source fractal explorer for Windows. Fractice has a rich set of features, including <a href="#Navigation">navigation</a>, <a href="#Deep_Zoom">deep zoom</a>, movie <a href="#Recording">recording</a>, <a href="#Posters">posters</a>, <a href="#Palettes">palettes</a>, multicore and <a href="#Distributed_processing">distributed processing</a>, <a href="#History">history</a> thumbnails, undo/redo, and <a href="#Job_control">job control</a>. The <a href="#Fractal_Type">fractal types</a> currently supported are the Mandelbrot set, including <a href="#Exponent">higher-exponent</a> variants, and the Newton fractal.
+
+<p>Please note that this documentation is a work in progress. Many features of Fractice are not yet documented, or are documented only partially or even incorrectly in some cases. The Fractice web site is updated more often than the application's help file, so for the latest version, consult the <a href="http://fractice.sourceforge.net/helpframe.html">online documentation</a>.
+
+<a name="License"><h2>License</h2></a>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111 USA.
+
+<a name="Requirements"><h2>Requirements</h2></a>
+
+<p>Fractice requires Windows XP or Vista. A dual- or quad-core CPU is highly recommended.
+
+<a name="Installing"><h2>Installing</h2></a>
+
+<p><b>Installing for the first time:</b>
+
+<p>Fractice is distributed as a .zip file. Unzip the distribution file, using WinZip or an equivalent program, and then double-click on Fractice.msi to launch the installer. The installer is about as simple as an installer can be: just keep hitting "Next."
+
+<p>Note that by default, Fractice is installed for the current user only. This means additional users must manually create desktop and start menu shortcuts to Fractice. If you wish to install Fractice for all users, select the "Everyone" radio button in the lower-left corner of the Select Installation Folder page.
+
+<p><b>Upgrading a previous installation:</b>
+
+<ol>
+<li>Unzip the distribution file to a folder, if you haven't already.
+<li>In that folder, double-click Upgrade.bat to launch the installer.
+<li>In the installer, select the "Repair" option and press "Finish".
+</ol>
+
+<p>Note that simply double-clicking the new Fractice.msi doesn't work. You will get the error message "Another version of the product is already installed."
+
+<a name="Uninstalling"><h2>Uninstalling</h2></a>
+
+<p>To uninstall Fractice from the Windows Start menu, select <span class="cmd">Programs/Fractice/Uninstall</span>. You can also use Add/Remove Programs in the Control Panel, or double-click on Fractice.msi and select the "Remove" option.
+
+
+<h1>Exploring</h1>
+
+<a name="Navigation"><h2>Navigation</h2></a>
+
+<p>Fractice provides three navigation tools: Marquee, Hand, and Zoom. To select one of these tools, use <span class="cmd">Edit/Tool</span>, or the corresponding Toolbar buttons, or the shortcut keys <span class="key">M</span>, <span class="key">H</span>, and <span class="key">Z</span>.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Tool</th><th>Action</th><th>Usage</th>
+</tr><tr>
+<td>Marquee</td><td>Zooms into a rectanglar area.</td><td>Identify an area of interest. Left-click a corner of this area, and while holding down the left button, move the cursor to the area's diagonally opposite corner. The selected area is indicated by a dotted border (the marquee). Release the left button to render this area. To cancel the operation, press <span class="key">Esc</span> before releasing the left button.</td>
+</tr><tr>
+<tr><td>Hand</td><td>Drags the image in X/Y.</td><td>Left-click a point, and while holding down the left button, move the cursor. The image follows the cursor. Release the left button to render at the new coordinates.</td>
+</tr><tr>
+<tr><td>Zoom</td><td>Zooms continuously in or out.</td><td>Hold down the left button to zoom in; hold down the right button to zoom out. The zoom origin is determined by the cursor position. The zoom rate can be changed, via <a href="#Zoom_tool_step">Zoom tool step</a> in the Options dialog.</td>
+</tr>
+</table>
+
+<p>Additional navigation methods are listed below. For these methods, the zoom amount is determined by <a href="#Zoom_step">Zoom step</a> in the Options dialog; note that this differs from Zoom <em>tool</em> step, described above.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Method</th><th>Action</th><th>Usage</th>
+</tr><tr>
+<td>Zoom In</td><td>Zooms into the center.</td><td><span class="cmd">Image/Zoom In</span>, or press <span class="key">=</span></td>
+</tr><tr>
+<td>Zoom Out</td><td>Zooms out from the center.</td><td><span class="cmd">Image/Zoom Out</span>, or press <span class="key">-</span></td>
+</tr><tr>
+<td>Context Zoom In</td><td>Zooms into a given position.</td><td>Right-click the desired position, and select <span class="cmd">Zoom In</span> from the context menu.</td>
+</tr><tr>
+<td>Context Zoom Out</td><td>Zooms out from a given position.</td><td>Right-click the desired position, and select <span class="cmd">Zoom Out</span> from the context menu.</td>
+</tr>
+</table>
+
+<p>It's also possible to navigate to a specific location by entering its coordinates or bounding rectangle. To enter coordinates, use <span class="cmd">Edit/Coordinates</span>. To enter a bounding rectangle, use <span class="cmd">Edit/Bounds</span>.
+
+<a name="History"><h2>History</h2></a>
+
+<p>***under construction***
+
+<a name="Levels"><h2>Levels</h2></a>
+
+<p>***under construction***
+
+<a name="Snapshots"><h2>Snapshots</h2></a>
+
+<p>***under construction***
+
+<a name="Projects"><h2>Projects</h2></a>
+
+<p>***under construction***
+
+<a name="Fit_in_Window"><h2>Fit in Window</h2></a>
+
+<p>Note that this setting also affects <a href="#Printing">printing</a>.
+
+<a name="Grid"><h2>Grid</h2></a>
+
+<p>***under construction***
+
+
+<h1>Parameters</h1>
+
+<a name="Parameters"><h2>Parameters</h2></a>
+
+<p>***under construction***
+
+<a name="Fractal_Type"><h2>Fractal Type</h2></a>
+
+<p>This <a href="#Parameters">parameter</a> selects the type of fractal. Currently supported fractals include:
+
+<ul>
+<li>Mandelbrot set, including <a href="#Exponent">higher-exponent</a> variants
+<li>Newton
+</ul>
+
+<p>To change fractal type, do one of the following:
+
+<ul>
+<li>Select <span class="cmd">Image/Fractal</span> from the main menu.
+<li>Right-click the image and select <span class="cmd">Fractal</span> from the context menu.
+<li>Use the Fractal Type drop-list in the Parameters bar.
+</ul>
+
+<a name="Image_Size"><h2>Image Size</h2></a>
+
+<p>This <a href="#Parameters">parameter</a> sets the actual size of the image, in pixels. The image is not necessarily displayed at this size; see <a href="#Fit_in_Window">fit in window</a>. Larger sizes improve the image, at the expense of increased rendering time. To change image size, do one of the following:
+
+<ul>
+<li>Select <span class="cmd">Image/Image Size</span> in the main menu.
+<li>Right-click the image and select <span class="cmd">Image Size</span> in the context menu.
+<li>Edit Image Width and Image Height in the Parameters bar.
+</ul>
+
+<p>The Image Size submenu includes standard sizes, a Custom option, and your most recently used non-standard sizes. Choosing Custom displays the Image Size dialog, allowing a non-standard size to be entered.
+
+<p>You can also use the following shortcuts to select a standard size:
+
+<ul>
+<li><span class="key">Ctrl+1</span> for 320 x 240
+<li><span class="key">Ctrl+2</span> for 640 x 480
+<li><span class="key">Ctrl+3</span> for 800 x 600
+<li><span class="key">Ctrl+4</span> for 1024 x 768
+</ul>
+
+<p>Very large image sizes can potentially exceed available memory, degrading performance. To avoid this, use the <a href="#Posters">poster</a> option instead. The current image allocates four bytes per pixel for escape times, and three bytes per pixel for color values, so Image Bytes = Width &times; Height &times; 7 (approximately).
+
+<a name="Quality"><h2>Quality</h2></a>
+
+<p>This <a href="#Parameters">parameter</a> sets the maximum number of iterations. Higher values improve the image, at the expense of increased rendering time. To change quality, do one of the following:
+
+<ul>
+<li>Select <span class="cmd">Image/Quality</span> in the main menu.
+<li>Right-click the image and select <span class="cmd">Quality</span> in the context menu.
+<li>Edit the Quality value in the Parameters bar.
+</ul>
+
+<p>The Quality submenu includes standard values, a Custom option, and your most recently used non-standard values. Choosing Custom displays the Quality dialog, allowing a non-standard value to be entered.
+
+<p>You can also use the following shortcuts to select a standard value:
+
+<ul>
+<li><span class="key">Shift+1</span> for Draft
+<li><span class="key">Shift+2</span> for Normal
+<li><span class="key">Shift+3</span> for High
+</ul>
+
+<a name="Antialiasing"><h2>Antialiasing</h2></a>
+
+<p>This <a href="#Parameters">parameter</a> sets the degree of antialiasing. Higher values improve the image, at the expense of increased rendering time. To change antialiasing, do one of the following:
+
+<ul>
+<li>Select <span class="cmd">Image/Antialiasing</span> in the main menu.
+<li>Right-click the image and select <span class="cmd">Antialiasing</span> in the context menu.
+<li>Edit the Antialiasing value in the Parameters bar.
+</ul>
+
+<p>The Antialiasing submenu includes standard values, a Custom option, and your most recently used non-standard values. Choosing Custom displays the Antialiasing dialog, allowing a non-standard value to be entered.
+
+<p>You can also use the following shortcuts to select a standard value:
+
+<ul>
+<li><span class="key">Alt+1</span> for None
+<li><span class="key">Alt+2</span> for 2x
+<li><span class="key">Alt+3</span> for 3x
+<li><span class="key">Alt+4</span> for 4x
+</ul>
+
+<a name="Cycle_Length"><h2>Cycle Length</h2></a>
+
+<p>This <a href="#Parameters">parameter</a> controls how quickly Fractice cycles through the colors in the current <a href="#Palettes">palette</a>. Lower values typically show more detail, but excessively low values increase high-frequency noise and give the image a posterized, "candy cane" appearance.
+
+<p>To change Cycle Length, edit its value in the Parameters bar, or use the "Length" slider in the <a href="#Color_mapping">Color Mapping</a> bar. Cycle Length ranges from zero to the current <a href="#Quality">Quality</a> value.
+
+<a name="Color_Offset"><h2>Color Offset</h2></a>
+
+<p>***under construction***
+
+<a name="Math_Precision"><h2>Math Precision</h2></a>
+
+<p>***under construction***
+
+<a name="Deep_Zoom"><h2>Deep Zoom</h2></a>
+
+<p>***under construction***
+
+<a name="Exponent"><h2>Exponent</h2></a>
+
+<p>This <a href="#Parameters">parameter</a> sets the exponent for the Mandelbrot set, in order to support cubic, quartic, and other higher-exponent variants. Instead of the classic equation:
+
+<p>Z = Z<sup>2</sup> + C
+
+<p>in which the exponent of Z is a constant, the exponent becomes a variable, so that the equation is:
+
+<p>Z = Z<sup>N</sup> + C
+
+<p>where N is a positive integer from 2 to 13. Higher exponents give the Mandelbrot more "bulbs"; the number of bulbs equals the exponent minus one. To change the exponent, edit its value in the Parameters bar. Note that higher exponents take longer to render, due to the increased number of computations.
+
+
+<h1>Palettes</h1>
+
+<a name="Palettes"><h2>Palettes</h2></a>
+
+<p>***under construction***
+
+<a name="Color_mapping"><h2>Color mapping</h2></a>
+
+<p>***under construction***
+
+
+<h1>Recording movies</h1>
+
+<a name="Recording"><h2>Recording</h2></a>
+
+<p>Fractice can record movies of your explorations. A movie is defined by a start point, an end point, and a duration. Fractice <em>interpolates</em> the data between the two points, such that the viewer travels from the start point to the end point at a constant speed. The speed is determined by both the distance between the points, and the duration. To increase the speed, choose points that are further apart, or decrease the duration.
+
+<p>Interpolation can occur in all three coordinates (X, Y, and Z), however beginners are encouraged to interpolate in Z only. When interpolating in X and/or Y, the points must be <a href="#Choosing_points">chosen</a> carefully to avoid crossing large empty spaces, which would result in a boring movie. To interpolate in Z only, choose the end point first; then use <span class="cmd">Image/Zoom Out</span> to zoom out as far as desired without changing the X/Y position, and make the resulting image the start point. If zooming out in steps is too time-consuming, you can set Z directly, using <span class="cmd">Edit/Coordinates</span>.
+
+<a name="Choosing_points"><h2>Choosing points</h2></a>
+
+<p>The movie's start and end points must already exist in your <a href="#History">history</a>. To begin recording, select <span class="cmd">File/Record</span> or press <span class="key">Ctrl+R</span> to open the <a href="#Record_dialog">Record dialog</a>. Now drag the start point's thumbnail from the History bar to the Record dialog, and drop it onto the rectangle labeled "Start Point". Similarly, drag the end point's thumbnail onto the rectangle labeled "End Point".
+
+<p>Alternatively, you may find it easier to right-click a thumbnail in the history, and select "Start Point" or "End Point" from the context menu; this opens the Record dialog and copies the thumbnail to the appropriate point.
+
+<p>If the start and end points differ in any respect other than their coordinates, Fractice displays the following warning:
+
+<blockquote>Points have different parameters and/or palettes. New point's parameters and palette will be used.
+</blockquote>
+
+<p>This occurs because Fractice can't interpolate anything but the coordinates. Properties other than the coordinates (image size, quality, antialiasing, palette, etc.) are taken from the most recently added point. Note that it's also possible to override <a href="#Parameters">parameters</a>, using the parameters grid in the Record dialog.
+
+<a name="Record_dialog"><h2>Record dialog</h2></a>
+
+<dl>
+<dt>Duration
+<dd>The duration of the <a href="#Recording">movie</a>. This can be entered in either time (hh:mm:ss) or frames. Use the Time/Frames radio buttons to select the desired unit.
+<dt>Frame Rate
+<dd>The movie's frame rate, in frames per second. Fractional values are permitted. Common values are 29.97 for NTSC, and 25.00 for PAL.
+<dt>Parameters
+<dd>This grid control allows you to override any of the <a href="#Parameters">parameters</a>. To change a parameter, left-click it, enter a new value, and press <span class="key">Enter</span>.
+<dt>Frame Range
+<dd>To record only a subset of the movie, select "Range" and enter the desired frame range.
+<dt>Record to bitmaps
+<dd>Check this box to record the movie as a sequence of numbered bitmaps instead of an AVI file. This is useful for recordings that will take a very long time; see <a href="#Record_to_bitmaps">Record to bitmaps</a>.
+<dt>Queue to job control
+<dd>If this box is checked, pressing "Start" adds the movie to the <a href="#Job_control">job queue</a> instead of beginning the recording immediately.
+<dt>Swap
+<dd>Press this button to exchange the start and end points. This is useful for trying a movie in reverse.
+<dt>Close
+<dd>Press this button to save your changes and dismiss the dialog without starting the recording.
+<dt>Start
+<dd>Press this button to save your changes and begin recording.
+</dl>
+
+<a name="Video_compression"><h2>Video compression</h2></a>
+
+<p>After pressing "Start" in the <a href="#Record_dialog">Record dialog</a>, a "Save As" dialog is displayed (unless <a href="#Record_to_bitmaps">Record to bitmaps</a> was checked). Specify the location and file name of the output AVI file, and press "OK" to continue. The "Video Compression" dialog is now displayed. Select a compressor (or "Full Frames" for uncompressed video), configure the compressor as desired, and then press "OK" to begin recording.
+
+<p>Assuming you have enough disk space, it's usually preferable to record uncompressed, and then do the compression afterwards, using an external application. This allows you to experiment with different compression settings without re-recording the movie. This is especially important for <a href="#Deep_Zoom">deep zoom</a> movies, which may take days or weeks to render, even with <a href="#Distributed_processing">distributed processing</a>. In such cases, it's also recommended to record to bitmaps, so that an aborted render can be resumed.
+
+<a name="Record_to_bitmaps"><h2>Record to bitmaps</h2></a>
+
+<p>If "Record to bitmaps" is checked in the <a href="#Record_dialog">Record dialog</a>, the recording doesn't create an AVI file; instead, it creates a numbered sequence of bitmaps, one per frame. Recording to bitmaps has an important advantage over recording to an AVI file: if a recording to bitmaps is aborted, it can easily be resumed.
+
+<p>To resume an aborted recording to bitmaps, open the project, press "Start" in the Record dialog, and select the same destination folder that the aborted recording used. Fractice will display this message:
+
+<blockquote>Destination folder already contains numbered bitmaps which could be an aborted version of this recording. If so, continue recording from where it aborted?
+</blockquote>
+
+<p>Fractice can't be certain that the bitmaps it found are in fact an aborted version of the current recording. Fractice relies on <em>you</em> to verify this! Press "Yes" in this message box to resume the recording. Note that it's not necessary to specify a frame range in the Record dialog; Fractice figures out which frames need to be rendered, automatically detecting and fixing any gaps in the sequence.
+
+<p>If you abort a recording to AVI, there's no easy way to resume it. You can try recording the remainder of the movie to a different AVI, and merging the clips in a video editor, but this is tricky, and it's only possible if the aborted recording was closed gracefully, which won't be the case if there was a crash or a power outage. For this reason, if a recording will take a long time, it's highly recommended to record to bitmaps.
+
+<p>If you need to create an AVI file from a bitmap sequence, an external tool called "BmpToAvi" is provided for this purpose. You'll find it in the Windows Start menu, under <span class="cmd">Programs/Fractice/BmpToAvi</span>. Most video editing applications can also import a bitmap sequence.
+
+
+<h1>Exporting images</h1>
+
+<a name="Export_bitmap"><h2>Export bitmap</h2></a>
+
+<p>***under construction***
+
+<a name="Posters"><h2>Posters</h2></a>
+
+<p>***under construction***
+
+
+<h1>Distributed processing</h1>
+
+<a name="Distributed_processing"><h2>Distributed processing</h2></a>
+
+<p>***under construction***
+
+<a name="Servers_dialog"><h2>Servers dialog</h2></a>
+
+<p>***under construction***
+
+<a name="Finding_servers"><h2>Finding servers</h2></a>
+
+<p>***under construction***
+
+<a name="Server_arguments"><h2>Server arguments</h2></a>
+
+<p>The server accepts the following command-line arguments:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Argument</th><th>Description</th><th>Comments</th></tr>
+<tr>
+<td>/help</td><td>display this help</td><td>&nbsp;</td>
+</tr><tr>
+<td>/port&nbsp;<em>number</em></td><td>use specified port number for TCP/UDP sockets</td>
+<td>Useful for working around firewalls. Note that the server's port number must match the port number specified in the client's <a href="#Network_settings">network settings</a>, or connection attempts will fail. If not specified, the port number defaults to 35321.</td>
+</tr><tr>
+<td>/noudp</td><td>don't launch UDP server to answer find broadcasts</td>
+<td>Useful for working around firewalls. If combined with the /client argument, the server does not create any listening sockets, which is often what triggers the firewall. If this option is enabled, the client's <a href="#Finding_servers">finder</a> will not find the server; the user must specify the server's hostname or IP address in the client.</td>
+</tr><tr>
+<td>/hide</td><td>make server invisible by hiding its console window</td>
+<td>This prevents users from accidentally killing the server by closing its window. To exit the server, use the client's <a href="#Servers_dialog">Servers dialog</a>, or kill the server's process in the Task Manager.</td>
+</tr><tr>
+<td>/client&nbsp;<em>address</em></td><td>connect to client at specified IP address or hostname</td>
+<td>Useful if you want to connect over the Internet, but the server isn't visible to the outside world; so long as the client is visible, the server can connect to the client. Note that the client's <a href="#Listen_for_servers">Listen for servers</a> option must be enabled. Also useful for working around firewalls; see /noudp argument above. </td>
+</tr><tr>
+<td>/bind&nbsp;<em>address</em></td><td>bind server to specified IP address</td>
+<td>Allows you to specify the server's IP address, instead of letting sockets assign an address. Useful on a multi-homed host, i.e. a host with more than one network interface and IP address. On a laptop with both a wireless and a wired connection, use this option to control which connection the server uses.</td>
+</tr><tr>
+<td>/threads&nbsp;<em>count</em></td><td>create specified number of rendering threads</td>
+<td>The thread count defaults to the number of CPUs reported by Windows. This is typically optimal, but reducing the thread count could potentially improve performance on a Hyper-Threading processor.</td>
+</tr><tr><td>/fpu</td><td>use FPU instead of SSE2 for rendering math</td>
+<td>SSE2 is normally optimal; for more information, see the client's <a href="#Use_SSE2">Use SSE2</a> option.</td>
+</tr>
+</table>
+
+
+<h1>Job control</h1>
+
+<a name="Job_control"><h2>Job control</h2></a>
+
+<p>***under construction***
+
+
+<h1>Options</h1>
+
+<a name="Default_snapshot"><h2>Default snapshot</h2></a>
+
+<p>***under construction***
+
+<a name="Thumbnail_size"><h2>Thumbnail size</h2></a>
+
+<p>***under construction***
+
+<a name="Default_file_format"><h2>Default file format</h2></a>
+
+<p>***under construction***
+
+<a name="Use_SSE2"><h2>Use SSE2</h2></a>
+
+<p>This option controls whether SSE2 instructions are used instead of FPU (Floating-Point Unit) instructions. SSE2 is normally significantly faster, so this option is enabled by default. SSE2 is currently implemented for the Mandelbrot set only, and only for the classic set, not the <a href="#Exponent">higher-exponent</a> variants. Note that this option has no effect on <a href="#Deep_Zoom">deep zoom</a> renders, which are handled differently.
+
+<a name="Save_changes_warning"><h2>Save changes warning</h2></a>
+
+<p>This option allows you to disable the warning that normally appears whenever you attempt to close an unsaved document. The warning is enabled by default. Disabling it can be useful during development, but is otherwise not recommended.
+
+<a name="Listen_for_servers"><h2>Listen for servers</h2></a>
+
+<p>***under construction***
+
+<a name="Rendering_threads"><h2>Rendering threads</h2></a>
+
+<p>This option allows you to set number of rendering threads. The thread count defaults to the number of CPUs reported by Windows. This is typically optimal, but reducing the thread count could potentially improve performance on a Hyper-Threading processor.
+
+<p>Note that in a <a href="#Distributed_processing">distributed processing</a> environment, this option only affects the client; to set the number of rendering threads for a server, use the server's <tt>/threads</tt> <a href="#Server_arguments">command-line argument</a>.
+
+<a name="Undo_levels"><h2>Undo levels</h2></a>
+
+<p>This option allows you to set the number of undo levels. For unlimited undo, check Unlimited; otherwise, uncheck it, and enter the desired number of levels in the edit box. To disable undo, set the number of levels to zero. By default, undo is unlimited. Note that unlimited undo can consume a significant amount of memory over time.
+
+<a name="Network_settings"><h2>Network settings</h2></a>
+
+<p>***under construction***
+
+<a name="Zoom_step"><h2>Zoom step</h2></a>
+
+<p>This option affects zooming in/out via the Image menu or the view's context menu, as described under <a href="#Navigation">navigation</a>. Each zoom scales the Z coordinate by the specified amount. Note that this option differs from <a href="#Zoom_tool_step">Zoom tool step</a>.
+
+<a name="Zoom_tool_step"><h2>Zoom tool step</h2></a>
+
+<p>This option controls the rate of continuous zooming with the Zoom tool, as described under <a href="#Navigation">navigation</a>. Each zoom scales the Z coordinate by the specified amount. Note that this option differs from <a href="#Zoom_step">Zoom step</a>.
+
+<a name="Cache_full-size_images"><h2>Cache full-size images</h2></a>
+
+<p>***under construction***
+
+<a name="Grid_color"><h2>Grid color</h2></a>
+
+<p>***under construction***
+
+<a name="Restore_defaults"><h2>Restore defaults</h2></a>
+
+<p>***under construction***
+
+
+<h1>Loose ends</h1>
+
+<a name="Printing"><h2>Printing</h2></a>
+
+<p>To print the current image, use <span class="cmd">File/Print</span> or <span class="key">Ctrl+P</span>. It's a good idea to preview the image first, via <span class="cmd">File/Print Preview</span>, and adjust the printer settings if necessary, via <span class="cmd">File/Print Setup</span>.
+
+<p>The current image is not re-rendered for the printer. The result depends on whether <a href="#Fit_in_Window">fit in window</a> is enabled, as shown below:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Fit in Window</th><th>Alignment</th><th>Scaling</th></tr>
+<tr><td>Yes</td><td>Centered
+</td><td>The image is scaled to fill the page as much as possible, without changing its aspect ratio.</td></tr>
+<tr><td>No</td><td>Upper-left corner</td><td>None. The image is printed at its actual size in pixels, and clipped if it doesn't fit on the page.</td></tr>
+</table>
+
+<p>Scaling up a low-resolution image to fill the page may result in a blocky printout. To avoid this, the recommended method is as follows:
+
+<ol>
+<li>Turn "Fit to Window" OFF.
+<li>Re-render the image with <a href="#Image_Size">image size</a> set to match the dimensions (in pixels) of the <em>printable area</em> of the page, i.e. taking the printer's margins into account.
+<li>Use print preview to make sure the image fills the page without clipping. If it looks OK, print it; otherwise go back to step 2, adjusting the image size as needed.
+</ol>
+
+<p>Another option is to <a href="#Export_bitmap">export a bitmap</a>, and then use an external application such as Photoshop to print the bitmap. Try to avoid resizing the bitmap, as this may introduce unwanted artifacts. For large-format printers and/or extreme <a href="#Antialiasing">antialiasing</a> factors, you should use the <a href="#Posters">poster export</a> to create the bitmap, otherwise you may run out of memory.
+
+<a name="Shortcuts"><h2>Shortcuts</h2></a>
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>-</td><td>Zoom Out</td><td>Zoom out</td></tr>
+<tr><td>Ctrl+0</td><td>Fit in Window</td><td>Fit the image in the window</td></tr>
+<tr><td>Ctrl+1</td><td>320 x 240</td><td>Set image size to 320 x 240</td></tr>
+<tr><td>Alt+1</td><td>No Antialiasing</td><td>Set antialiasing to none</td></tr>
+<tr><td>Shift+1</td><td>Draft Quality</td><td>Set quality to draft</td></tr>
+<tr><td>Ctrl+2</td><td>640 x 480</td><td>Set image size to 640 x 480</td></tr>
+<tr><td>Alt+2</td><td>2x Antialiasing</td><td>Set antialiasing to 2x</td></tr>
+<tr><td>Shift+2</td><td>Normal Quality</td><td>Set quality to normal</td></tr>
+<tr><td>Ctrl+3</td><td>800 x 600</td><td>Set image size to 800 x 600</td></tr>
+<tr><td>Alt+3</td><td>3x Antialiasing</td><td>Set antialiasing to 3x</td></tr>
+<tr><td>Shift+3</td><td>High Quality</td><td>Set quality to high</td></tr>
+<tr><td>Ctrl+4</td><td>1024 x 768</td><td>Set image size to 1024 x 768</td></tr>
+<tr><td>Alt+4</td><td>4x Antialiasing</td><td>Set antialiasing to 4x</td></tr>
+<tr><td>=</td><td>Zoom In</td><td>Zoom in</td></tr>
+<tr><td>Ctrl+A</td><td>Select All</td><td>Select the entire document</td></tr>
+<tr><td>Shift+B</td><td>Edit Bounds</td><td>Edit the bounding rectangle</td></tr>
+<tr><td>Ctrl+C</td><td>Copy</td><td>Copy the selection and put it on the Clipboard</td></tr>
+<tr><td>Shift+C</td><td>Edit Coordinates</td><td>Edit the coordinates</td></tr>
+<tr><td>Ctrl+E</td><td>Export</td><td>Export current image as a bitmap</td></tr>
+<tr><td>Shift+F</td><td>Toggle Files</td><td>Show or hide the files bar</td></tr>
+<tr><td>Ctrl+G</td><td>Toggle Grid</td><td>Show or hide the grid</td></tr>
+<tr><td>H</td><td>Hand Tool</td><td>Select the hand tool</td></tr>
+<tr><td>Shift+H</td><td>Toggle History</td><td>Show or hide the history bar</td></tr>
+<tr><td>Shift+I</td><td>Toggle MIDI Setup</td><td>Show or hide the MIDI setup dialog</td></tr>
+<tr><td>Shift+J</td><td>Job Control</td><td>Show or hide job control dialog</td></tr>
+<tr><td>Shift+L</td><td>Toggle Levels</td><td>Show or hide the levels bar</td></tr>
+<tr><td>M</td><td>Marquee Tool</td><td>Select the marquee tool</td></tr>
+<tr><td>Shift+M</td><td>Toggle Mixer</td><td>Show or hide the mixer</td></tr>
+<tr><td>Ctrl+N</td><td>New</td><td>Create a new document</td></tr>
+<tr><td>Shift+N</td><td>Invert Color</td><td>Invert color</td></tr>
+<tr><td>Ctrl+O</td><td>Open</td><td>Open an existing document</td></tr>
+<tr><td>Shift+O</td><td>Options</td><td>Edit the options</td></tr>
+<tr><td>Ctrl+P</td><td>Print</td><td>Print the active document</td></tr>
+<tr><td>Shift+P</td><td>Toggle Params</td><td>Show or hide the parameters bar</td></tr>
+<tr><td>Ctrl+R</td><td>Record</td><td>Record a movie</td></tr>
+<tr><td>Shift+R</td><td>Rotate Hue 60°</td><td>Rotate hues sixty degrees</td></tr>
+<tr><td>Ctrl+S</td><td>Save</td><td>Save the active document</td></tr>
+<tr><td>Shift+S</td><td>Toggle Servers</td><td>Show or hide the servers dialog</td></tr>
+<tr><td>Ctrl+V</td><td>Paste</td><td>Insert Clipboard contents</td></tr>
+<tr><td>Alt+Backspace</td><td>Undo</td><td>Undo the last action</td></tr>
+<tr><td>Delete</td><td>Delete</td><td>Delete the selection</td></tr>
+<tr><td>Shift+Delete</td><td>Cut</td><td>Cut the selection and put it on the Clipboard</td></tr>
+<tr><td>Esc</td><td>Cancel</td><td>Cancel the current render</td></tr>
+<tr><td>F1</td><td>Help</td><td>List Help topics</td></tr>
+<tr><td>F11</td><td>Full Screen</td><td>Show the image full-screen</td></tr>
+<tr><td>Ctrl+F11</td><td>Toggle Exclusive</td><td>Toggle DirectDraw Exclusive mode</td></tr>
+<tr><td>F5</td><td>Render</td><td>Render the current frame</td></tr>
+<tr><td>Shift+F5</td><td>Slide Show</td><td>View a slide show of history</td></tr>
+<tr><td>F6</td><td>Next Pane</td><td>Switch to the next window pane</td></tr>
+<tr><td>Shift+F6</td><td>Previous Pane</td><td>Switch back to the previous window pane</td></tr>
+<tr><td>F7</td><td>Toggle Palette</td><td>Show or hide the palette</td></tr>
+<tr><td>F8</td><td>Toggle Color Mapping</td><td>Show or hide the color mapping dialog</td></tr>
+<tr><td>F9</td><td>Toggle Color Cycling</td><td>Show or hide the color cycling dialog</td></tr>
+<tr><td>Shift+F9</td><td>Cycle Colors</td><td>Toggle color cycling</td></tr>
+<tr><td>Ctrl+Insert</td><td>Copy</td><td>Copy the selection and put it on the Clipboard</td></tr>
+<tr><td>Shift+Insert</td><td>Paste</td><td>Insert Clipboard contents</td></tr>
+<tr><td>Ctrl+X</td><td>Cut</td><td>Cut the selection and put it on the Clipboard</td></tr>
+<tr><td>Ctrl+Y</td><td>Redo</td><td>Redo the previously undone action</td></tr>
+<tr><td>Z</td><td>Zoom Tool</td><td>Select the zoom tool</td></tr>
+<tr><td>Ctrl+Z</td><td>Undo</td><td>Undo the last action</td></tr>
+</table>
+
+</body></html>

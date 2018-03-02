@@ -1,0 +1,37 @@
+<title>Server arguments</title>
+<body>
+
+<h3>Server arguments</h3>
+
+<p>The server accepts the following command-line arguments:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Argument</th><th>Description</th><th>Comments</th></tr>
+<tr>
+<td>/help</td><td>display this help</td><td>&nbsp;</td>
+</tr><tr>
+<td>/port&nbsp;<em>number</em></td><td>use specified port number for TCP/UDP sockets</td>
+<td>Useful for working around firewalls. Note that the server's port number must match the port number specified in the client's <a href="../Options/Network_settings.htm">network settings</a>, or connection attempts will fail. If not specified, the port number defaults to 35321.</td>
+</tr><tr>
+<td>/noudp</td><td>don't launch UDP server to answer find broadcasts</td>
+<td>Useful for working around firewalls. If combined with the /client argument, the server does not create any listening sockets, which is often what triggers the firewall. If this option is enabled, the client's <a href="../Distributed_processing/Finding_servers.htm">finder</a> will not find the server; the user must specify the server's hostname or IP address in the client.</td>
+</tr><tr>
+<td>/hide</td><td>make server invisible by hiding its console window</td>
+<td>This prevents users from accidentally killing the server by closing its window. To exit the server, use the client's <a href="../Distributed_processing/Servers_dialog.htm">Servers dialog</a>, or kill the server's process in the Task Manager.</td>
+</tr><tr>
+<td>/client&nbsp;<em>address</em></td><td>connect to client at specified IP address or hostname</td>
+<td>Useful if you want to connect over the Internet, but the server isn't visible to the outside world; so long as the client is visible, the server can connect to the client. Note that the client's <a href="../Options/Listen_for_servers.htm">Listen for servers</a> option must be enabled. Also useful for working around firewalls; see /noudp argument above. </td>
+</tr><tr>
+<td>/bind&nbsp;<em>address</em></td><td>bind server to specified IP address</td>
+<td>Allows you to specify the server's IP address, instead of letting sockets assign an address. Useful on a multi-homed host, i.e. a host with more than one network interface and IP address. On a laptop with both a wireless and a wired connection, use this option to control which connection the server uses.</td>
+</tr><tr>
+<td>/threads&nbsp;<em>count</em></td><td>create specified number of rendering threads</td>
+<td>The thread count defaults to the number of CPUs reported by Windows. This is typically optimal, but reducing the thread count could potentially improve performance on a Hyper-Threading processor.</td>
+</tr><tr><td>/fpu</td><td>use FPU instead of SSE2 for rendering math</td>
+<td>SSE2 is normally optimal; for more information, see the client's <a href="../Options/Use_SSE2.htm">Use SSE2</a> option.</td>
+</tr>
+</table>
+
+
+
+</body>

@@ -1,0 +1,27 @@
+<title>Printing</title>
+<body>
+
+<h3>Printing</h3>
+
+<p>To print the current image, use <span class="cmd">File/Print</span> or <span class="key">Ctrl+P</span>. It's a good idea to preview the image first, via <span class="cmd">File/Print Preview</span>, and adjust the printer settings if necessary, via <span class="cmd">File/Print Setup</span>.
+
+<p>The current image is not re-rendered for the printer. The result depends on whether <a href="../Exploring/Fit_in_Window.htm">fit in window</a> is enabled, as shown below:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Fit in Window</th><th>Alignment</th><th>Scaling</th></tr>
+<tr><td>Yes</td><td>Centered
+</td><td>The image is scaled to fill the page as much as possible, without changing its aspect ratio.</td></tr>
+<tr><td>No</td><td>Upper-left corner</td><td>None. The image is printed at its actual size in pixels, and clipped if it doesn't fit on the page.</td></tr>
+</table>
+
+<p>Scaling up a low-resolution image to fill the page may result in a blocky printout. To avoid this, the recommended method is as follows:
+
+<ol>
+<li>Turn "Fit to Window" OFF.
+<li>Re-render the image with <a href="../Parameters/Image_Size.htm">image size</a> set to match the dimensions (in pixels) of the <em>printable area</em> of the page, i.e. taking the printer's margins into account.
+<li>Use print preview to make sure the image fills the page without clipping. If it looks OK, print it; otherwise go back to step 2, adjusting the image size as needed.
+</ol>
+
+<p>Another option is to <a href="../Exporting_images/Export_bitmap.htm">export a bitmap</a>, and then use an external application such as Photoshop to print the bitmap. Try to avoid resizing the bitmap, as this may introduce unwanted artifacts. For large-format printers and/or extreme <a href="../Parameters/Antialiasing.htm">antialiasing</a> factors, you should use the <a href="../Exporting_images/Posters.htm">poster export</a> to create the bitmap, otherwise you may run out of memory.
+
+</body>

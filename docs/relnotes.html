@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fractice - Release Notes</title>
+<meta content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<link href="./style.css" rel=stylesheet title=default type=text/css>
+</head>
+<body>
+<div class=menu>
+<a href="./index.html"><img src="./images/fractice-icon-32x32.gif" width="32" height="32" alt="icon"></a>
+<div class=title>Fractice</div><p>
+<div class=menuitem0 title="Overview"><a href="./index.html">Home</a></div>
+<div class=menuitem0 title="Movies"><a href="./movies.html">Movies</a></div>
+<div class=menuitem0 title="Gallery"><a href="./gallery/gallery1.html">Gallery</a></div>
+<div class=menuitem0 title="Screenshots"><a href="./screenshots.html">Screenshots</a></div>
+<div class=menuitem0 title="Features"><a href="./features.html">Features</a></div>
+<div class=menuitem0 title="Download"><a href="./download.html">Download</a></div>
+<div class=menuitem0 title="Documentation"><a href="./helpframe.html">Documentation</a></div>
+<div class=menuitem0 title="Development"><a href="./development.html">Development</a></div>
+<div class=menuitem0 title="FAQ"><a href="./faq.html">FAQ</a></div>
+<div class=menuitem0 title="Forums"><a href="./forums.html">Forums</a></div>
+<div class=menuitem0 title="Links"><a href="./links.html">Links</a></div>
+<div class=menuitem0 title="Contact"><a href="./contact.html">Contact</a></div><br>
+</div>
+<div id=body>
+<!--  content goes HERE  -->
+
+<h1>Release Notes</h1>
+
+<h3>1.0.06.00</h3>
+
+<p>Fractice 1.0.06.00 features a performance upgrade to the 64-bit version, and a minor UI enhancement.
+
+<ol>
+<li>In the 64-bit version only, the Mandelbrot/Mandelbar SSE2 assembler code's inner loop was unrolled to process four pixels at once instead of two. This makes Mandelbrot and Mandelbar renders approximately 1.5 times faster. Note that this optimization is only in effect if the image width is a multiple of four, otherwise the original code is used.
+
+<li>The history bar's context menu now includes the Transform and Export commands.
+</ol>
+
+<h3>1.0.05.00</h3>
+
+<p>Fractice 1.0.05.00 fixes a bug that made shallow (non-deep) zooms take twice as long as they should have.
+
+<ol>
+<li>In the previous version, SSE2 support was accidentally disabled for shallow (non-deep) zooms. This caused shallow zooms to take approximately twice as long as they should have. Deep zooms were unaffected. Checking the "Use SSE2" checkbox in Options/Engine made no difference. The bug was present in both the 32-bit and 64-bit versions, and in both the server and the client. Sorry! Fixed.
+
+<li>The real-time colormapping/downsampling function that's used in full-screen Exclusive (Mixer) mode is now better optimized, and runs two or three times faster on all platforms. This leaves more CPU time for rendering.
+</ol>
+
+<h3>1.0.04.00</h3>
+
+<p>Fractice 1.0.04.00 adds a native 64-bit version, which typically renders deep zooms 2.5 times faster than the 32-bit version.
+
+<ol>
+<li>The 64-bit version has been tested on Intel Core2, Intel i7, and AMD X2 CPUs, under Vista x64 and Windows 7 x64. In all cases it proved to be at least twice as fast as the 32-bit version of Fractice running on the same PC, typically 2.5 faster for deep zooms. The 64-bit download includes a 64-bit server (FractServ.exe). Note that either version of the client can be connected to a mix of 32-bit and 64-bit servers.
+
+<li>A new 32-bit version is also included in this release. It should behave identically to 1.0.03.01, but the executable file is smaller, because it omits debug information which was accidentally included in previous versions.
+
+<li>A context menu was added to the Servers dialog's list control. The menu includes a Properties item which displays information about the selected servers, including whether they're 32 or 64 bit. The client's About dialog also includes this information.
+</ol>
+
+<h3>1.0.03.01</h3>
+
+<p>Fractice 1.0.03.01 adds a major new feature called multi-leg recording, which allows a movie's trajectory to contain more than two coordinates. This version also fixes a number of bugs, some of them critical.
+
+<ol>
+<li>Multi-leg recording. In previous versions, a movie's trajectory consisted of only two coordinates (start and end). The trajectory can now contain any number of coordinates, defining a series of connected linear segments or "legs", AKA a polyline. This allows an entire navigation history to be turned directly into a movie. Various UI changes were made to accommodate this, mostly in the Record dialog. The leg durations are calculated automatically, based on the amount of zoom change.
+
+<li>Slow deep zoom cancel. In previous versions, canceling a deep zoom render could take a very long time, causing the application to appear hung. This is fixed for both navigation and recording, and for both local and distributed rendering. Note that for distributed rendering to cancel quickly, you must be running the latest version of FractServ.exe on ALL of your server PCs.
+
+<li>Deep zoom beyond range of double. In previous versions, deep zoom navigation failed beyond the range of double precision floating-point (10E+308). This is fixed: deep zoom navigation is now unlimited, assuming sufficient math precision is specified. Note that for movie recording, zoom depth is also unlimited, with the exception that the delta zoom of each leg can't exceed 10E+308.
+
+<li>Highlight drop position. In the history bar, when drag-reordering items, the drop position is now highlighted. The drop position is also highlighted when dragging items from the history bar to the record dialog, or when drag-reordering items within the record dialog.
+
+<li>Servers Done and Queue. The Servers dialog now includes two addition columns, Done and Queue, which are useful for distributed rendering. Done is the number of items the server has completed, and Queue is the number of items assigned to the server but not yet completed. The items are frames during movie recording, otherwise they're rows. Both columns update dynamically if Progress is checked.
+
+<li>Servers dialog header state. The servers dialog's header state, including column widths, column order, and sort order, now persists in the registry.
+
+<li>Caption click brings bar to front. In previous versions, clicking a floating bar's non-client area (caption) didn't bring it to the front of the Z-order. The same was true for modeless dialogs. This is fixed.
+
+<li>Reverse color cycling. It's now possible to cycle colors in reverse, by entering a negative color cycling rate in the Color Cycling bar, or in the Record dialog. Note that the Color Cycling bar's slider doesn't show negative values. To allow reverse color cycling via MIDI, change the range of Color Cycling Rate to [-1..1] in the MIDI Setup dialog.
+
+<li>Duplicate frames in recording. In previous versions, recordings could contain occasional duplicate frames, particularly if the render time per frame was very short. This was due to a race condition, fixed.
+</ol>
+
+<h3>1.0.02.00</h3>
+
+<p>This version adds support for the Mandelbar (Tricorn) fractal. No other changes were made.
+
+<ol>
+<li>Added support for the Mandelbar (Tricorn) fractal. As with Mandelbrot, exponents ranging from 2 to 13 are supported. For optimal performance, exponent 2 (the default case) uses hand-coded SSE2 instructions, provided Use SSE2 is checked in Options/Engine. All other features including deep zoom, movie recording, and distributed processing are fully supported for Mandelbar.
+</ol>
+
+<h3>1.0.01.61</h3>
+
+<p>This is a bug fix release; no new features were added.
+
+<ol>
+<li>Upon entering Exclusive mode, the initial position of the mix fader was being ignored; fixed.
+<li>In the Record dialog, specifying a duration of one frame would cause a crash, due to a divide by zero; fixed.
+<li>During recording, the View menu's keyboard accelerators were being needlessly disabled; fixed.
+</ol>
+
+<h3>1.0.01.59</h3>
+
+<p>This is the initial release.
+
+<!--  content stops HERE  -->
+</div>
+</body>
+</html>

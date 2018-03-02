@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fractice - News</title>
+<meta content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<link href="./style.css" rel=stylesheet title=default type=text/css>
+</head>
+<body>
+<div class=menu>
+<a href="./index.html"><img src="./images/fractice-icon-32x32.gif" width="32" height="32" alt="icon"></a>
+<div class=title>Fractice</div><p>
+<div class=menuitem0 title="Overview"><a href="./index.html">Home</a></div>
+<div class=menuitem0 title="Movies"><a href="./movies.html">Movies</a></div>
+<div class=menuitem0 title="Gallery"><a href="./gallery/gallery1.html">Gallery</a></div>
+<div class=menuitem0 title="Screenshots"><a href="./screenshots.html">Screenshots</a></div>
+<div class=menuitem0 title="Features"><a href="./features.html">Features</a></div>
+<div class=menuitem0 title="Download"><a href="./download.html">Download</a></div>
+<div class=menuitem0 title="Documentation"><a href="./helpframe.html">Documentation</a></div>
+<div class=menuitem0 title="Development"><a href="./development.html">Development</a></div>
+<div class=menuitem0 title="FAQ"><a href="./faq.html">FAQ</a></div>
+<div class=menuitem0 title="Forums"><a href="./forums.html">Forums</a></div>
+<div class=menuitem0 title="Links"><a href="./links.html">Links</a></div>
+<div class=menuitem0 title="Contact"><a href="./contact.html">Contact</a></div><br>
+</div>
+<div id=body>
+<!--  content goes HERE  -->
+
+<h1>News</h1>
+
+<a name="2010-01-27">
+<h2>Fractice bug fix for slow shallow zooms</h2>
+
+<p>The latest release of Fractice (1.0.05) fixes a bug that made shallow (non-deep) zooms take twice as long as they should have. The bug was introduced in the previous version (1.0.04). It was pretty simple: SSE2 support was accidentally disabled for shallow zooms. Deep zooms were unaffected. Checking the "Use SSE2" checkbox in Options/Engine made no difference. The bug was present in both the 32-bit and 64-bit versions, and in both the server and the client. Sorry! All better now.
+
+<p>On a lighter note, the real-time colormapping/downsampling function that's used in full-screen Exclusive (Mixer) mode is now much better optimized, and runs two or three times faster on all platforms. This leaves more CPU time for rendering. This particular bit of code is critical because it runs at the output frame rate (typically 30 FPS) and is also single-threaded. The optimization was in the pixel averaging, and consisted of replacing three divides (one for each color channel) with a single SSE packed multiply.
+
+<p><em>2010-01-27 9:11:00 EST</em>
+
+<a name="2010-01-14">
+<h2>Fractice adds native 64-bit version</h2>
+
+<p>The latest release of Fractice (1.0.04) includes a native 64-bit version, which renders as much as 2.5 times faster than the 32-bit version.
+
+<p>The 64-bit version has been tested on Intel Core2, Intel i7, and AMD X2 CPUs, under Vista x64 and Windows 7 x64, and in all cases it proved to be at least twice as fast as the 32-bit version of Fractice running on the same PC, typically 2.5 faster for deep zooms.
+
+<p>The 64-bit download includes a 64-bit rendering server (FractServ.exe). Either version of the client (Fractice.exe) can be connected to a mix of 32-bit and 64-bit servers, ensuring maximum flexibility for distributed rendering.
+
+<p>Previous versions of Fractice used Gnu Multiple Precision (GMP) for arbitrary-precision math, however the 64-bit version uses the Multiple Precision Integers and Rationals (MPIR) fork of GMP instead, because MPIR is Windows-friendly, and includes thoroughly optimized 64-bit assembler for Intel and AMD processors, along with full support for MSVC. Thanks are due to the entire MPIR developer team, and in particular to Brian Gladman, who is responsible for the MSVC port.
+
+<p><em>2010-01-14 16:39:04 EST</em>
+
+<a name="2010-01-09">
+<h2>Fractice 1.0.03 adds multi-leg recording</h2>
+
+<p>A new release of Fractice (version 1.0.03) is now available. This release adds a major new feature called multi-leg recording, which allows a movie's trajectory to contain more than two coordinates.
+
+<p>In previous versions, a movie's trajectory consisted of only two coordinates, start and end. The trajectory can now contain any number of coordinates, defining a series of connected linear segments or "legs", AKA a polyline. This allows an entire navigation history to be turned directly into a movie, by simply dragging the history items onto the Record dialog. The leg durations are calculated automatically, based on the amount of zoom change.
+
+<p>The new version also fixes a number of bugs, some of them critical. Most importantly, the slow deep zoom cancel is fixed, by moving the cancel poll from the y-loop into the x-loop. Also a nasty race condition that could occasionally cause duplicate frames in movies is fixed. See the <a href="http://fractice.sourceforge.net/relnotes.html">release notes</a> for details. 
+
+<p><em>2010-01-09 06:47:39 EST</em>
+
+<a name="2009-08-24">
+<h2>Fractice now supports Mandelbar</h2>
+
+<p>The latest release of Fractice (1.0.02.00) adds support for the Mandelbar (Tricorn) fractal. As with Mandelbrot, exponents ranging from 2 to 13 are supported. For optimal performance, exponent 2 (the default case) uses hand-coded SSE2 instructions, provided Use SSE2 is checked in Options/Engine. All other features including deep zoom, movie recording, and distributed processing are fully supported for Mandelbar.
+
+<p><em>2009-08-24 02:39:18 EDT</em>
+
+<a name="2009-07-12">
+<h2>New release available; multi-leg recording in development</h2>
+
+<p>A new release of Fractice (version 1.0.01.61) is now available. This release fixes some minor bugs; no new features were added.
+
+<p>Fractice is a free, open-source fractal explorer/renderer for XP/Vista. It supports navigation, history, previews, antialiasing, deep zoom, printing, posters, palettes, multicore and distributed processing, movie recording, undo/redo, color cycling, job control, mixing, MIDI, and more.
+
+<p>A significant new feature called "multi-leg recording" is currently in development. A movie's "script" currently consists of a simple pair of points (start and end), but with the new feature, a script will consist of an arbitrary number of connected linear segments, or "legs". In effect, movies will be able to traverse a polyline, instead of only a single line segment. This will allow an entire navigation history to be turned directly into a movie.
+
+<p>The UI changes for multi-leg recording are completed, but the traversal math has presented unexpected obstacles, hence the need for an interim bug-fix release.
+
+<p><em>2009-07-12 04:14:13 EDT</em>
+
+<a name="roadmap">
+<h2>Fractice development roadmap</h2>
+
+<p>If you've gone to the trouble of downloading Fractice and playing with it a bit, you might be curious to know where development is headed. The Fractice roadmap looks like this:
+
+<ol>
+<p><li>Finish the documentation. That's a sizable project (estimate: at least 100 hours) so it may overlap other items.
+
+<p><li>Add an "escape time keying" feature. Right now the only way to mix two fractal images in Fractice is via transparency (alpha) mixing. This has the unavoidable side effect of desaturating the colors in both images. Luma or chroma keying might do a better job of preserving the colors, but these methods aren't compatible with color cycling.
+
+<p>Escape time keying would solve this problem. AFAIK no existing fractal software has this feature. To understand its significance you have to know something about fractals. Most fractals (including the Mandelbrot set) are normally rendered using the escape time algorithm, which is basically:
+
+<p>For each pixel, iterate the function (i.e. compute the function repeatedly, using its previous result as input) until the function "escapes" (the result exceeds some defined threshold), or the maximum number of iterations is reached. If you reach the iteration limit, set the pixel to the background color. If you escape, determine the pixel color by mapping the *number of iterations* to a color, e.g. using a look-up table. All fractal color is effectively pseudocolor: there's no color inherent in fractals, just iteration counts.
+
+<p>Escape time keying is similar to color or luma keying, except that it's done in escape time space, before the escape times are mapped to colors. The algorithm is simple: You define a range of escape times, and for each pixel in image A, if it's within the defined range, substitute the corresponding escape time from image B, and use B's color mapping. Otherwise use image A's escape time and A's color mapping. One advantage of this scheme that the keying is totally unaffected by color. Both images can be color cycling. The keying is also done before antialiasing, which should result in smoother transitions.
+
+<p><li>Make deep zoom faster. Without deep zoom, you can get to 1E+12 without problems. Above that, you'll see distortion (e.g. the image might look squashed) and somewhere around 1E+14, you'll get a blank screen. This occurs because of underflow. The FPU inside the Pentium has 80-bit precision, but that's not enough for iterative calculations with such huge (or tiny) numbers.
+
+<p>Fractice gets around this by providing a "deep zoom" option, which causes the rendering math to be done using Gnu Multiple Precision library (GMP) instead of in hardware. This allows nearly unlimited precision, but it's typically at least three orders of magnitude slower. For example, I'm working on a hi-res (640 x 480 2x antialiased) deep zoom movie that zooms in to 1E+95. It's been rendering on ~20 dual-core machines for six months (!) and it's still only 85% done. Towards the end, the movie requires 352-bit precision (!!).
+
+<p>There are various possible approaches to optimizing deep zoom. Basically they can be categorized as follows:
+
+<ol type="a">
+<p><li>More iron. Throw more hardware at the problem. Why only 20 machines? Why not 200 machines? Or 2000? Fractice supports it, but lack of access is a problem. And who pays the electric bill?
+
+<p><li>Tricks. Try to "guess" neighboring pixels instead of actually calculating them. Lots of softwares do this but the results are questionable. If you demand perfection (we do!) there's no substitute for doing the work.
+
+<p><li>Hand optimized assembler. A realistic expectation would be on the order of between three and six times faster, depending on the techniques. Not great, but we'll take it.
+</ol>
+
+<p>The GPU is interesting (384 cores!) but current GPUs have extremely limited floating-point precision. In theory it's possible to write extended precision routines for the GPU, but so far as I know no one has done this yet. This is an area worth researching. CUDA should make this easier. Success here would a major breakthrough and not only for Fractice.
+
+<p>So regarding deep zoom optimization there are two proposals underway:
+
+<ol type="a">
+<p><li>Make a 64-bit version. In theory the 64-bit version of GMP would be almost twice as fast, so it's worth a try. This is a major hassle and requires access to some tools that I don't have (yet), e.g. a machine running 64-bit Windows. Also it only helps users who are running 64-bit Windows.
+
+<p><li>Write custom fixed-point extended precision routines in assembler (for deep zoom). The innermost loop of a Mandelbrot render only requires two functions: square and add/subtract. Since GMP is designed for arbitrary precision (a much more general case) in theory it should be possible to improve considerably on GMP's performance. This project began back in December and it's pretty far along (add/subtract works, square still has some problems) but was temporarily abandoned in favor of getting a working version released.
+</ol>
+
+<p><li>Other stuff. Well there's no shortage of ideas, some easy, some hard. The ability to scroll without recomputing the entire image would be nice. Recording the mixer output would be handy. And so on. The canonical list is <a href="http://fractice.sourceforge.net/development.html">here</a>.
+</ol>
+
+<p><em>2009-04-14 23:05:25 EDT</em>
+
+<!--  content stops HERE  -->
+</div>
+</body>
+</html>

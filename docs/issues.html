@@ -1,0 +1,2202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>fractice</title>
+<meta content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<link href="./style.css" rel=stylesheet title=default type=text/css>
+</head>
+<body>
+<div class=menu>
+<a href="./index.html"><img src="./images/fractice-icon-32x32.gif" width="32" height="32" alt="icon"></a>
+<div class=title>Fractice</div><p>
+<div class=menuitem0 title="Overview"><a href="./index.html">Home</a></div>
+<div class=menuitem0 title="Movies"><a href="./movies.html">Movies</a></div>
+<div class=menuitem0 title="Gallery"><a href="./gallery/gallery1.html">Gallery</a></div>
+<div class=menuitem0 title="Screenshots"><a href="./screenshots.html">Screenshots</a></div>
+<div class=menuitem0 title="Features"><a href="./features.html">Features</a></div>
+<div class=menuitem0 title="Download"><a href="./download.html">Download</a></div>
+<div class=menuitem0 title="Documentation"><a href="./helpframe.html">Documentation</a></div>
+<div class=menuitem0 title="Development"><a href="./development.html">Development</a></div>
+<div class=menuitem0 title="FAQ"><a href="./faq.html">FAQ</a></div>
+<div class=menuitem0 title="Forums"><a href="./forums.html">Forums</a></div>
+<div class=menuitem0 title="Links"><a href="./links.html">Links</a></div>
+<div class=menuitem0 title="Contact"><a href="./contact.html">Contact</a></div><br>
+</div>
+<div id=body>
+<!--  content goes HERE  -->
+<TABLE BORDER=1 CELLPADDING=2 CELLSPACING=0>
+<TR VALIGN=TOP>
+<TD>open</TD>
+<TD>close</TD>
+<TD>type</TD>
+<TD>description</TD>
+<TD>rev</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/17/08</TD>
+<TD>done</TD>
+<TD>canceling render by rezooming causes duplicate thumbnail</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/17/08</TD>
+<TD>done</TD>
+<TD>document and history must include all settings that affect rendering</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/17/08</TD>
+<TD>done</TD>
+<TD>adding thumbnail should scroll list to bottom</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/17/08</TD>
+<TD>done</TD>
+<TD>thumbnail should include rectangle around area that was zoomed</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/18/08</TD>
+<TD>done</TD>
+<TD>show preview image at start of render if possible</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/17/08</TD>
+<TD>02/18/08</TD>
+<TD>done</TD>
+<TD>convert history to a vector of snapshot ref ptrs</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/17/08</TD>
+<TD>02/18/08</TD>
+<TD>done</TD>
+<TD>allow file drop and shell open</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/17/08</TD>
+<TD>02/18/08</TD>
+<TD>done</TD>
+<TD>add thumbnail after each render that pushed history</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/17/08</TD>
+<TD>02/18/08</TD>
+<TD>done</TD>
+<TD>store preview rect in snapshot and draw it in history OnDraw</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/19/08</TD>
+<TD>done</TD>
+<TD>movie recording</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/17/08</TD>
+<TD>02/19/08</TD>
+<TD>done</TD>
+<TD>StretchBlt frame to back buffer instead of display to speed repaint</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/20/08</TD>
+<TD>done</TD>
+<TD>if thumbnail and frame aspect ratios differ, thumbnail is distorted</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/19/08</TD>
+<TD>02/20/08</TD>
+<TD>done</TD>
+<TD>scroll view, make fit in window optional</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/20/08</TD>
+<TD>02/20/08</TD>
+<TD>done</TD>
+<TD>progress bar makes screen artifacts when sizing scroll view</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/20/08</TD>
+<TD>02/20/08</TD>
+<TD>done</TD>
+<TD>frame memcpy could be avoided using buffer swapping</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/21/08</TD>
+<TD>done</TD>
+<TD>allow thumbnail size to vary</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/21/08</TD>
+<TD>done</TD>
+<TD>thumbnail list should indicate current history position</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/20/08</TD>
+<TD>02/21/08</TD>
+<TD>done</TD>
+<TD>in fit in window mode, center zoom doesn't behave as expected </TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/20/08</TD>
+<TD>02/21/08</TD>
+<TD>done</TD>
+<TD>drag mode should have continuous preview</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/08</TD>
+<TD>02/21/08</TD>
+<TD>done</TD>
+<TD>wheel zooming</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/08</TD>
+<TD>02/21/08</TD>
+<TD>done</TD>
+<TD>history delete</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/08</TD>
+<TD>02/22/08</TD>
+<TD>done</TD>
+<TD>disable view progress bar during recording</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/19/08</TD>
+<TD>02/23/08</TD>
+<TD>done</TD>
+<TD>antialiasing via downsampling</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/22/08</TD>
+<TD>02/24/08</TD>
+<TD>done</TD>
+<TD>after canceling render, settings aren't restored to previous values</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/08</TD>
+<TD>02/25/08</TD>
+<TD>done</TD>
+<TD>zooming or dragging while rendering causes incorrect preview</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/25/08</TD>
+<TD>02/25/08</TD>
+<TD>done</TD>
+<TD>compensate for bottom-up DIB by flipping y-axis in engine</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/08</TD>
+<TD>02/26/08</TD>
+<TD>done</TD>
+<TD>printing and print preview</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>02/27/08</TD>
+<TD>done</TD>
+<TD>multi-core rendering</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>03/05/08</TD>
+<TD>done</TD>
+<TD>full-screen mode</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>03/05/08</TD>
+<TD>done</TD>
+<TD>palette editor</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>03/05/08</TD>
+<TD>done</TD>
+<TD>allow palette to be changed without re-rendering</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/06/08</TD>
+<TD>03/06/08</TD>
+<TD>done</TD>
+<TD>give gradient control an eydropper</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/05/08</TD>
+<TD>03/09/08</TD>
+<TD>done</TD>
+<TD>palette editor should allow multiple selections</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/06/08</TD>
+<TD>03/09/08</TD>
+<TD>done</TD>
+<TD>dragging shade picker's arrow doesn't release capture</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/06/08</TD>
+<TD>03/09/08</TD>
+<TD>done</TD>
+<TD>gradient interpolation must handle missing start or end point</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/09/08</TD>
+<TD>03/10/08</TD>
+<TD>done</TD>
+<TD>point zoom should keep image centered on the point</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/11/08</TD>
+<TD>03/13/08</TD>
+<TD>done</TD>
+<TD>entering coordinates manually doesn't generate thumb rect</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/10/08</TD>
+<TD>03/14/08</TD>
+<TD>done</TD>
+<TD>alternate document that saves entire project including history</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/14/08</TD>
+<TD>03/14/08</TD>
+<TD>done</TD>
+<TD>entering zero zoom in coords dialog crashes app</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/05/08</TD>
+<TD>03/15/08</TD>
+<TD>done</TD>
+<TD>add properties to history context menu</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/05/08</TD>
+<TD>03/15/08</TD>
+<TD>done</TD>
+<TD>import RGB palettes</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/15/08</TD>
+<TD>03/18/08</TD>
+<TD>done</TD>
+<TD>archive signature is backwards</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>03/20/08</TD>
+<TD>done</TD>
+<TD>undo and redo</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/05/08</TD>
+<TD>03/20/08</TD>
+<TD>done</TD>
+<TD>save changes warning</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/20/08</TD>
+<TD>03/20/08</TD>
+<TD>done</TD>
+<TD>undo should remove previous snapshot's detail rectangle</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/08</TD>
+<TD>03/26/08</TD>
+<TD>done</TD>
+<TD>history should allow multiple selections</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/23/08</TD>
+<TD>03/26/08</TD>
+<TD>done</TD>
+<TD>continuous mouse zooming</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/01/08</TD>
+<TD>03/28/08</TD>
+<TD>done</TD>
+<TD>menu radio button is too small</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/11/08</TD>
+<TD>03/28/08</TD>
+<TD>done</TD>
+<TD>changing palette during a render behaves unexpectedly</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/27/08</TD>
+<TD>03/28/08</TD>
+<TD>done</TD>
+<TD>keyboard shortcuts for image commands (ss)</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>04/03/08</TD>
+<TD>done</TD>
+<TD>make record dialog modeless</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>04/03/08</TD>
+<TD>done</TD>
+<TD>drag thumbnails from history to record dialog</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>04/10/08</TD>
+<TD>done</TD>
+<TD>engine should always return escape times</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>04/13/08</TD>
+<TD>done</TD>
+<TD>include record info in project container</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>04/15/08</TD>
+<TD>done</TD>
+<TD>try other high-precision math libraries; GMP is the best</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/15/08</TD>
+<TD>04/17/08</TD>
+<TD>done</TD>
+<TD>include math precision in snapshot and project</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/17/08</TD>
+<TD>04/21/08</TD>
+<TD>done</TD>
+<TD>parameters bar</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/08</TD>
+<TD>04/25/08</TD>
+<TD>done</TD>
+<TD>reduce progress bar overhead; drive it with a timer</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/24/08</TD>
+<TD>04/25/08</TD>
+<TD>done</TD>
+<TD>SSE2 support</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/24/08</TD>
+<TD>04/26/08</TD>
+<TD>done</TD>
+<TD>marquee/hand/zoom tools</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/24/08</TD>
+<TD>04/29/08</TD>
+<TD>done</TD>
+<TD>show axes</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/22/08</TD>
+<TD>04/30/08</TD>
+<TD>done</TD>
+<TD>changing cycle length should apply palette instead of rendering</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>05/01/08</TD>
+<TD>05/01/08</TD>
+<TD>done</TD>
+<TD>busy count goes negative due to race condition in engine</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>05/07/08</TD>
+<TD>05/07/08</TD>
+<TD>done</TD>
+<TD>if snapshot is preview source, deleting it causes incorrect preview</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>05/03/08</TD>
+<TD>05/08/08</TD>
+<TD>done</TD>
+<TD>ctrl+wheel doesn't work if control bar has focus</TD>
+<TD>1.0.00.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/10/08</TD>
+<TD>05/15/08</TD>
+<TD>done</TD>
+<TD>record dialog needs start/end frame option</TD>
+<TD>1.0.00.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/10/08</TD>
+<TD>05/15/08</TD>
+<TD>done</TD>
+<TD>add record to bitmaps option</TD>
+<TD>1.0.00.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>05/16/08</TD>
+<TD>done</TD>
+<TD>distributed movie rendering via network client/server</TD>
+<TD>1.0.00.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/11/08</TD>
+<TD>05/18/08</TD>
+<TD>done</TD>
+<TD>histogram should have optional reticle</TD>
+<TD>1.0.00.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>07/24/08</TD>
+<TD>07/24/08</TD>
+<TD>done</TD>
+<TD>during grid control edit, clicking different row doesn't apply change</TD>
+<TD>1.0.00.52</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>05/16/08</TD>
+<TD>09/15/08</TD>
+<TD>done</TD>
+<TD>add find servers dialog; allow multiple selection, show busy servers</TD>
+<TD>1.0.00.53</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>05/21/08</TD>
+<TD>10/10/08</TD>
+<TD>done</TD>
+<TD>detect gaps in frame sequence and repair them</TD>
+<TD>1.0.00.55</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>05/16/08</TD>
+<TD>10/14/08</TD>
+<TD>done</TD>
+<TD>distributed movie render must create AVI file from bitmaps</TD>
+<TD>1.0.00.58</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/16/08</TD>
+<TD>10/16/08</TD>
+<TD>done</TD>
+<TD>allow port number to be changed, and make UDP server optional</TD>
+<TD>1.0.00.59</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/16/08</TD>
+<TD>10/17/08</TD>
+<TD>done</TD>
+<TD>in servers dialog, need option to add a list of hostnames</TD>
+<TD>1.0.00.60</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/12/08</TD>
+<TD>10/20/08</TD>
+<TD>done</TD>
+<TD>show server performance statistics</TD>
+<TD>1.0.00.62</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/12/08</TD>
+<TD>10/20/08</TD>
+<TD>done</TD>
+<TD>aborting a recording should send cancel to servers</TD>
+<TD>1.0.00.63</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/11/08</TD>
+<TD>10/23/08</TD>
+<TD>done</TD>
+<TD>job queue for batch rendering movies</TD>
+<TD>1.0.00.68</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/24/08</TD>
+<TD>10/24/08</TD>
+<TD>done</TD>
+<TD>add parameters control to record dialog</TD>
+<TD>1.0.00.70</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/25/08</TD>
+<TD>10/26/08</TD>
+<TD>done</TD>
+<TD>handle record points with different parameters/palettes</TD>
+<TD>1.0.00.72</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/25/08</TD>
+<TD>10/26/08</TD>
+<TD>done</TD>
+<TD>open/save palette from within palette dialog, via context menu</TD>
+<TD>1.0.00.73</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/25/08</TD>
+<TD>10/26/08</TD>
+<TD>done</TD>
+<TD>preview option in palette file dialog</TD>
+<TD>1.0.00.74</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>10/27/08</TD>
+<TD>done</TD>
+<TD>make palette dialog resizeable</TD>
+<TD>1.0.00.74</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/30/08</TD>
+<TD>10/27/08</TD>
+<TD>done</TD>
+<TD>options for continuous zoom step, grid color</TD>
+<TD>1.0.00.75</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/27/08</TD>
+<TD>10/29/08</TD>
+<TD>done</TD>
+<TD>recover incomplete recording; for bitmaps only</TD>
+<TD>1.0.00.77</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/25/08</TD>
+<TD>10/30/08</TD>
+<TD>done</TD>
+<TD>in servers dialog, show a progress bar for each server</TD>
+<TD>1.0.00.79</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/01/08</TD>
+<TD>11/01/08</TD>
+<TD>done</TD>
+<TD>restore defaults button in options dialog</TD>
+<TD>1.0.00.82</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/02/08</TD>
+<TD>11/05/08</TD>
+<TD>done</TD>
+<TD>server /client arg; if present, server connects to specified client</TD>
+<TD>1.0.00.86</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/27/08</TD>
+<TD>11/06/08</TD>
+<TD>done</TD>
+<TD>clipboard support for history</TD>
+<TD>1.0.00.87</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/06/08</TD>
+<TD>11/08/08</TD>
+<TD>done</TD>
+<TD>history should indicate selection and rendered item separately</TD>
+<TD>1.0.00.89</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>11/13/08</TD>
+<TD>done</TD>
+<TD>drag reordering of history with automatic scrolling</TD>
+<TD>1.0.00.90</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/06/08</TD>
+<TD>11/14/08</TD>
+<TD>done</TD>
+<TD>select history span via editing keys</TD>
+<TD>1.0.00.90</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/15/08</TD>
+<TD>11/18/08</TD>
+<TD>done</TD>
+<TD>convert to MDI</TD>
+<TD>1.0.00.93</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/01/08</TD>
+<TD>11/21/08</TD>
+<TD>done</TD>
+<TD>snapshot should include palette name</TD>
+<TD>1.0.00.97</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/15/08</TD>
+<TD>11/22/08</TD>
+<TD>done</TD>
+<TD>grid control should support drop list</TD>
+<TD>1.0.00.98</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/05/08</TD>
+<TD>11/28/08</TD>
+<TD>done</TD>
+<TD>if selecting a snapshot only changes palette, don't re-render</TD>
+<TD>1.0.01.02</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/28/08</TD>
+<TD>11/29/08</TD>
+<TD>done</TD>
+<TD>show states of tool dialogs should be persistent</TD>
+<TD>1.0.01.03</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/29/08</TD>
+<TD>11/29/08</TD>
+<TD>done</TD>
+<TD>shell open causes incorrect history scroll bar position</TD>
+<TD>1.0.01.07</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/30/08</TD>
+<TD>12/02/08</TD>
+<TD>done</TD>
+<TD>show grid instead of just axes</TD>
+<TD>1.0.01.08</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>12/08/08</TD>
+<TD>done</TD>
+<TD>remember recent image size, quality and antialiasing values</TD>
+<TD>1.0.01.09</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/20/08</TD>
+<TD>12/10/08</TD>
+<TD>done</TD>
+<TD>project should include bitmap of current image</TD>
+<TD>1.0.01.10</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>12/15/08</TD>
+<TD>done</TD>
+<TD>distributed exploring; render strips</TD>
+<TD>1.0.01.12</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/15/08</TD>
+<TD>12/15/08</TD>
+<TD>done</TD>
+<TD>changing server listening port fails until app is restarted</TD>
+<TD>1.0.01.14</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/15/08</TD>
+<TD>12/16/08</TD>
+<TD>done</TD>
+<TD>restoring app also unexpectedly restores iconic tool dialogs</TD>
+<TD>1.0.01.15</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/25/08</TD>
+<TD>12/19/08</TD>
+<TD>done</TD>
+<TD>show view's render time; add extra row to servers dialog for local host</TD>
+<TD>1.0.01.16</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/15/08</TD>
+<TD>12/20/08</TD>
+<TD>done</TD>
+<TD>add/remove server(s) during strip job</TD>
+<TD>1.0.01.17</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/12/08</TD>
+<TD>12/21/08</TD>
+<TD>done</TD>
+<TD>reserve space for fractal type in documents</TD>
+<TD>1.0.01.18</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/11/08</TD>
+<TD>12/22/08</TD>
+<TD>done</TD>
+<TD>support other fractal types, e.g. Newton, Lyapunov?</TD>
+<TD>1.0.01.20</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/22/08</TD>
+<TD>12/22/08</TD>
+<TD>done</TD>
+<TD>make parameter bar's column widths persistent</TD>
+<TD>1.0.01.21</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>12/26/08</TD>
+<TD>done</TD>
+<TD>activating app by left-clicking view unexpectedly renders</TD>
+<TD>1.0.01.23</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/27/08</TD>
+<TD>12/27/08</TD>
+<TD>done</TD>
+<TD>make palette dialog a control bar</TD>
+<TD>1.0.01.24</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/23/08</TD>
+<TD>12/28/08</TD>
+<TD>done</TD>
+<TD>undo for individual palette edits</TD>
+<TD>1.0.01.25</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/22/08</TD>
+<TD>12/29/08</TD>
+<TD>done</TD>
+<TD>Mandelbrot higher powers; cubic, quartic, etc.</TD>
+<TD>1.0.01.26</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/15/08</TD>
+<TD>12/30/08</TD>
+<TD>done</TD>
+<TD>canceling a slow render freezes app; show wait cursor</TD>
+<TD>1.0.01.28</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/03/09</TD>
+<TD>01/05/09</TD>
+<TD>done</TD>
+<TD>optionally cache full-size images in project history</TD>
+<TD>1.0.01.29</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/04/09</TD>
+<TD>01/05/09</TD>
+<TD>done</TD>
+<TD>destroying view doesn't destroy history view</TD>
+<TD>1.0.01.29</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/27/08</TD>
+<TD>01/07/09</TD>
+<TD>done</TD>
+<TD>generate movie from bitmap sequence; external BmpToAvi app</TD>
+<TD>1.0.01.29</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/10/09</TD>
+<TD>01/10/09</TD>
+<TD>done</TD>
+<TD>set GMP precision explicitly, don't rely on default</TD>
+<TD>1.0.01.31</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/23/08</TD>
+<TD>01/11/09</TD>
+<TD>done</TD>
+<TD>bitmap export should allow override of dimensions and resolution</TD>
+<TD>1.0.01.32</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/23/08</TD>
+<TD>01/11/09</TD>
+<TD>done</TD>
+<TD>allow bitmap exports to be queued to job control</TD>
+<TD>1.0.01.32</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/08/08</TD>
+<TD>01/11/09</TD>
+<TD>done</TD>
+<TD>poster export; write strips to disk to reduce memory usage</TD>
+<TD>1.0.01.32</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/12/09</TD>
+<TD>01/12/09</TD>
+<TD>done</TD>
+<TD>include bits per pixel in record info</TD>
+<TD>1.0.01.33</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/11/09</TD>
+<TD>01/16/09</TD>
+<TD>done</TD>
+<TD>poster pause/resume</TD>
+<TD>1.0.01.34</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/17/09</TD>
+<TD>01/17/09</TD>
+<TD>done</TD>
+<TD>include version number in snapshot</TD>
+<TD>1.0.01.35</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/18/09</TD>
+<TD>01/19/09</TD>
+<TD>done</TD>
+<TD>enable Cancel command only while rendering</TD>
+<TD>1.0.01.36</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/29/08</TD>
+<TD>01/24/09</TD>
+<TD>done</TD>
+<TD>allow palette files to be opened via drop</TD>
+<TD>1.0.01.36</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>01/25/09</TD>
+<TD>done</TD>
+<TD>palette editor should allow dragging multiple selection</TD>
+<TD>1.0.01.36</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/31/09</TD>
+<TD>02/02/09</TD>
+<TD>done</TD>
+<TD>add color offset and color mapping bar</TD>
+<TD>1.0.01.37</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/02/09</TD>
+<TD>02/03/09</TD>
+<TD>done</TD>
+<TD>color mapping bar's sliders should coalesce edits</TD>
+<TD>1.0.01.38</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/05/09</TD>
+<TD>02/05/09</TD>
+<TD>done</TD>
+<TD>handle palette wraparound</TD>
+<TD>1.0.01.39</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/31/09</TD>
+<TD>02/06/09</TD>
+<TD>done</TD>
+<TD>Esc should cancel drag</TD>
+<TD>1.0.01.40</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/05/09</TD>
+<TD>02/06/09</TD>
+<TD>done</TD>
+<TD>color cycling</TD>
+<TD>1.0.01.40</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/23/08</TD>
+<TD>02/07/09</TD>
+<TD>done</TD>
+<TD>optionally save escape times</TD>
+<TD>1.0.01.40</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/06/09</TD>
+<TD>02/08/09</TD>
+<TD>done</TD>
+<TD>use property sheet for options</TD>
+<TD>1.0.01.41</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/08/09</TD>
+<TD>02/10/09</TD>
+<TD>done</TD>
+<TD>if no idle time, going full-screen doesn't hide bars</TD>
+<TD>1.0.01.42</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/30/08</TD>
+<TD>02/11/09</TD>
+<TD>done</TD>
+<TD>recorder's bitmap recovery shouldn't be interactive in batch mode</TD>
+<TD>1.0.01.42</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/24/09</TD>
+<TD>02/11/09</TD>
+<TD>done</TD>
+<TD>record and poster progress should show percent done</TD>
+<TD>1.0.01.42</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/06/09</TD>
+<TD>02/11/09</TD>
+<TD>done</TD>
+<TD>color cycling in movies</TD>
+<TD>1.0.01.42</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/21/09</TD>
+<TD>02/12/09</TD>
+<TD>done</TD>
+<TD>handle multiple network adapters</TD>
+<TD>1.0.01.43</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/13/09</TD>
+<TD>02/14/09</TD>
+<TD>done</TD>
+<TD>don't store redundant escape times for color-only edits</TD>
+<TD>1.0.01.44</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/06/09</TD>
+<TD>02/16/09</TD>
+<TD>done</TD>
+<TD>fast color cycling causes tearing; use DirectDraw</TD>
+<TD>1.0.01.45</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/06/09</TD>
+<TD>02/16/09</TD>
+<TD>done</TD>
+<TD>support dual-monitor</TD>
+<TD>1.0.01.45</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/06/09</TD>
+<TD>02/16/09</TD>
+<TD>done</TD>
+<TD>mirror mode with origin motion</TD>
+<TD>1.0.01.45</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/22/08</TD>
+<TD>02/18/09</TD>
+<TD>done</TD>
+<TD>include imported palettes in most recently used palettes</TD>
+<TD>1.0.01.45</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/20/09</TD>
+<TD>02/21/09</TD>
+<TD>done</TD>
+<TD>properties dialog exits exclusive mode; main thread must own dialog</TD>
+<TD>1.0.01.46</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/06/09</TD>
+<TD>02/22/09</TD>
+<TD>done</TD>
+<TD>optimize color mapping in MMX</TD>
+<TD>1.0.01.46</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/19/09</TD>
+<TD>02/22/09</TD>
+<TD>done</TD>
+<TD>tween palette changes in exclusive mode</TD>
+<TD>1.0.01.46</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/18/09</TD>
+<TD>02/24/09</TD>
+<TD>done</TD>
+<TD>render multiple selected history items</TD>
+<TD>1.0.01.47</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/09</TD>
+<TD>02/24/09</TD>
+<TD>done</TD>
+<TD>delete escape times from selected items</TD>
+<TD>1.0.01.47</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/23/09</TD>
+<TD>02/24/09</TD>
+<TD>done</TD>
+<TD>non-client events shouldn't block message loop in exclusive mode</TD>
+<TD>1.0.01.47</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/23/09</TD>
+<TD>02/25/09</TD>
+<TD>done</TD>
+<TD>file browser bar</TD>
+<TD>1.0.01.47</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/01/08</TD>
+<TD>02/26/09</TD>
+<TD>done</TD>
+<TD>export selected history items</TD>
+<TD>1.0.01.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/26/09</TD>
+<TD>done</TD>
+<TD>add image cached and escape times to properties dialog</TD>
+<TD>1.0.01.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/26/09</TD>
+<TD>done</TD>
+<TD>history command to uncache selected images; warn user first</TD>
+<TD>1.0.01.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/26/09</TD>
+<TD>done</TD>
+<TD>escape must exit single-monitor exclusive</TD>
+<TD>1.0.01.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/26/09</TD>
+<TD>done</TD>
+<TD>items with escape times but no image are rendered; should be remapped</TD>
+<TD>1.0.01.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/26/09</TD>
+<TD>done</TD>
+<TD>distributed render of multiple items stalls after first item; use PostMessage</TD>
+<TD>1.0.01.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/27/09</TD>
+<TD>done</TD>
+<TD>strip renders should do color mapping in engine thread</TD>
+<TD>1.0.01.48</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/27/09</TD>
+<TD>done</TD>
+<TD>decouple exclusive source from active document; add mixer bar</TD>
+<TD>1.0.01.49</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/27/09</TD>
+<TD>done</TD>
+<TD>move mirroring, tweening, origin motion from options to mixer bar</TD>
+<TD>1.0.01.49</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>02/27/09</TD>
+<TD>done</TD>
+<TD>move frame rate option from palette page to display page</TD>
+<TD>1.0.01.49</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/27/09</TD>
+<TD>03/01/09</TD>
+<TD>done</TD>
+<TD>tween halts color cycling; must cycle both old and new palettes</TD>
+<TD>1.0.01.50</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/27/09</TD>
+<TD>03/01/09</TD>
+<TD>done</TD>
+<TD>arrow keys should scroll view; add scroll delta option</TD>
+<TD>1.0.01.50</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/27/09</TD>
+<TD>03/02/09</TD>
+<TD>done</TD>
+<TD>child frame non-client events blocking message loop in exclusive mode</TD>
+<TD>1.0.01.50</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/23/09</TD>
+<TD>03/04/09</TD>
+<TD>done</TD>
+<TD>MIDI support</TD>
+<TD>1.0.01.51</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>03/10/09</TD>
+<TD>done</TD>
+<TD>crossfading between documents</TD>
+<TD>1.0.01.52</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>03/10/09</TD>
+<TD>done</TD>
+<TD>allow mixer channels to have different origin motions</TD>
+<TD>1.0.01.52</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>03/10/09</TD>
+<TD>done</TD>
+<TD>automated crossfading</TD>
+<TD>1.0.01.52</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/10/09</TD>
+<TD>03/11/09</TD>
+<TD>done</TD>
+<TD>palette dropped on a view should open in that view, active or not</TD>
+<TD>1.0.01.52</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/11/09</TD>
+<TD>03/11/09</TD>
+<TD>done</TD>
+<TD>escape should cancel palette drag</TD>
+<TD>1.0.01.52</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/12/09</TD>
+<TD>03/13/09</TD>
+<TD>done</TD>
+<TD>if project is saved with no current history item, reopening it crashes</TD>
+<TD>1.0.01.53</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/13/09</TD>
+<TD>03/13/09</TD>
+<TD>done</TD>
+<TD>quality change needlessly reallocates palette in exclusive mode</TD>
+<TD>1.0.01.53</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/18/09</TD>
+<TD>03/14/09</TD>
+<TD>done</TD>
+<TD>slide show of selected history items</TD>
+<TD>1.0.01.54</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/12/09</TD>
+<TD>03/14/09</TD>
+<TD>done</TD>
+<TD>transform parameters/palette of selected history items</TD>
+<TD>1.0.01.54</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/14/09</TD>
+<TD>03/16/09</TD>
+<TD>done</TD>
+<TD>demo mode</TD>
+<TD>1.0.01.55</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/06/09</TD>
+<TD>03/23/09</TD>
+<TD>done</TD>
+<TD>control bar system menu command to enable/disable docking</TD>
+<TD>1.0.01.57</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/21/09</TD>
+<TD>03/23/09</TD>
+<TD>done</TD>
+<TD>subdivide MIDI properties into global and channel properties</TD>
+<TD>1.0.01.57</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/23/09</TD>
+<TD>03/24/09</TD>
+<TD>done</TD>
+<TD>if app launches maximized, docked sizing bars expand</TD>
+<TD>1.0.01.57</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/18/09</TD>
+<TD>03/25/09</TD>
+<TD>done</TD>
+<TD>if app is maximized, entering/exiting dual-monitor exclusive flickers</TD>
+<TD>1.0.01.57</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/23/09</TD>
+<TD>03/26/09</TD>
+<TD>done</TD>
+<TD>animate fader during autofade</TD>
+<TD>1.0.01.57</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/29/09</TD>
+<TD>03/29/09</TD>
+<TD>done</TD>
+<TD>for some MIDI properties, channel B's controllers access channel A</TD>
+<TD>1.0.01.58</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/29/09</TD>
+<TD>03/29/09</TD>
+<TD>done</TD>
+<TD>in OnEditOptions, don't restore MIDI defaults</TD>
+<TD>1.0.01.58</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/29/09</TD>
+<TD>03/29/09</TD>
+<TD>done</TD>
+<TD>if damping exceeds [0..1] due to MIDI setup range, app crashes</TD>
+<TD>1.0.01.59</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/28/09</TD>
+<TD>03/30/09</TD>
+<TD>done</TD>
+<TD>save/open mixer settings</TD>
+<TD>1.0.01.59</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/28/09</TD>
+<TD>03/30/09</TD>
+<TD>done</TD>
+<TD>loading mixer settings should also load source documents</TD>
+<TD>1.0.01.59</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/30/09</TD>
+<TD>03/31/09</TD>
+<TD>done</TD>
+<TD>on display change, rebuild options dialog's display list</TD>
+<TD>1.0.01.59</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/30/09</TD>
+<TD>03/31/09</TD>
+<TD>done</TD>
+<TD>add refresh list button to MIDI options page</TD>
+<TD>1.0.01.59</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>05/24/09</TD>
+<TD>06/01/09</TD>
+<TD>done</TD>
+<TD>on entering exclusive mode, initial position of mix fader is ignored</TD>
+<TD>1.0.01.60</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>06/30/09</TD>
+<TD>07/01/09</TD>
+<TD>done</TD>
+<TD>parameters control's image list must be a member</TD>
+<TD>1.0.01.61</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>07/04/09</TD>
+<TD>07/05/09</TD>
+<TD>done</TD>
+<TD>movie duration of one frame causes divide by zero</TD>
+<TD>1.0.01.61</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>07/04/09</TD>
+<TD>07/05/09</TD>
+<TD>done</TD>
+<TD>view keyboard accelerators should work while recording</TD>
+<TD>1.0.01.61</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/22/08</TD>
+<TD>07/23/09</TD>
+<TD>done</TD>
+<TD>Mandelbar set</TD>
+<TD>1.0.02.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>12/03/09</TD>
+<TD>done</TD>
+<TD>movie recording should allow more than two points</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/03/09</TD>
+<TD>12/03/09</TD>
+<TD>done</TD>
+<TD>in history bar, canceling drag should also stop scrolling</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/03/09</TD>
+<TD>12/03/09</TD>
+<TD>done</TD>
+<TD>in history bar and record dialog, highlight drop position </TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/02/09</TD>
+<TD>12/04/09</TD>
+<TD>done</TD>
+<TD>zooming beyond range of double gives incorrect X/Y positions</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/07/09</TD>
+<TD>12/08/09</TD>
+<TD>done</TD>
+<TD>non-client button down in dialog or floating bar should activate it immediately</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/09/09</TD>
+<TD>12/11/09</TD>
+<TD>done</TD>
+<TD>add done and queue columns to servers dialog</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/11/09</TD>
+<TD>12/11/09</TD>
+<TD>done</TD>
+<TD>make servers dialog's header state persistent</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/12/09</TD>
+<TD>12/12/09</TD>
+<TD>done</TD>
+<TD>local host's progress doesn't always reach 100% for normal renders</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/12/09</TD>
+<TD>12/12/09</TD>
+<TD>done</TD>
+<TD>crash on canceling distributed render that increases image size or antialiasing</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/01/08</TD>
+<TD>12/13/09</TD>
+<TD>done</TD>
+<TD>canceling deep zoom render is too slow, due to infrequent polling</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/16/09</TD>
+<TD>12/16/09</TD>
+<TD>done</TD>
+<TD>add insert button to record dialog; show select images dialog</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/22/09</TD>
+<TD>12/22/09</TD>
+<TD>done</TD>
+<TD>reverse color cycling; allow negative color cycling rate</TD>
+<TD>1.0.03.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/25/09</TD>
+<TD>12/25/09</TD>
+<TD>done</TD>
+<TD>if record status is hidden during recording, and shown afterwards, data is stale</TD>
+<TD>1.0.03.01</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/25/09</TD>
+<TD>12/25/09</TD>
+<TD>done</TD>
+<TD>for recordings shorter than one second, record status fields remain blank</TD>
+<TD>1.0.03.01</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/25/09</TD>
+<TD>12/25/09</TD>
+<TD>done</TD>
+<TD>when aborting deep zoom recording, servers don't cancel immediately</TD>
+<TD>1.0.03.01</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/25/09</TD>
+<TD>12/27/09</TD>
+<TD>done</TD>
+<TD>status dialog is inconsistent after recording, esp if progress enabled</TD>
+<TD>1.0.03.01</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/27/09</TD>
+<TD>12/27/09</TD>
+<TD>done</TD>
+<TD>duplicate frames in recording; output frame before starting next render</TD>
+<TD>1.0.03.01</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/27/09</TD>
+<TD>12/28/09</TD>
+<TD>done</TD>
+<TD>can't reverse color cycling via MIDI</TD>
+<TD>1.0.03.01</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/01/08</TD>
+<TD>01/06/10</TD>
+<TD>done</TD>
+<TD>64-bit version</TD>
+<TD>1.0.04.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/09/09</TD>
+<TD>01/09/10</TD>
+<TD>done</TD>
+<TD>show bignum version/platform in servers dialog and About box</TD>
+<TD>1.0.04.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/14/10</TD>
+<TD>01/27/10</TD>
+<TD>done</TD>
+<TD>in x64, port tween engine's colormap/downsample to MMX</TD>
+<TD>1.0.05.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/27/10</TD>
+<TD>01/27/10</TD>
+<TD>done</TD>
+<TD>SSE2 accidentally disabled in 1.0.4; fix conditionals in Engine.cpp</TD>
+<TD>1.0.05.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/14/10</TD>
+<TD>02/01/10</TD>
+<TD>done</TD>
+<TD>in x64, port tween engine's dib mix and palette tween to MMX</TD>
+<TD>1.0.06.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/14/10</TD>
+<TD>03/16/10</TD>
+<TD>done</TD>
+<TD>in x64, render four pixels at once per thread in SSE code</TD>
+<TD>1.0.06.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/15/10</TD>
+<TD>03/16/10</TD>
+<TD>done</TD>
+<TD>add export and transform to history context menu</TD>
+<TD>1.0.06.00</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/11/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>distance estimator</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/28/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>temporal antialiasing</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/15/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>automatically use bignums for zoom above specified threshold</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/24/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>show orbits</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/24/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>show coordinates and iteration count at cursor; navigator bar?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/24/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>Julia sets</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/23/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>in job control, if shutdown enabled, save check before starting jobs</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/30/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>log file; job start, stop, total rendering time, frames, etc.</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/24/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>try fixed point math for deep zoom</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/01/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>save snapshots of selected history items</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/02/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>grid numbers are all the same at high zooms</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/02/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>improve performance via guessing</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/02/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>rotation of fractal</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/02/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>when dragging, only render invalidated portion of frame</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/23/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>export escape times; to what format?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/29/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>undo apply palette followed by apply palette causes a needless re-render</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/29/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>palette edit undo is confusing; auto-apply palette edits?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/29/08</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>deep zoom for Mandelbrot higher powers</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/10/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>after recording, current history position may not match image state</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/31/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>palette editor should allow multiple selection to be resized</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/31/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>NET Unicode version won't link to BmpToAvi; port BmpToAvi to NET</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/02/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>show commas in bounds and coordinates dialogs</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/19/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>open/save doc with escape times can be slow; show progress</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>if no escape times, exclusive shows blank screen; warn? start render?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/25/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>non-destructive palette preview in files bar, esp. in exclusive mode</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/26/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>luma/chroma keying</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/27/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>escape time keying; unaffected by color changes</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/27/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>mixer should show thumbnails of sources</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/08/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>freeframe effects</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/10/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>record mixer output; disable movie recording in exclusive mode</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/28/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>boolean mixing: xor etc. can it still have a crossfader?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/28/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>momentary control to make B motion same as A, or vice versa</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/28/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>MIDI select next/prev history item; same for palettes</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/28/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>single click zoom, at least optionally; separate tool?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/29/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>MIDI map slide show settings</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>06/04/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>mix document doesn't save origins</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>07/03/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>can't undo record dialog edits</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/22/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>options MIDI refresh should preserve selected device if possible</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/09/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>show machine type and clock speed in servers dialog</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/16/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>pressing Ctrl+A in record dialog selects all in history view</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/18/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>in multi-leg recording, panning is ignored when calculating leg durations</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/18/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>if only one server is rendering, deleting it hangs job; should reprime</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/21/09</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>UI to customize leg durations in a multi-leg recording</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/14/10</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>in x64, use SSE instrinsics for rounding</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/24/10</TD>
+<TD>&nbsp;</TD>
+<TD>hold</TD>
+<TD>add GDI+ bicubic resizing as optional alternative to bilinear</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>maximizing app causes docked history bar to glitch briefly</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>changing frame size can cause black or missing preview</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/16/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>animate preview image, zooming it up to window size; fancy</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/20/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>for big frames in fit in window mode, stretch blit blocks UI</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/20/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>with xvid, first 3 frames are always the same; uncompressed is ok</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/21/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>zooming back out adds duplicate snapshots to history</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/28/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>ctrl+arrow keys should move origin</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/01/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>generalize history view to work with any list of snapshots</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>04/15/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>histogram should optionally include background value</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>05/14/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>minimize server to tray; how to do this in console app?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/12/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>support named pipes as an alternative to TCP</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/27/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>NET uninstall removes BmpToAvi when it shouldn't; use VC6 installer?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/30/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>client-side port override for individual servers, via hostname:port</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/31/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>view sometimes unpainted until render done; remote desktop only?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>10/31/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>server time estimate is sometimes way off at beginning of job</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/19/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>undocking/docking history bar changes scroll position</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/22/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>popup combo box doesn't support exit keys</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/25/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>zooming out or dragging can cause unpainted border around image</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>11/29/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>distributed record to bitmaps misses frames; can't reproduce it</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/07/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>grid numbers shouldn't scroll with image</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/15/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>server can connect to another server via client flag; feature?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/15/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>compress strips to increase network throughput; small gain</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/16/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>strip render seems slightly noisier than single-engine render</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/16/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>if shell open fails, MDI child window zoomed state is lost</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/16/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>placement of iconic tool dialogs doesn’t persist; can of worms</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/16/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>mixed strips from VC6 and .NET engines don't line up near FPU limit</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/22/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>newton deep zoom; it all looks the same so why bother?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>12/29/08</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>exiting print preview restores iconic tool dialogs</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/11/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>Photoshop erroneously computes DPI using 39.36 inches per meter</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/06/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>include full screen in image size menu; size of which monitor?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/14/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>if cycling color, cycle length slider should have immediate effect</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/24/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>thumbnail stretch blit causes significant delay; use worker thread?</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/25/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>move origin in escape frame coords: smoother, but causes temporal aliasing</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/27/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>opening palette can block message loop; cache? use ram drive</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/27/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>horizontal/vertical split screen; flattens origin motion to a single axis</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>02/28/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>in exclusive, color cycling sometimes splits a render between two palettes</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/01/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>if scrolls are coalesced, thumbnail detail rectangle doesn't update</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/02/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>make options dialog resizable; no need, stacked tabs are fine</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/13/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>status bar indicators don't update if there's no idle time</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/15/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>engine's wait cursor is visible in single monitor exclusive</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/25/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>in dual-monitor exclusive, can't dock bars via dragging; due to non-blocking</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>03/29/09</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>save slide show settings in document</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/15/10</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>history export to My Computer fails silently; SHBrowseForFolder returns false</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/20/10</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>move color mapping assembler into CDibEngine so it's always used</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/20/10</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>in recorder, add buffer swap so next render starts before frame is output</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/24/10</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>round antialiasing pixel averages instead of truncating them; no visisible gain</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR VALIGN=TOP>
+<TD>01/24/10</TD>
+<TD>&nbsp;</TD>
+<TD>punt</TD>
+<TD>try down-samping escape values instead of RGB values; looks terrible</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE><!--  content stops HERE  -->
+</div>
+</body>
+</html>

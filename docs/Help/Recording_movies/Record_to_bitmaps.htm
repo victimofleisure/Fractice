@@ -1,0 +1,21 @@
+<title>Record to bitmaps</title>
+<body>
+
+<h3>Record to bitmaps</h3>
+
+<p>If "Record to bitmaps" is checked in the <a href="../Recording_movies/Record_dialog.htm">Record dialog</a>, the recording doesn't create an AVI file; instead, it creates a numbered sequence of bitmaps, one per frame. Recording to bitmaps has an important advantage over recording to an AVI file: if a recording to bitmaps is aborted, it can easily be resumed.
+
+<p>To resume an aborted recording to bitmaps, open the project, press "Start" in the Record dialog, and select the same destination folder that the aborted recording used. Fractice will display this message:
+
+<blockquote>Destination folder already contains numbered bitmaps which could be an aborted version of this recording. If so, continue recording from where it aborted?
+</blockquote>
+
+<p>Fractice can't be certain that the bitmaps it found are in fact an aborted version of the current recording. Fractice relies on <em>you</em> to verify this! Press "Yes" in this message box to resume the recording. Note that it's not necessary to specify a frame range in the Record dialog; Fractice figures out which frames need to be rendered, automatically detecting and fixing any gaps in the sequence.
+
+<p>If you abort a recording to AVI, there's no easy way to resume it. You can try recording the remainder of the movie to a different AVI, and merging the clips in a video editor, but this is tricky, and it's only possible if the aborted recording was closed gracefully, which won't be the case if there was a crash or a power outage. For this reason, if a recording will take a long time, it's highly recommended to record to bitmaps.
+
+<p>If you need to create an AVI file from a bitmap sequence, an external tool called "BmpToAvi" is provided for this purpose. You'll find it in the Windows Start menu, under <span class="cmd">Programs/Fractice/BmpToAvi</span>. Most video editing applications can also import a bitmap sequence.
+
+
+
+</body>

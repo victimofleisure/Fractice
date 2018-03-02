@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fractice - FAQ</title>
+<meta content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<link href="./style.css" rel=stylesheet title=default type=text/css>
+</head>
+<body>
+<div class=menu>
+<a href="./index.html"><img src="./images/fractice-icon-32x32.gif" width="32" height="32" alt="icon"></a>
+<div class=title>Fractice</div><p>
+<div class=menuitem0 title="Overview"><a href="./index.html">Home</a></div>
+<div class=menuitem0 title="Movies"><a href="./movies.html">Movies</a></div>
+<div class=menuitem0 title="Gallery"><a href="./gallery/gallery1.html">Gallery</a></div>
+<div class=menuitem0 title="Screenshots"><a href="./screenshots.html">Screenshots</a></div>
+<div class=menuitem0 title="Features"><a href="./features.html">Features</a></div>
+<div class=menuitem0 title="Download"><a href="./download.html">Download</a></div>
+<div class=menuitem0 title="Documentation"><a href="./helpframe.html">Documentation</a></div>
+<div class=menuitem0 title="Development"><a href="./development.html">Development</a></div>
+<div class=menuitem0 title="FAQ"><b>FAQ</b></div>
+<div class=menuitem0 title="Forums"><a href="./forums.html">Forums</a></div>
+<div class=menuitem0 title="Links"><a href="./links.html">Links</a></div>
+<div class=menuitem0 title="Contact"><a href="./contact.html">Contact</a></div><br>
+</div>
+<div id=body>
+<!--  content goes HERE  -->
+
+<h1>Fractice FAQ</h1>
+
+<ul>
+<li><a href="#view_demo">How do I view the demo?</a>
+<li><a href="#find_servers">Why can't I find my rendering server(s)?</a>
+<li><a href="#old_fashioned">The app looks old-fashioned, can I change the style?</a>
+<li><a href="#SSE2">CPU doesn't support SSE2?</a>
+</ul>
+
+<a name="view_demo">
+<p><b>How do I view the demo?</b>
+
+<p>The View menu only includes a Demo item when no documents are open. To view the
+demo, first close all documents (e.g. using File/Close), and then select View/Demo.
+
+<a name="find_servers">
+<p><b>Why can't I find my rendering server(s)?</b>
+
+<p>Your server PCs must run FractServ.exe, NOT Fractice.exe! Only the client
+PC should be running Fractice.exe. You'll find FractServ.exe in the Fractice
+folder, typically C:\Program Files\Fractice. You can either copy it to each
+server PC, or have the server PCs run it over the LAN from a shared folder. Once
+your server PCs are all running FractServ.exe, press the "Find" button in the 
+Servers dialog. If you still can't find your servers, it's probably a firewall
+issue.
+
+<p>Try using the Servers dialog's "Add" button, which bypasses the find and
+instead prompts you for the server's hostname or IP address. If this works, it's
+only the find that's having problems; if it doesn't work, something more serious
+is wrong. Note that the find uses a UDP broadcast, which requires the client 
+and the servers to be on the same subnet. When you do a find, each server 
+should display the message "x.x.x.x found us" where x.x.x.x is the client's IP 
+address. If you see this message, it proves that the server heard the client and 
+responded. The server also has to be able to bind to a UDP socket, which is
+often what trips the firewall. If possible, temporarily disable the firewall on
+at least one server PC and see if it helps. Also see the 
+<a href="help.php?topic=Help/Distributed_processing/Server_arguments.htm">FractServ 
+command line arguments</a>, some of which are useful for working around firewalls.
+
+<a name="old_fashioned">
+<p><b>The app looks old-fashioned, can I change the style?</b>
+
+<p>Yes, you can give Fractice more modern XP-style controls very easily: just download
+the <a href="http://fractice.sourceforge.net/downloads/fractice.exe.manifest">manifest</a>
+and copy it into the same folder as the application.
+
+<a name="SSE2">
+<p><b>CPU doesn't support SSE2?</b>
+
+<p>If Fractice exits with a "CPU doesn't support SSE2" error message when you try 
+to run it, your CPU doesn't support the <a href="http://en.wikipedia.org/wiki/SSE2">SSE2</a> 
+instruction set and is too old to run the application. If you just want to run the 
+<em>server</em> on an old PC, a non-SSE2 version of the server is available <a href="downloads/fractserv-no-sse2.zip">here</a>. The non-SSE2 version can be
+identified using the /help flag: it reports a GMP version of 4.1.0.
+
+<!--  content stops HERE  -->
+</div>
+</body>
+</html>

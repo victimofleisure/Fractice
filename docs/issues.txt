@@ -1,0 +1,310 @@
+open	close	type	description	rev
+02/16/08	02/17/08	done	canceling render by rezooming causes duplicate thumbnail	1.0.00.00
+02/16/08	02/17/08	done	document and history must include all settings that affect rendering	1.0.00.00
+02/16/08	02/17/08	done	adding thumbnail should scroll list to bottom	1.0.00.00
+02/16/08	02/17/08	done	thumbnail should include rectangle around area that was zoomed	1.0.00.00
+02/16/08	02/18/08	done	show preview image at start of render if possible	1.0.00.00
+02/17/08	02/18/08	done	convert history to a vector of snapshot ref ptrs	1.0.00.00
+02/17/08	02/18/08	done	allow file drop and shell open	1.0.00.00
+02/17/08	02/18/08	done	add thumbnail after each render that pushed history	1.0.00.00
+02/17/08	02/18/08	done	store preview rect in snapshot and draw it in history OnDraw	1.0.00.00
+02/16/08	02/19/08	done	movie recording	1.0.00.00
+02/17/08	02/19/08	done	StretchBlt frame to back buffer instead of display to speed repaint	1.0.00.00
+02/16/08	02/20/08	done	if thumbnail and frame aspect ratios differ, thumbnail is distorted	1.0.00.00
+02/19/08	02/20/08	done	scroll view, make fit in window optional	1.0.00.00
+02/20/08	02/20/08	done	progress bar makes screen artifacts when sizing scroll view	1.0.00.00
+02/20/08	02/20/08	done	frame memcpy could be avoided using buffer swapping	1.0.00.00
+02/16/08	02/21/08	done	allow thumbnail size to vary	1.0.00.00
+02/16/08	02/21/08	done	thumbnail list should indicate current history position	1.0.00.00
+02/20/08	02/21/08	done	in fit in window mode, center zoom doesn't behave as expected 	1.0.00.00
+02/20/08	02/21/08	done	drag mode should have continuous preview	1.0.00.00
+02/21/08	02/21/08	done	wheel zooming	1.0.00.00
+02/21/08	02/21/08	done	history delete	1.0.00.00
+02/21/08	02/22/08	done	disable view progress bar during recording	1.0.00.00
+02/19/08	02/23/08	done	antialiasing via downsampling	1.0.00.00
+02/22/08	02/24/08	done	after canceling render, settings aren't restored to previous values	1.0.00.00
+02/21/08	02/25/08	done	zooming or dragging while rendering causes incorrect preview	1.0.00.00
+02/25/08	02/25/08	done	compensate for bottom-up DIB by flipping y-axis in engine	1.0.00.00
+02/21/08	02/26/08	done	printing and print preview	1.0.00.00
+02/16/08	02/27/08	done	multi-core rendering	1.0.00.00
+02/16/08	03/05/08	done	full-screen mode	1.0.00.00
+02/16/08	03/05/08	done	palette editor	1.0.00.00
+02/16/08	03/05/08	done	allow palette to be changed without re-rendering	1.0.00.00
+03/06/08	03/06/08	done	give gradient control an eydropper	1.0.00.00
+03/05/08	03/09/08	done	palette editor should allow multiple selections	1.0.00.00
+03/06/08	03/09/08	done	dragging shade picker's arrow doesn't release capture	1.0.00.00
+03/06/08	03/09/08	done	gradient interpolation must handle missing start or end point	1.0.00.00
+03/09/08	03/10/08	done	point zoom should keep image centered on the point	1.0.00.00
+03/11/08	03/13/08	done	entering coordinates manually doesn't generate thumb rect	1.0.00.00
+03/10/08	03/14/08	done	alternate document that saves entire project including history	1.0.00.00
+03/14/08	03/14/08	done	entering zero zoom in coords dialog crashes app	1.0.00.00
+03/05/08	03/15/08	done	add properties to history context menu	1.0.00.00
+03/05/08	03/15/08	done	import RGB palettes	1.0.00.00
+03/15/08	03/18/08	done	archive signature is backwards	1.0.00.00
+02/16/08	03/20/08	done	undo and redo	1.0.00.00
+03/05/08	03/20/08	done	save changes warning	1.0.00.00
+03/20/08	03/20/08	done	undo should remove previous snapshot's detail rectangle	1.0.00.00
+02/21/08	03/26/08	done	history should allow multiple selections	1.0.00.00
+03/23/08	03/26/08	done	continuous mouse zooming	1.0.00.00
+03/01/08	03/28/08	done	menu radio button is too small	1.0.00.00
+03/11/08	03/28/08	done	changing palette during a render behaves unexpectedly	1.0.00.00
+03/27/08	03/28/08	done	keyboard shortcuts for image commands (ss)	1.0.00.00
+04/01/08	04/03/08	done	make record dialog modeless	1.0.00.00
+04/01/08	04/03/08	done	drag thumbnails from history to record dialog	1.0.00.00
+04/01/08	04/10/08	done	engine should always return escape times	1.0.00.00
+04/01/08	04/13/08	done	include record info in project container	1.0.00.00
+02/16/08	04/15/08	done	try other high-precision math libraries; GMP is the best	1.0.00.00
+04/15/08	04/17/08	done	include math precision in snapshot and project	1.0.00.00
+04/17/08	04/21/08	done	parameters bar	1.0.00.00
+02/21/08	04/25/08	done	reduce progress bar overhead; drive it with a timer	1.0.00.00
+04/24/08	04/25/08	done	SSE2 support	1.0.00.00
+04/24/08	04/26/08	done	marquee/hand/zoom tools	1.0.00.00
+04/24/08	04/29/08	done	show axes	1.0.00.00
+04/22/08	04/30/08	done	changing cycle length should apply palette instead of rendering	1.0.00.00
+05/01/08	05/01/08	done	busy count goes negative due to race condition in engine	1.0.00.00
+05/07/08	05/07/08	done	if snapshot is preview source, deleting it causes incorrect preview	1.0.00.00
+05/03/08	05/08/08	done	ctrl+wheel doesn't work if control bar has focus	1.0.00.00
+04/10/08	05/15/08	done	record dialog needs start/end frame option	1.0.00.48
+04/10/08	05/15/08	done	add record to bitmaps option	1.0.00.48
+02/16/08	05/16/08	done	distributed movie rendering via network client/server	1.0.00.48
+04/11/08	05/18/08	done	histogram should have optional reticle	1.0.00.48
+07/24/08	07/24/08	done	during grid control edit, clicking different row doesn't apply change	1.0.00.52
+05/16/08	09/15/08	done	add find servers dialog; allow multiple selection, show busy servers	1.0.00.53
+05/21/08	10/10/08	done	detect gaps in frame sequence and repair them	1.0.00.55
+05/16/08	10/14/08	done	distributed movie render must create AVI file from bitmaps	1.0.00.58
+10/16/08	10/16/08	done	allow port number to be changed, and make UDP server optional	1.0.00.59
+10/16/08	10/17/08	done	in servers dialog, need option to add a list of hostnames	1.0.00.60
+10/12/08	10/20/08	done	show server performance statistics	1.0.00.62
+10/12/08	10/20/08	done	aborting a recording should send cancel to servers	1.0.00.63
+03/11/08	10/23/08	done	job queue for batch rendering movies	1.0.00.68
+10/24/08	10/24/08	done	add parameters control to record dialog	1.0.00.70
+10/25/08	10/26/08	done	handle record points with different parameters/palettes	1.0.00.72
+10/25/08	10/26/08	done	open/save palette from within palette dialog, via context menu	1.0.00.73
+10/25/08	10/26/08	done	preview option in palette file dialog	1.0.00.74
+04/01/08	10/27/08	done	make palette dialog resizeable	1.0.00.74
+04/30/08	10/27/08	done	options for continuous zoom step, grid color	1.0.00.75
+10/27/08	10/29/08	done	recover incomplete recording; for bitmaps only	1.0.00.77
+10/25/08	10/30/08	done	in servers dialog, show a progress bar for each server	1.0.00.79
+11/01/08	11/01/08	done	restore defaults button in options dialog	1.0.00.82
+11/02/08	11/05/08	done	server /client arg; if present, server connects to specified client	1.0.00.86
+10/27/08	11/06/08	done	clipboard support for history	1.0.00.87
+11/06/08	11/08/08	done	history should indicate selection and rendered item separately	1.0.00.89
+04/01/08	11/13/08	done	drag reordering of history with automatic scrolling	1.0.00.90
+11/06/08	11/14/08	done	select history span via editing keys	1.0.00.90
+11/15/08	11/18/08	done	convert to MDI	1.0.00.93
+03/01/08	11/21/08	done	snapshot should include palette name	1.0.00.97
+11/15/08	11/22/08	done	grid control should support drop list	1.0.00.98
+03/05/08	11/28/08	done	if selecting a snapshot only changes palette, don't re-render	1.0.01.02
+11/28/08	11/29/08	done	show states of tool dialogs should be persistent	1.0.01.03
+11/29/08	11/29/08	done	shell open causes incorrect history scroll bar position	1.0.01.07
+04/30/08	12/02/08	done	show grid instead of just axes	1.0.01.08
+02/16/08	12/08/08	done	remember recent image size, quality and antialiasing values	1.0.01.09
+11/20/08	12/10/08	done	project should include bitmap of current image	1.0.01.10
+02/16/08	12/15/08	done	distributed exploring; render strips	1.0.01.12
+12/15/08	12/15/08	done	changing server listening port fails until app is restarted	1.0.01.14
+12/15/08	12/16/08	done	restoring app also unexpectedly restores iconic tool dialogs	1.0.01.15
+10/25/08	12/19/08	done	show view's render time; add extra row to servers dialog for local host	1.0.01.16
+12/15/08	12/20/08	done	add/remove server(s) during strip job	1.0.01.17
+12/12/08	12/21/08	done	reserve space for fractal type in documents	1.0.01.18
+03/11/08	12/22/08	done	support other fractal types, e.g. Newton, Lyapunov?	1.0.01.20
+12/22/08	12/22/08	done	make parameter bar's column widths persistent	1.0.01.21
+02/16/08	12/26/08	done	activating app by left-clicking view unexpectedly renders	1.0.01.23
+11/27/08	12/27/08	done	make palette dialog a control bar	1.0.01.24
+12/23/08	12/28/08	done	undo for individual palette edits	1.0.01.25
+12/22/08	12/29/08	done	Mandelbrot higher powers; cubic, quartic, etc.	1.0.01.26
+12/15/08	12/30/08	done	canceling a slow render freezes app; show wait cursor	1.0.01.28
+01/03/09	01/05/09	done	optionally cache full-size images in project history	1.0.01.29
+01/04/09	01/05/09	done	destroying view doesn't destroy history view	1.0.01.29
+10/27/08	01/07/09	done	generate movie from bitmap sequence; external BmpToAvi app	1.0.01.29
+01/10/09	01/10/09	done	set GMP precision explicitly, don't rely on default	1.0.01.31
+10/23/08	01/11/09	done	bitmap export should allow override of dimensions and resolution	1.0.01.32
+10/23/08	01/11/09	done	allow bitmap exports to be queued to job control	1.0.01.32
+12/08/08	01/11/09	done	poster export; write strips to disk to reduce memory usage	1.0.01.32
+01/12/09	01/12/09	done	include bits per pixel in record info	1.0.01.33
+01/11/09	01/16/09	done	poster pause/resume	1.0.01.34
+01/17/09	01/17/09	done	include version number in snapshot	1.0.01.35
+01/18/09	01/19/09	done	enable Cancel command only while rendering	1.0.01.36
+12/29/08	01/24/09	done	allow palette files to be opened via drop	1.0.01.36
+04/01/08	01/25/09	done	palette editor should allow dragging multiple selection	1.0.01.36
+01/31/09	02/02/09	done	add color offset and color mapping bar	1.0.01.37
+02/02/09	02/03/09	done	color mapping bar's sliders should coalesce edits	1.0.01.38
+02/05/09	02/05/09	done	handle palette wraparound	1.0.01.39
+01/31/09	02/06/09	done	Esc should cancel drag	1.0.01.40
+02/05/09	02/06/09	done	color cycling	1.0.01.40
+12/23/08	02/07/09	done	optionally save escape times	1.0.01.40
+02/06/09	02/08/09	done	use property sheet for options	1.0.01.41
+02/08/09	02/10/09	done	if no idle time, going full-screen doesn't hide bars	1.0.01.42
+10/30/08	02/11/09	done	recorder's bitmap recovery shouldn't be interactive in batch mode	1.0.01.42
+01/24/09	02/11/09	done	record and poster progress should show percent done	1.0.01.42
+02/06/09	02/11/09	done	color cycling in movies	1.0.01.42
+01/21/09	02/12/09	done	handle multiple network adapters	1.0.01.43
+02/13/09	02/14/09	done	don't store redundant escape times for color-only edits	1.0.01.44
+02/06/09	02/16/09	done	fast color cycling causes tearing; use DirectDraw	1.0.01.45
+02/06/09	02/16/09	done	support dual-monitor	1.0.01.45
+02/06/09	02/16/09	done	mirror mode with origin motion	1.0.01.45
+12/22/08	02/18/09	done	include imported palettes in most recently used palettes	1.0.01.45
+02/20/09	02/21/09	done	properties dialog exits exclusive mode; main thread must own dialog	1.0.01.46
+02/06/09	02/22/09	done	optimize color mapping in MMX	1.0.01.46
+02/19/09	02/22/09	done	tween palette changes in exclusive mode	1.0.01.46
+02/18/09	02/24/09	done	render multiple selected history items	1.0.01.47
+02/21/09	02/24/09	done	delete escape times from selected items	1.0.01.47
+02/23/09	02/24/09	done	non-client events shouldn't block message loop in exclusive mode	1.0.01.47
+02/23/09	02/25/09	done	file browser bar	1.0.01.47
+12/01/08	02/26/09	done	export selected history items	1.0.01.48
+02/26/09	02/26/09	done	add image cached and escape times to properties dialog	1.0.01.48
+02/26/09	02/26/09	done	history command to uncache selected images; warn user first	1.0.01.48
+02/26/09	02/26/09	done	escape must exit single-monitor exclusive	1.0.01.48
+02/26/09	02/26/09	done	items with escape times but no image are rendered; should be remapped	1.0.01.48
+02/26/09	02/26/09	done	distributed render of multiple items stalls after first item; use PostMessage	1.0.01.48
+02/26/09	02/27/09	done	strip renders should do color mapping in engine thread	1.0.01.48
+02/26/09	02/27/09	done	decouple exclusive source from active document; add mixer bar	1.0.01.49
+02/26/09	02/27/09	done	move mirroring, tweening, origin motion from options to mixer bar	1.0.01.49
+02/26/09	02/27/09	done	move frame rate option from palette page to display page	1.0.01.49
+02/27/09	03/01/09	done	tween halts color cycling; must cycle both old and new palettes	1.0.01.50
+02/27/09	03/01/09	done	arrow keys should scroll view; add scroll delta option	1.0.01.50
+02/27/09	03/02/09	done	child frame non-client events blocking message loop in exclusive mode	1.0.01.50
+02/23/09	03/04/09	done	MIDI support	1.0.01.51
+02/26/09	03/10/09	done	crossfading between documents	1.0.01.52
+02/26/09	03/10/09	done	allow mixer channels to have different origin motions	1.0.01.52
+02/26/09	03/10/09	done	automated crossfading	1.0.01.52
+03/10/09	03/11/09	done	palette dropped on a view should open in that view, active or not	1.0.01.52
+03/11/09	03/11/09	done	escape should cancel palette drag	1.0.01.52
+03/12/09	03/13/09	done	if project is saved with no current history item, reopening it crashes	1.0.01.53
+03/13/09	03/13/09	done	quality change needlessly reallocates palette in exclusive mode	1.0.01.53
+02/18/09	03/14/09	done	slide show of selected history items	1.0.01.54
+03/12/09	03/14/09	done	transform parameters/palette of selected history items	1.0.01.54
+03/14/09	03/16/09	done	demo mode	1.0.01.55
+02/06/09	03/23/09	done	control bar system menu command to enable/disable docking	1.0.01.57
+03/21/09	03/23/09	done	subdivide MIDI properties into global and channel properties	1.0.01.57
+03/23/09	03/24/09	done	if app launches maximized, docked sizing bars expand	1.0.01.57
+02/18/09	03/25/09	done	if app is maximized, entering/exiting dual-monitor exclusive flickers	1.0.01.57
+03/23/09	03/26/09	done	animate fader during autofade	1.0.01.57
+03/29/09	03/29/09	done	for some MIDI properties, channel B's controllers access channel A	1.0.01.58
+03/29/09	03/29/09	done	in OnEditOptions, don't restore MIDI defaults	1.0.01.58
+03/29/09	03/29/09	done	if damping exceeds [0..1] due to MIDI setup range, app crashes	1.0.01.59
+03/28/09	03/30/09	done	save/open mixer settings	1.0.01.59
+03/28/09	03/30/09	done	loading mixer settings should also load source documents	1.0.01.59
+03/30/09	03/31/09	done	on display change, rebuild options dialog's display list	1.0.01.59
+03/30/09	03/31/09	done	add refresh list button to MIDI options page	1.0.01.59
+05/24/09	06/01/09	done	on entering exclusive mode, initial position of mix fader is ignored	1.0.01.60
+06/30/09	07/01/09	done	parameters control's image list must be a member	1.0.01.61
+07/04/09	07/05/09	done	movie duration of one frame causes divide by zero	1.0.01.61
+07/04/09	07/05/09	done	view keyboard accelerators should work while recording	1.0.01.61
+12/22/08	07/23/09	done	Mandelbar set	1.0.02.00
+04/01/08	12/03/09	done	movie recording should allow more than two points	1.0.03.00
+12/03/09	12/03/09	done	in history bar, canceling drag should also stop scrolling	1.0.03.00
+12/03/09	12/03/09	done	in history bar and record dialog, highlight drop position 	1.0.03.00
+12/02/09	12/04/09	done	zooming beyond range of double gives incorrect X/Y positions	1.0.03.00
+12/07/09	12/08/09	done	non-client button down in dialog or floating bar should activate it immediately	1.0.03.00
+12/09/09	12/11/09	done	add done and queue columns to servers dialog	1.0.03.00
+12/11/09	12/11/09	done	make servers dialog's header state persistent	1.0.03.00
+12/12/09	12/12/09	done	local host's progress doesn't always reach 100% for normal renders	1.0.03.00
+12/12/09	12/12/09	done	crash on canceling distributed render that increases image size or antialiasing	1.0.03.00
+12/01/08	12/13/09	done	canceling deep zoom render is too slow, due to infrequent polling	1.0.03.00
+12/16/09	12/16/09	done	add insert button to record dialog; show select images dialog	1.0.03.00
+12/22/09	12/22/09	done	reverse color cycling; allow negative color cycling rate	1.0.03.00
+12/25/09	12/25/09	done	if record status is hidden during recording, and shown afterwards, data is stale	1.0.03.01
+12/25/09	12/25/09	done	for recordings shorter than one second, record status fields remain blank	1.0.03.01
+12/25/09	12/25/09	done	when aborting deep zoom recording, servers don't cancel immediately	1.0.03.01
+12/25/09	12/27/09	done	status dialog is inconsistent after recording, esp if progress enabled	1.0.03.01
+12/27/09	12/27/09	done	duplicate frames in recording; output frame before starting next render	1.0.03.01
+12/27/09	12/28/09	done	can't reverse color cycling via MIDI	1.0.03.01
+12/01/08	01/06/10	done	64-bit version	1.0.04.00
+12/09/09	01/09/10	done	show bignum version/platform in servers dialog and About box	1.0.04.00
+01/14/10	01/27/10	done	in x64, port tween engine's colormap/downsample to MMX	1.0.05.00
+01/27/10	01/27/10	done	SSE2 accidentally disabled in 1.0.4; fix conditionals in Engine.cpp	1.0.05.00
+01/14/10	02/01/10	done	in x64, port tween engine's dib mix and palette tween to MMX	1.0.06.00
+01/14/10	03/16/10	done	in x64, render four pixels at once per thread in SSE code	1.0.06.00
+01/15/10	03/16/10	done	add export and transform to history context menu	1.0.06.00
+03/11/08		hold	distance estimator	
+03/28/08		hold	temporal antialiasing	
+04/15/08		hold	automatically use bignums for zoom above specified threshold	
+04/24/08		hold	show orbits	
+04/24/08		hold	show coordinates and iteration count at cursor; navigator bar?	
+04/24/08		hold	Julia sets	
+10/23/08		hold	in job control, if shutdown enabled, save check before starting jobs	
+10/30/08		hold	log file; job start, stop, total rendering time, frames, etc.	
+11/24/08		hold	try fixed point math for deep zoom	
+12/01/08		hold	save snapshots of selected history items	
+12/02/08		hold	grid numbers are all the same at high zooms	
+12/02/08		hold	improve performance via guessing	
+12/02/08		hold	rotation of fractal	
+12/02/08		hold	when dragging, only render invalidated portion of frame	
+12/23/08		hold	export escape times; to what format?	
+12/29/08		hold	undo apply palette followed by apply palette causes a needless re-render	
+12/29/08		hold	palette edit undo is confusing; auto-apply palette edits?	
+12/29/08		hold	deep zoom for Mandelbrot higher powers	
+01/10/09		hold	after recording, current history position may not match image state	
+01/31/09		hold	palette editor should allow multiple selection to be resized	
+01/31/09		hold	NET Unicode version won't link to BmpToAvi; port BmpToAvi to NET	
+02/02/09		hold	show commas in bounds and coordinates dialogs	
+02/19/09		hold	open/save doc with escape times can be slow; show progress	
+02/21/09		hold	if no escape times, exclusive shows blank screen; warn? start render?	
+02/25/09		hold	non-destructive palette preview in files bar, esp. in exclusive mode	
+02/26/09		hold	luma/chroma keying	
+02/27/09		hold	escape time keying; unaffected by color changes	
+02/27/09		hold	mixer should show thumbnails of sources	
+03/08/09		hold	freeframe effects	
+03/10/09		hold	record mixer output; disable movie recording in exclusive mode	
+03/28/09		hold	boolean mixing: xor etc. can it still have a crossfader?	
+03/28/09		hold	momentary control to make B motion same as A, or vice versa	
+03/28/09		hold	MIDI select next/prev history item; same for palettes	
+03/28/09		hold	single click zoom, at least optionally; separate tool?	
+03/29/09		hold	MIDI map slide show settings	
+06/04/09		hold	mix document doesn't save origins	
+07/03/09		hold	can't undo record dialog edits	
+10/22/09		hold	options MIDI refresh should preserve selected device if possible	
+12/09/09		hold	show machine type and clock speed in servers dialog	
+12/16/09		hold	pressing Ctrl+A in record dialog selects all in history view	
+12/18/09		hold	in multi-leg recording, panning is ignored when calculating leg durations	
+12/18/09		hold	if only one server is rendering, deleting it hangs job; should reprime	
+12/21/09		hold	UI to customize leg durations in a multi-leg recording	
+01/14/10		hold	in x64, use SSE instrinsics for rounding	
+01/24/10		hold	add GDI+ bicubic resizing as optional alternative to bilinear	
+02/16/08		punt	maximizing app causes docked history bar to glitch briefly	
+02/16/08		punt	changing frame size can cause black or missing preview	
+02/16/08		punt	animate preview image, zooming it up to window size; fancy	
+02/20/08		punt	for big frames in fit in window mode, stretch blit blocks UI	
+02/20/08		punt	with xvid, first 3 frames are always the same; uncompressed is ok	
+02/21/08		punt	zooming back out adds duplicate snapshots to history	
+03/28/08		punt	ctrl+arrow keys should move origin	
+04/01/08		punt	generalize history view to work with any list of snapshots	
+04/15/08		punt	histogram should optionally include background value	
+05/14/08		punt	minimize server to tray; how to do this in console app?	
+10/12/08		punt	support named pipes as an alternative to TCP	
+10/27/08		punt	NET uninstall removes BmpToAvi when it shouldn't; use VC6 installer?	
+10/30/08		punt	client-side port override for individual servers, via hostname:port	
+10/31/08		punt	view sometimes unpainted until render done; remote desktop only?	
+10/31/08		punt	server time estimate is sometimes way off at beginning of job	
+11/19/08		punt	undocking/docking history bar changes scroll position	
+11/22/08		punt	popup combo box doesn't support exit keys	
+11/25/08		punt	zooming out or dragging can cause unpainted border around image	
+11/29/08		punt	distributed record to bitmaps misses frames; can't reproduce it	
+12/07/08		punt	grid numbers shouldn't scroll with image	
+12/15/08		punt	server can connect to another server via client flag; feature?	
+12/15/08		punt	compress strips to increase network throughput; small gain	
+12/16/08		punt	strip render seems slightly noisier than single-engine render	
+12/16/08		punt	if shell open fails, MDI child window zoomed state is lost	
+12/16/08		punt	placement of iconic tool dialogs doesn’t persist; can of worms	
+12/16/08		punt	mixed strips from VC6 and .NET engines don't line up near FPU limit	
+12/22/08		punt	newton deep zoom; it all looks the same so why bother?	
+12/29/08		punt	exiting print preview restores iconic tool dialogs	
+01/11/09		punt	Photoshop erroneously computes DPI using 39.36 inches per meter	
+02/06/09		punt	include full screen in image size menu; size of which monitor?	
+02/14/09		punt	if cycling color, cycle length slider should have immediate effect	
+02/24/09		punt	thumbnail stretch blit causes significant delay; use worker thread?	
+02/25/09		punt	move origin in escape frame coords: smoother, but causes temporal aliasing	
+02/27/09		punt	opening palette can block message loop; cache? use ram drive	
+02/27/09		punt	horizontal/vertical split screen; flattens origin motion to a single axis	
+02/28/09		punt	in exclusive, color cycling sometimes splits a render between two palettes	
+03/01/09		punt	if scrolls are coalesced, thumbnail detail rectangle doesn't update	
+03/02/09		punt	make options dialog resizable; no need, stacked tabs are fine	
+03/13/09		punt	status bar indicators don't update if there's no idle time	
+03/15/09		punt	engine's wait cursor is visible in single monitor exclusive	
+03/25/09		punt	in dual-monitor exclusive, can't dock bars via dragging; due to non-blocking	
+03/29/09		punt	save slide show settings in document	
+01/15/10		punt	history export to My Computer fails silently; SHBrowseForFolder returns false	
+01/20/10		punt	move color mapping assembler into CDibEngine so it's always used	
+01/20/10		punt	in recorder, add buffer swap so next render starts before frame is output	
+01/24/10		punt	round antialiasing pixel averages instead of truncating them; no visisible gain	
+01/24/10		punt	try down-samping escape values instead of RGB values; looks terrible	
